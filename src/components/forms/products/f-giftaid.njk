@@ -1,0 +1,21 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>Thanks you for choosing to donate to the British Heart Foundation.</h1>
+
+        <p>Your donations means we can continue our life saving research and offer support to heart patients.</p> 
+
+        {% include 'forms/elements/f-input__amount.njk' %}
+
+        {% include 'forms/elements/f-giftaid.njk' %}
+        
+        {% include 'forms/core/f-submit.njk' %}
+
+    </form> 
+
+</section>

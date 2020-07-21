@@ -1,0 +1,91 @@
+.f-forms { 
+    
+     &__checkbox {
+
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+
+        & + .f-forms__checkbox {
+            margin: 10px 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* Base for label styling */
+        [type="checkbox"]:not(:checked),
+        [type="checkbox"]:checked {
+            position: absolute;
+            left: -9999px;
+        }
+
+        [type="checkbox"]:not(:checked) + label,
+        [type="checkbox"]:checked + label {
+            position: relative;
+            padding-left: 45px;
+            cursor: pointer;
+        }
+
+        [type="checkbox"] + label {
+            padding-top: 5px;
+        }
+
+        /* checkbox aspect */
+        [type="checkbox"]:not(:checked) + label:before,
+        [type="checkbox"]:checked + label:before {
+            content: '';
+            position: absolute;
+            left: 0; 
+            top: 0;
+            width: 30px; 
+            height: 30px;
+            border: 1px solid $c-dark-grey;
+            background: $c-white; 
+            z-index: 1;
+            @include transition(0.1s all);
+        }
+
+        [type="checkbox"]:checked + label:before {
+            background: $c-white;
+            border: 1px solid $c-green; 
+        }
+
+        /* checked mark aspect */
+        [type="checkbox"]:not(:checked) + label:after,
+        [type="checkbox"]:checked + label:after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/icons/icon-green-tick.svg);
+            background-repeat: no-repeat;
+            background-size: 16px 13.3px;
+            display: inline-block;
+            @include transition(0.1s all);
+            width: 30px; 
+            height: 30px;
+            left: 7px;
+            top: 8px;
+            z-index: 1;
+        }
+        /* checked mark aspect changes */
+        [type="checkbox"]:not(:checked) + label:after {
+            opacity: 0;
+        }
+        
+        [type="checkbox"]:checked + label:after {
+            opacity: 1;
+        }
+
+        [disabled]:before  {
+            background-color: $c-gallery !important;
+            border: solid 1px $c-silver !important;
+            cursor: pointer;
+        }
+
+        [disabled] ~ label {
+            color: $c-silver;
+        }
+ 
+    }
+}

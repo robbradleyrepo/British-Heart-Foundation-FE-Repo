@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Long Text Component</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+
+                <div class="cs-shelf__row is-narrow">
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% set whichButton = 'primary' %}
+                        {% include 'c-text-component.njk' %}
+                        {% set whichButton = 'none' %}
+                    </div>
+                </div>
+
+                <div class="cs-shelf__row is-wide-left">
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column"></div>
+                </div>
+
+                <div class="cs-shelf__row is-equal">
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% set whichButton = 'secondary' %}
+                        {% include 'c-text-component.njk' %}
+                        {% set whichButton = 'none' %}
+                    </div>
+                </div>
+
+                <div class="cs-shelf__row is-equal-thirds">
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                </div>
+
+                <div class="cs-shelf__row is-equal-quaters">
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% set isLongTextComponent = 'true' %}
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    
+</html>

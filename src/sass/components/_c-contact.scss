@@ -1,0 +1,63 @@
+.c-contact {
+    padding: 0 20px;
+
+    @include mq('tablet') { 
+        padding: 0 25px;
+    }
+    
+    @include mq('large') {
+        padding: 0;
+    }
+    
+    &__wrap {
+        display: flex;
+        flex-flow: column; 
+
+        @include mq('tablet') {
+            flex-flow: row; 
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+
+        @include mq('tablet') {
+            width: 50%;
+        }
+
+        @include mq('desktop') {
+            width: 25%;
+        }
+
+        img {
+            margin-right: 20px;
+        }
+
+        .icon-phone {
+            width: 38px;
+            height: 39px;
+        }
+
+        .icon-email {
+            width: 47px;
+            height: 34px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            @include transition(all 0.3s);
+
+            &:hover {
+                color: $c-bhf-red;
+            }
+        }
+    }
+}

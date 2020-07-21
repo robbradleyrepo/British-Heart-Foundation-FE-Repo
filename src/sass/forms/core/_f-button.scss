@@ -1,0 +1,71 @@
+.f-forms {
+    
+    &__spinner {
+        background-color: $c-white;
+        background-image: none;
+        background-position: right center;
+        background-repeat: no-repeat;
+        @include transition(all 0.1s);
+        
+        &.is-visible {
+            background: $c-white url('../img/mvc/spinner.gif') right center no-repeat !important;
+        }
+    }
+
+    &__pulse {
+        display: inline-block;
+        opacity: 0;
+        width: 60px;
+        height: 60px;
+        background-image: url(../img/icons/pulse_6_60px.gif);
+        background-repeat: no-repeat;
+        @include transition(0.2s all);
+
+        &.is-visible {
+            opacity: 1;
+        }
+    }
+
+    button.button {
+        font-family: $font-base;	
+        padding: 7px 15px 11px;
+        opacity: 1;
+        @include transition(0.2s all);
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    &__clear {
+        margin-left: 40px;
+        color: $c-bhf-wine;
+        border-bottom: 1px solid $c-bhf-wine;
+        opacity: 1;
+        @include transition(all 0.3s);
+        
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .cta__tertiary {
+        border-radius: 0;
+        margin-top: 0;
+        padding: 7px 15px;
+        opacity: 1;
+        @include transition(0.2s all);
+    }
+
+    &__button--notice {
+        @include transition(all 0.2s);
+        
+        &.deactive {
+            @include transition(all 0.2s);
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
+
+}

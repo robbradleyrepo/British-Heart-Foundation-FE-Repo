@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Utility/Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Utility/Search" fill="#000000" fill-rule="nonzero">
+            <path d="M16.5,23 C20.0898509,23 23,20.0898509 23,16.5 C23,12.9101491 20.0898509,10 16.5,10 C12.9101491,10 10,12.9101491 10,16.5 C10,20.0898509 12.9101491,23 16.5,23 Z M24.0695972,22.2411701 L27.4142136,25.5857864 L24.5857864,28.4142136 L21.026132,24.8545592 C19.6805492,25.5850776 18.1387298,26 16.5,26 C11.2532949,26 7,21.7467051 7,16.5 C7,11.2532949 11.2532949,7 16.5,7 C21.7467051,7 26,11.2532949 26,16.5 C26,18.6571752 25.2810097,20.6464212 24.0695972,22.2411701 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

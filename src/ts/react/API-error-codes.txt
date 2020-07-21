@@ -1,0 +1,27 @@
+Below are the categories of responses by their status codes:
+
+2xx Success
+
+200 OK: Returned by a successful GET or DELETE operation. PUT or POST can also use this, if the service does not want to return a resource back to the client after creation or modification.
+
+201 Created: Response for a successful resource creation by a POST request.
+
+3xx Redirection
+
+304 Not Modified: Used if HTTP caching header is implemented.
+
+4xx Client Errors
+
+400 Bad Request: When an HTTP request body can’t be parsed. For example, if an API is expecting a body in a JSON format for a POST request, but the body of the request is malformed.
+
+401 Unauthorized: Authentication is unsuccessful (or credentials have not been provided) while accessing the API.
+
+403 Forbidden: If a user is not Authorized to perform an action although authentication information is correct.
+
+404 Not Found: If the requested resource is not available on the server.
+
+405 Method Not Allowed: If the user is trying to violate an API contract, for example, trying to update a resource by using a POST method.
+
+5xx Server Errors
+
+These errors occur due to server failures or issues with the underlying infrastructure.

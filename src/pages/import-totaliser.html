@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Text and image with quote</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+                <!-- BEGIN COMPONENT : Totaliser -->
+                <!-- One Totaliser -->
+                <div class="cs-shelf__row is-full">
+                    <div class="cs-shelf__column">
+                        {% set totaliserVariant = 'one' %}
+                        {% include 'c-totaliser.njk' %}
+                    </div>
+                </div> 
+                <!-- END COMPONENT -->  
+
+                <!-- BEGIN COMPONENT : Totaliser -->
+                <!-- Two Totaliser -->
+                <div class="cs-shelf__row is-full">
+                    <div class="cs-shelf__column">
+                        {% set totaliserVariant = 'two' %}
+                        {% include 'c-totaliser.njk' %}
+                    </div>
+                </div>
+                <!-- END COMPONENT -->   
+
+                <!-- BEGIN COMPONENT : Totaliser -->
+                <!-- Two Totaliser -->
+                <div class="cs-shelf__row is-full">
+                    <div class="cs-shelf__column">
+                        {% set totaliserVariant = 'three' %}
+                        {% include 'c-totaliser.njk' %}
+                    </div>
+                </div>
+                <!-- END COMPONENT -->      
+
+                <!-- BEGIN COMPONENT: Totaliser -->
+                <!-- Three Totaliser -->
+                <div class="cs-shelf__row is-full">
+                    <div class="cs-shelf__column">
+                            {% set totaliserVariant = 'four' %}
+                            {% include 'c-totaliser.njk' %}
+                    </div>
+                </div>
+                <!-- END COMPONENT -->   
+            </div>
+        </main>
+    
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

@@ -1,0 +1,26 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2: Nested</h1>
+
+        <p>Nested Forms are where a checkbox or radio button particular option can be specifically set to reveal a nested form element.</p>
+
+        <p>This nested form element should have validation (a good case must be made for why it shouldn't). </p>
+        
+        <p>Validation is destoyed and fields cleared upon deselecting and the nested element is excluded from global form validation upon form submission.</p> 
+
+        {% include 'forms/elements/f-checkbox__group-with-nested.njk' %}
+
+        {% include 'forms/elements/f-radio__group-with-nested.njk' %}
+
+
+        {% include 'forms/core/f-submit.njk' %}
+ 
+    </form> 
+
+</section>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+    <h1>MVC - Featured tiles</h1>
+    <div id="skipto-content"><a href="#main-content">Skip to main content</a></div>
+
+    <main accesskey="c" id="main-content">
+        <a href="index.html" class="cta">Return to list</a>
+        <!-- BEGIN COMPONENT : FEATURED TILES -->
+        {% include 'c-featured-titles.njk' %}
+        <!-- END COMPONENT -->
+    </main>
+
+    {# {% include 'c-cookies.njk' %} #}
+    {# {% include 'c-policy-update.njk' %} #}
+
+    
+    {% include '_scripts.njk' %}
+
+</body>
+    
+</html>

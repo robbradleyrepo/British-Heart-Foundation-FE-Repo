@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Text Component</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        {% include 'c-text-component.njk' %}
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-equal-thirds">
+                    <h2 style="text-align:center; font-weight: bold;">Parts of text component highlighted</h2>
+                    <p style="text-align:center; font-weight: bold;">To highlight any element inside text-component simply add 'c-text-component__is-highlighted' class to it</p>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% include 'c-text-component-parts-highlighted.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                    <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    
+</html>

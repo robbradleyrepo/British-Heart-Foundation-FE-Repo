@@ -1,0 +1,115 @@
+<fieldset class="f-forms__fieldset--nested">
+        
+    <legend>Radio Buttons with validation</legend>
+
+    <!-- ********************************** -->
+    <!-- FORM element : RADIO -->
+    <!-- ********************************** -->
+    <div class="f-forms__element" id="f-forms__radio__1">
+
+        <div class="f-forms__radio">
+            <label class="f-forms__radio--element" for="f-forms__radio__1a">
+                
+                <input type="radio" 
+                
+                id="f-forms__radio__1a" 
+                name="f-forms__radio__1" 
+                value="option__1"
+                
+                data-parsley-required="true"
+                data-parsley-trigger="click" 
+                data-parsley-class-handler="#f-forms__radio__1"
+                data-parsley-multiple="f-forms__radio__1"
+                data-parsley-errors-container="#f-forms__radio-error__1" 
+
+                >
+
+                <i></i>
+            
+                <span class="f-forms__radio--label">This is option 1a</span>
+            </label>
+            
+        </div>
+
+        <div class="f-forms__radio">
+            <label class="f-forms__radio--element" for="f-forms__radio__1b">
+                
+                <input type="radio" 
+                
+                id="f-forms__radio__1b" 
+                name="f-forms__radio__1" 
+                value="option__1b"
+                
+                data-parsley-required="true"
+                data-parsley-trigger="click" 
+                data-parsley-class-handler="#f-forms__radio__1"
+                data-parsley-multiple="f-forms__radio__1"
+                data-parsley-errors-container="#f-forms__radio-error__1" 
+
+                >
+
+                <i></i>
+
+                <span class="f-forms__radio--label">This is option 1b which has a very long label and which spans over one line. Indeed, it's quite long and should wrap on to the next line - which would be nice, wouldn't it?</span>
+            </label>
+            
+        </div>
+
+        <div class="f-forms__radio">
+            <label class="f-forms__radio--element" for="f-forms__radio__1c">
+                
+                <input type="radio" 
+
+                class="f-forms__element--parsley-toggle is-nested-input"
+                
+                id="f-forms__radio__1c" 
+                name="f-forms__radio__1" 
+                value="option__1c"
+                
+                data-parsley-required="true"
+                data-parsley-trigger="click" 
+                data-parsley-class-handler="#f-forms__radio__1"
+                data-parsley-multiple="f-forms__radio__1"
+                data-parsley-errors-container="#f-forms__radio-error__1" 
+
+                >
+
+                <i></i>
+
+                <span class="f-forms__radio--label">This is option 1c</span>
+            </label>
+        </div>
+
+        <!-- FORM element : TYPE = INPUT [toggled] -->
+        <div class="f-forms__element nested hidden" id="f-forms__element__45">
+            <label for="f-forms__element-input__45">
+                <span class="f-forms__element--label">Input box - validation when active</span>
+            </label>
+
+            <input type="text" name="" id="f-forms__element-input__45"
+
+            data-parsley-trigger="focusout"
+            data-parsley-trigger-after-failure="focusout"
+            data-parsley-length="[2, 255]"
+            data-parsley-length-message="Must be between 2 and 255 characters."
+            data-parsley-required="false"
+            data-parsley-excluded="true" 
+            data-parsley-required-message="This is a required field." 
+            data-parsley-class-handler="#f-forms__element__45"
+            data-parsley-errors-container="#f-forms__element-error__45"
+            data-parsley-validation-threshold="2"
+
+            aria-required="false"
+            aria-describedby="g-forms__element-error__45"
+                
+            >
+            <span class="f-forms__element--status"></span>
+        
+            <div class="f-forms__element--error" id="f-forms__element-error__45" role="alert" aria-live="polite"></div>
+        
+        </div>
+
+        <div class="f-forms__element--error" id="f-forms__radio-error__1" role="alert" aria-live="polite"><span></span></div>
+    </div>
+
+</fieldset>

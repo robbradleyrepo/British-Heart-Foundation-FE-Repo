@@ -1,0 +1,11 @@
+.g-forms__engraving--mulitple {
+
+    fieldset {
+        display: none;
+
+        &.is-visible {
+            display: block;
+        }
+    }
+
+}

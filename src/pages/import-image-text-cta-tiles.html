@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Text and image with quote</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+                <!-- BEGIN COMPONENT : TILES with CTA x3 -->
+                <div class="cs-shelf__wrapper is-grey">
+                    <div class="cs-shelf__row is-equal-thirds">
+                        <div class="cs-shelf__column">
+
+                            <!-- BEGIN: TILE -->
+                            {% set tiles_with_cta_variant = 'one' %}
+                            {% include 'c-tiles-with-cta.njk' %}
+                            <!-- END: TILE -->
+                            
+                        </div>
+                        <div class="cs-shelf__column">
+                        
+                            <!-- BEGIN: TILE -->
+                            {% set tiles_with_cta_variant = 'two' %}
+                            {% include 'c-tiles-with-cta.njk' %}
+                            <!-- END: TILE -->
+
+                        </div>
+                        <div class="cs-shelf__column">
+                            
+                            <!-- BEGIN: TILE -->
+                            {% set tiles_with_cta_variant = 'three' %}
+                            {% include 'c-tiles-with-cta.njk' %}
+                            <!-- END: TILE -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END COMPONENT -->
+
+                <!-- BEGIN COMPONENT : TILES with CTA x2 -->
+                <div class="cs-shelf__wrapper is-grey">
+                    <div class="cs-shelf__row is-equal-quaters">
+                        <div class="cs-shelf__column"></div>
+                        <div class="cs-shelf__column">
+
+                            <!-- BEGIN: TILE -->
+                            {% set tiles_with_cta_variant = 'one' %}
+                            {% include 'c-tiles-with-cta.njk' %}
+                            <!-- END: TILE -->
+                            
+                        </div>
+                        <div class="cs-shelf__column">
+                        
+                            <!-- BEGIN: TILE -->
+                            {% set tiles_with_cta_variant = 'two' %}
+                            {% include 'c-tiles-with-cta.njk' %}
+                            <!-- END: TILE -->
+
+                        </div>
+                        <div class="cs-shelf__column"></div>
+                    </div>
+                </div>
+                <!-- END COMPONENT -->
+            </div>
+        </main>
+    
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

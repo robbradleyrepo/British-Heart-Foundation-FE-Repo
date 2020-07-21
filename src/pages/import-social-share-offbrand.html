@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Social Share inside off brand</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+                    <!-- BEGIN COMPONENT : SOCIAL SHARE -->
+                    <section class="cs-shelf__wrapper c-offbrand">
+                        <div class="cs-shelf__row is-equal">
+                            <div class="cs-shelf__column">
+                                
+                                <div class="c-cta-block">
+                                    <h2>Challenge someone!</h2>
+                                    <p>Do you know someone afraid of heights? Tag them in a social media post and challenge them to face their fear and raise money for the British Heart Foundation.</p>
+                                    {% include 'c-social-share.njk' %}
+                                </div>
+
+                            </div>
+                            <div class="cs-shelf__column">
+                                <img src="assets/img/product/challenge-someone-1.jpg" alt="Challenge someone!" class="resp" />
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END COMPONENT -->
+            </div>
+        </main>
+    
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

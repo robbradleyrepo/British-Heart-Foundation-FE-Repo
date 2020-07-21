@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        {# <h1>MVC - ARTICLE EXAMPLE</h1> #}
+
+        <main class="cd-main-content" accesskey="c">        
+           
+            {# <a href="index.html" class="cta">Return to list</a> #}
+
+
+                <div class="cs-shelf__row is-marginless">   
+                    <div class="cs-shelf__column">
+                        {% include 'c-nav-master.njk' %}
+                        {% include 'c-nav-mobile.njk' %}
+                    </div>
+                </div>
+
+                <!-- COMPONENT -->
+                <div class="cs-shelf__row is-marginless">
+                    <div class="cs-shelf__column">
+                        
+                        <section class="c-scp-hero">
+                                <header> 
+                            
+                                    <a href="#" class="g-logo bigbeat animation-beat">
+                                        <span></span>
+                                    </a>
+                            
+                                    <div class="c-scp-hero__copy">
+                            
+                                        <div class="c-scp-hero__is-full">
+                            
+                                            {% include '_breadcrumb.njk' %}
+                            
+                                            <h1 itemprop="headline">Heart of Steel</h1>
+                             
+                            
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="c-scp-hero__mask">
+                                    <img src="assets/img/mvc/scp-hero-curve.svg" alt="Hero curve mask" />
+                                </div>
+                            </section>
+
+                    </div>
+                </div> 
+                
+                <!-- COMPONENT -->
+                <div class="cs-shelf__row is-full">
+                    <div class="cs-shelf__column"> 
+                        {% include 'hos__form-step1__x5.njk' %}       
+                    </div>
+                </div>
+    
+               
+                <!-- PLACEHOLDER -->
+                <div class="cs-shelf__row is-marginless">
+                    <div class="cs-shelf__column">
+                        {% include '_footer.njk' %}
+                    </div>
+                </div>
+
+
+                
+        </main>
+
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

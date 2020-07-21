@@ -1,0 +1,314 @@
+.c-search-with-image {
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 1;
+    padding: 0 20px;
+    
+    @include mq('tablet') {
+        flex-flow: row;
+        padding: 0 25px;
+    }
+
+    @include mq('large') {
+        padding: 0;
+    }
+
+    &__item {
+        width: 100%;
+        color: $c-body-text;
+        min-height: 1vh;
+
+        @include mq('tablet') {
+            width: 50%;
+        }
+
+        &:first-child {
+            order: 2;
+
+            @include mq('tablet') {
+                position: relative;
+                display: block;
+                order: 1;
+                padding-right: 30px;
+                margin-bottom: 0;
+            }
+        }
+
+        &:last-child {
+            order: 1;
+
+            @include mq('tablet') {
+                order: 2
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        img + a {
+            margin-top: 27px;
+        }
+
+        h2 {
+            font-family: $font-bhf-bold;
+            text-align: left;
+            @include font-size(18px);
+            line-height: 22px;
+            margin-bottom: 0;
+
+            @include mq('tablet') {
+                @include font-size(24px);
+                line-height: 44px;
+                margin-top: 0px;
+            }
+
+            @include mq('desktop') {
+                @include font-size(36px);
+            }
+
+            a {
+                color: $c-body-text;
+                @include transition(all 300ms);
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+
+        p {
+
+            text-align: left;
+            @include font-size(14px);
+            line-height: 20px;
+
+            @include mq('tablet') {
+                padding: 0 6vw 0 0;
+                margin-top: 26px;
+                @include font-size(16px);
+                line-height: 26px;
+            }
+        }
+
+        h2 + p {
+            margin-top: 6px;
+        }
+
+        a.cta {
+            position: relative;
+            align-items: center;
+            padding: 6px 36px 6px 15px;
+            color: $c-white;
+            background-color: $c-bhf-rubine-red;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: font-size(16px);
+            text-decoration: none;
+            @include transition(all 300ms);
+
+            i {
+                @include vertical-align;
+                right: 8px;
+                position: absolute;
+                color: $c-white;
+                @include transition(all 300ms);
+            }
+
+            &:hover {
+                border: 0;
+                text-decoration: none;
+                opacity: .7;
+                
+                i {
+                    right: 5px;
+                }       
+            }
+        }
+
+        p + a {
+            margin-top: 0;
+        }
+
+        h2 + a {
+            margin-top: 17px;
+        }
+    }
+
+    &__copy {    
+        padding: 0;
+        @include mq('tablet') { 
+            @include vertical-align();
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__form { 
+        
+        @include mq('tablet') {
+            max-width: none;
+        }
+
+        .g-forms__element {
+            width: 100%;
+            display: flex;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="text"] {
+            outline: none;
+            width: 100%;  
+            width: calc(100% - 150px);
+            max-width: 345px;
+            background-color: $c-white;
+            padding: 4px 8px;
+            @include font-size(14px);
+            line-height: 26px;
+
+            @include mq('tablet') {
+                @include font-size(16px);
+                width: 100%;
+                max-width: 345px;
+                padding: 4px 15px;
+            }
+
+            @include placeholder {
+                color: $c-nobel;
+            }
+
+            /* IE10+ */
+            &::-ms-clear {
+                display: none;
+            }
+            
+            /* Chrome */
+            &::-webkit-search-decoration,
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-results-button,
+            &::-webkit-search-results-decoration { 
+                display: none; 
+            }
+
+        }
+
+        button,
+        input[type="submit"] {
+            margin: 6px 15px;
+            cursor: pointer;
+            outline: none;
+            @include transition(all 300ms);
+
+            &:hover {
+                background-color: darken($c-bhf-rubine-red, 15%);
+            }
+        }
+    }
+
+    &.is-flipped {
+        .c-text-and-image__item {
+
+            &:first-child {
+                @include mq('tablet') {
+                    order: 2;
+                    margin-right: 0;
+                    margin-left: 30px;
+                }
+            }
+
+            &:last-child {
+                @include mq('tablet') {
+                    order: 1;
+                }
+            }
+                
+        }
+    }
+
+    //optional
+    .easy-autocomplete {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-flow: column;
+        
+        @include mq('desktop') {
+            max-width: none;
+            flex-flow: row;
+        }
+
+        .easy-autocomplete-container {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            max-width: 485px;
+            //max-width: 345px;
+
+            ul {
+                display: none;
+                margin: 0;
+                padding: 0;
+                background: $c-white;
+                border: 2px solid $c-amber;
+                list-style-type: none;
+
+                li {
+                    cursor: pointer;
+                    padding: 15px;
+                    font-weight: bold;
+                    @include transition(all 0.15s);
+                
+                    &.selected  {
+                        background: $c-amber;
+                    }
+
+                    b {
+                        color: $c-bhf-rubine-red;
+                    }
+
+                    i {
+                        display: block;
+                        @include font-size(14px);
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+
+        input[type="text"] {
+            width: 85%;
+            max-width: 345px;
+            margin-bottom: 10px;
+
+            @include mq('desktop') { 
+                width: 100%;
+                width: calc(100% - 150px);
+            }
+
+        }
+
+        button,
+        input[type="submit"] {
+            display: inline-flex;
+            max-width: 120px;
+            margin: 20px 0;
+
+            @include mq('desktop') { 
+                max-width: inherit;
+                display: inherit;
+                margin: 6px 15px;
+            }
+
+        }
+    }
+}

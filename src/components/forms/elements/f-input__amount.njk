@@ -1,0 +1,35 @@
+<!-- FORM element : TYPE = INPUT [CUSTOM] [AMOUNT] -->
+<div class="f-forms__element" id="f-forms__element__123b">
+    <label for="f-forms__element-input__123b">
+        <span class="f-forms__element--label">How much would you like to donate?</span> 
+    </label>
+
+    <span class="is-amount">
+
+        <input type="text" name="" id="f-forms__element-input__123b"
+        
+        class="f-forms__element--actual"
+
+        data-parsley-trigger="focusout"
+        data-parsley-trigger-after-failure="focusout"
+        data-parsley-required="true"
+        data-parsley-required-message="This is a required field." 
+        data-parsley-class-handler="#f-forms__element__123b"
+        data-parsley-errors-container="#f-forms__element-error__123b"
+        data-parsley-pattern="[0-9.]*[0-9.]$"
+        data-parsley-pattern-message="Numbers only. Decimals are allowed." 
+        data-parsley-min="2"
+        data-parsley-min-message="Minimum amount must be £2" 
+        data-parsley-whitespace="trim"
+
+        aria-required="true"
+        aria-describedby="f-forms__element-error__123b"
+            
+        >
+
+    </span>
+
+    <span class="f-forms__element--status"></span>
+    
+    <div class="f-forms__element--error" id="f-forms__element-error__123b" role="alert" aria-live="polite"><span></span></div>
+</div>

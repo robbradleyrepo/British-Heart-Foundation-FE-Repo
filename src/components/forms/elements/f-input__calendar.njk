@@ -1,0 +1,110 @@
+<fieldset class="f-forms--calendar-picker" data-generic-date-message="This is a required field." data-past-date="false" data-past-date-message="Donation date cannot be in the past." data-future-date="true" data-future-date-message="Date of birth cannot be in the future." data-include-today="false"
+data-include-days="[0,1,2,3,4,5,6]" data-exclude-date-message="This date is excluded.">
+<p>The fieldset with class "f-forms--calendar-picker" has four important data attributes:
+    <ul>
+        <li>data-future-date - true will enable dates in the future, false will disable</li>
+        <li>data-past-date - true will enable dates in the future, false will disable</li>
+        <li>data-include-today - true will enable today, false will disable</li>
+        <li>data-include-days="[0,1,2,3,4,5,6]" - the array representing days of week. 0 - Monday, 1- Tuesday, etc. If someone wanted to allow only Mondays and Fridays it would be data-include-days="[0, 4]" and that's all.</li>
+    </ul>
+</p>
+<p>For the above data fields, validation messages should be set using the following data-attributes:
+    <ul>
+        <li>data-generic-date-message</li>
+        <li>data-exclude-date-message</li>
+        <li>data-future-date-message</li>
+        <li>data-past-date-message</li>
+    </ul>
+</p>
+    <div class="calendar-overlay">
+    </div>
+    <div class="calendar-top-header">
+        <span class="close-overlay"></span>
+    </div>
+    <div class="f-forms__element" id="f-forms__element__1date" data-parsley-errors-container="#f-forms__element-error__1date" data-parsley-is-date-valid="false" data-parsley-validate-if-empty="true">
+        <p class="f-forms__label">
+            <span class="f-forms__element--label">Enter a date</span>
+        </p>
+    
+        <div class="f-forms__textbox">
+            <label for="f-forms__element-date__day">
+                <span class="f-forms__element--sublabel">Day</span>
+            </label>
+            <input type="text" name="" id="f-forms__element-date__day" maxlength="2"
+            
+            class="f-forms__element--actual day-input"
+
+            data-parsley-required="true" 
+            data-parsley-required-message="This is a required field." 
+            data-parsley-trigger="focusout"
+            data-parsley-trigger-after-failure="focusout"
+            data-parsley-class-handler="#f-forms__element__1date"
+            data-parsley-errors-container="#f-forms__element-error__1date"
+            data-parsley-pattern-message="Please select a value from the list." 
+            data-parsley-range="[1, 31]"
+            data-parsley-range-message="Day must be a number between 1 and 31"
+
+            aria-required="true"
+            aria-describedby="f-forms__element-error__1date"
+            >
+        </div>
+
+        <div class="f-forms__textbox">
+            <label for="f-forms__element-date__month">
+                <span class="f-forms__element--sublabel">Month</span>
+            </label>
+
+            <input type="text" name="" id="f-forms__element-date__month" maxlength="2"
+            
+            class="f-forms__element--actual month-input"
+
+            data-parsley-required="true" 
+            data-parsley-required-message="This is a required field." 
+            data-parsley-trigger="focusout"
+            data-parsley-trigger-after-failure="focusout" 
+            data-parsley-class-handler="#f-forms__element__1date"
+            data-parsley-errors-container="#f-forms__element-error__1date"
+            data-parsley-pattern-message="Please select a value from the list." 
+            data-parsley-range="[1, 12]"
+            data-parsley-range-message="Month must be a number between 1 and 12"
+
+            aria-required="true"
+            aria-describedby="f-forms__element-error__1date"
+            >
+        </div>
+
+        <div class="f-forms__textbox">
+            <label for="f-forms__element-date__year">
+                <span class="f-forms__element--sublabel">Year</span>
+            </label>
+
+            <input type="text" name="" id="f-forms__element-date__year" maxlength="4"
+            
+            class="f-forms__element--actual year-input"
+
+            data-parsley-required="true" 
+            data-parsley-required-message="This is a required field." 
+            data-parsley-trigger="focusout"
+            data-parsley-trigger-after-failure="focusout" 
+            data-parsley-class-handler="#f-forms__element__1date"
+            data-parsley-errors-container="#f-forms__element-error__1date"
+            data-parsley-pattern-message="Please select a value from the list." 
+            data-parsley-min="1900"
+            data-parsley-min-message="Year must be a number with a minimum value of 1900"
+
+            aria-required="true"
+            aria-describedby="f-forms__element-error__1date"
+            >
+            <span class="f-forms__element--status for-date"></span>
+        </div>
+        <div class="f-forms__textbox calendar-wrapper">
+            <label for="calendar-button">
+                <span class="f-forms__element--sublabel">&nbsp;</span>
+            </label>
+            <input type="hidden" class="calendar-trigger">
+            <a href="#" class="cta cta__tertiary is-white-on-red calendar-button"><i class="calendar-icon"></i>Calendar</a>
+        </div>
+        <div class="f-forms__element--error" id="f-forms__element-error__1date" role="alert" aria-live="polite" data-date-fields-all="true"><span></span></div>
+    </div>
+</fieldset>
+{% include 'forms/core/f-submit.njk' %} 

@@ -1,0 +1,84 @@
+.c-related-articles {
+
+    h2 {
+        @include font-size(18px);
+        padding-left: 20px;
+
+        @include mq('tablet') {
+            padding-left: 0px;    
+        }
+    }
+
+    article {
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            @include mq('tablet') {
+                flex-direction: row;
+                margin-bottom: 30px;
+            }
+
+            .item-img {
+                max-width: inherit;
+                line-height: 0;
+                @include mq('tablet') {
+                    max-width: 170px;
+                    margin-right: 20px;
+                }
+
+                img {
+                    line-height: initial;
+                    max-width: 100%;
+                    min-width: 100px;
+                    width: 100%;
+                    opacity: 1;
+                    @include transition(all 0.3s);
+                    @include mq('tablet') {
+                        width: 14vw;
+                        max-width: 170px;
+                    }
+                }
+            }
+            
+            .item-content {
+                line-height: inherit;
+                padding: 10px 20px;
+                color: initial; 
+
+                @include mq('tablet') {
+                    padding: 0;
+                    line-height: 0.7;
+                }
+
+                h1 {
+                    color: $c-bhf-red;
+                    margin: 0; 
+                    @include font-size(14px);
+                    margin: 5px 0 0 0;
+                    @include mq('tablet') {
+                        margin: -5px 0 0 0;
+                        @include font-size(15px);
+                        line-height: 22px;
+                    }  
+                }
+
+                p {
+                    line-height: 22px;
+                    margin: 0;
+                    @include font-size(14px);
+                    @include mq('tablet') {
+                        font-size: inherit;
+                    }  
+                }
+            } 
+
+            &:hover .item-img img {
+                opacity: 0.7;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.c-hero-standard {
+    background-color: $c-bhf-red;
+    overflow: hidden;
+    height: 380px;
+    color: $c-white;
+
+    .logo {
+        display: block;
+        float: left;
+        width: 180px;
+        height: 180px;
+        border: 1px solid white;
+    }
+
+    h1, :-moz-any() {
+        color: $c-white;
+    }
+
+    .c-hero-inner {
+        width: calc(((1170px * 49.1) / 97.2)); 
+        margin: 0 auto; 
+        padding: 0 1.4%;
+        margin-top: 130px;
+
+        ul.breadcrumb {
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            li {
+               
+            }
+        }
+        a {
+            
+            color: $c-white;
+            text-decoration: underline;
+            padding: 0 5px;
+            @include font-size(14px);
+        }
+    }
+}
+
+.button {
+    float: right;
+    background: $c-white;
+    padding: 15px 25px;
+    margin: 15px 25px;
+    @include border-radius(20px);
+}

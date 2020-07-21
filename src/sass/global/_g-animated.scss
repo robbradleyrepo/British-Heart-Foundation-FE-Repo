@@ -1,0 +1,62 @@
+.animated {
+
+    .circle {
+        stroke:green;
+        stroke-width:10;
+        fill:none;
+        stroke-dasharray:0 360;   
+        stroke-dashoffset:0;
+        animation:mymove 2s infinite;
+    }
+    
+    @keyframes mymove {
+        0% {
+            fill:tomato;
+        }
+        100% {
+            fill:tomato;
+            stroke-dasharray:360 0;
+            stroke-dashoffset:10;
+        }
+    }
+
+    @keyframes fade-in {
+        0%   {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+
+
+    @keyframes slide-in-bounce {
+        0% {
+            @include transform(translateX(-100%) scale(0, 1));
+            opacity: 0;
+        }
+        70% {
+            opacity: 1;
+        }
+        75% {
+            @include transform(translateX(0) scale(1.2, 1)); 
+            opacity: 1;
+        }
+        100% { 
+            @include transform(translateX(0) scale(1, 1));
+            opacity: 1;
+        }
+    }
+
+}
+
+// GLOBAL
+
+@keyframes fade-in {
+    0%   {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}

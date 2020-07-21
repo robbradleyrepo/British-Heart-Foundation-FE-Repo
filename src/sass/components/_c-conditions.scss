@@ -1,0 +1,182 @@
+.c-conditions {
+    display: flex;
+    padding: 0 20px;
+    
+
+    @include mq('desktop') {
+        padding: 20px;
+    }
+ 
+    &__core {
+        width: 100%; 
+        position: relative;
+ 
+        @include mq('desktop') {
+            flex: 0 0 68%;
+            flex: 0 0 calc(100% - 320px);    
+            border-right: 1px solid $c-light-grey2;
+        }
+ 
+    }
+
+    &__core--header {
+        
+        @include clearfix;
+
+        h2 {
+            font-family: $font-bhf-bold;
+            @include font-size(18px);
+            line-height: 37px;
+            margin: 0;
+            display: inline-block;
+
+            @include mq('tablet') {
+                @include font-size(36px);
+                line-height: 44px;
+                margin: 0 0 20px;
+
+            }
+        }
+
+        ul {
+            margin-right: 0;
+            float: none;
+            padding: 0;
+
+            @include mq('desktop') {
+                margin-right: 7%;
+                float: right;
+            }
+
+            li {
+                display: inline-block;
+                
+                a {
+                    font-family: $font-bhf-bold;
+                    @include border-radius(18px);
+                    @include font-size(14px);
+                    color: $c-white;
+                    text-align: center;
+                    padding: 9px 15px;
+                    background-color: $c-bhf-rubine-red;
+                    font-weight: normal;
+                    @include transition(all 0.3s);
+
+                    &:hover {
+                        background-color: darken($c-bhf-rubine-red, 15%);
+                    }
+
+                    &.active, &:focus {
+                        background-color: $c-dark-grey;
+                    }
+                }
+            }
+        }
+
+    }
+ 
+    &__core--results {
+        position: relative; 
+        float: left;
+        width: 100%;
+       
+
+        & > div  {
+            margin-top: 10px;
+            width: 100%;
+            display: none;
+            // position: absolute;
+            // top: 0;
+            // bottom: 0;
+            // opacity: 0;
+            // visibility: hidden;
+            // @include transition(all 0.2s); 
+
+            &.active {
+                display: block;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                float: none;
+                height: auto;
+
+                @include mq('tablet') {
+                    width: 50%;
+                    float: left;
+                }
+                
+                li {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    
+                    @include mq('tablet') {
+                        width: 80%;
+                    }
+    
+                    a {
+                        color: inherit;
+                        @include transition(all 0.3s);
+                        
+                        &:hover {
+                            border: 0;
+                            text-decoration: none;
+                            color: $c-bhf-wine;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        
+
+    }
+
+    // utilise + override secondary nav
+    aside {
+        display: none;
+
+        @include mq('desktop') {
+            display: block;
+            align-content: flex-end;
+            flex: 0 0 320px;
+        }
+
+        nav {
+            margin-right: 0;
+            margin-top: 10px;
+
+            h2 {
+                font-family: $font-bhf-bold;
+            }
+            
+            li {
+                min-height: 0;
+                height: auto;
+                padding-left: 5px;
+
+                &:first-child {
+                    padding-top: 10px;
+                    a {
+                        font-weight: normal;
+                        padding-left: 10px;
+                    }
+                }
+                &:last-child {
+                    padding-bottom: 10px;
+                }
+
+                a {
+                    min-height: 0;
+                    height: auto;
+                    margin: 10px 0;
+                    @include font-size(14px);
+                }
+
+            }
+        }
+    }
+}

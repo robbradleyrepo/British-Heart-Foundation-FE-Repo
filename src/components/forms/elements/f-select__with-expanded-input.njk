@@ -1,0 +1,71 @@
+<fieldset class="no-border">
+    
+    <div class="g-forms__inner"> 
+
+        <!-- FORM element : #10 : TYPE = SELECT -->
+        <div class="g-forms__element" id="g-forms__element__10">
+            <label for="g-forms__element-select__10">How did you hear about this?<i>*</i></label>
+            
+            <div class="g-forms__select half-width">
+
+                <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                
+                <select id="g-forms__element-select__10" class="expand-field"
+                
+                data-parsley-required="true"
+                data-parsley-trigger="change"
+                data-parsley-min-value="email"  
+                data-parsley-error-message="Select an option." 
+                data-parsley-class-handler="#g-forms__element__10"
+                data-parsley-errors-container="#g-forms__element-error__10"
+
+                aria-required="true"
+                aria-describedby="g-forms__element-error__10"
+                
+                >
+                    <option value="">Select...</option>
+                    <option value="email">Email</option><!-- NOTE value here needs to be equal to data-parsley-min-value for parent SELECT above -->
+                    <option value="socialmedia">Social Media</option>
+                    <option value="bhf_representative">BHF representative</option>
+                    <option value="bhf_website">BHF website</option>
+                    <option value="bhf_shop">BHF shop</option>
+                    <option value="magazine_newspaper">Magazine / Newspaper</option>
+                    <option value="radio">Radio</option>
+                    <option value="tv">TV</option>
+                    <option value="post">Postal mailing</option>
+                    <option value="heart_matters">Heart Matters</option>
+                    <option value="wordofmouth">Word of mouth</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="g-forms__element--error" id="g-forms__element-error__10" role="alert" aria-live="polite"></div>
+
+        </div> 
+
+        <!-- FORM element : #10b : TYPE = TEXTAREA -->
+        <div class="g-forms__element hidden" id="g-forms__element__10b">
+            <label for="g-forms__element-input__10b">Please state<i>*</i></label>
+
+            <input type="text" name="" id="g-forms__element-input__12b"
+            
+            data-parsley-length="[2, 255]"
+            data-parsley-required="false" 
+            data-parsley-trigger="focusout"                              
+            data-parsley-error-message="Enter text." 
+            data-parsley-class-handler="#g-forms__element__10b"
+            data-parsley-errors-container="#g-forms__element-error__10b" 
+
+            aria-required="false"
+            aria-describedby="g-forms__element-error__10b"
+                
+            >
+
+            <span class="g-forms__element--status"></span>
+            
+            <div class="g-forms__element--error" id="g-forms__element-error__10b" role="alert" aria-live="polite"></div>
+        </div>
+
+    </div>
+
+</fieldset>

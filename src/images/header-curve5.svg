@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="650px" viewBox="0 0 1440 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="650"></rect>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#ED1F54" offset="0%"></stop>
+            <stop stop-color="#FF0030" offset="100%"></stop>
+        </linearGradient>
+        <path d="M704.3307,0 L1440,0 L1440,426.832469 C1101.22805,594.808878 641.173194,666.500634 33.515598,646.638091 C22.2922893,646.269637 11.1203243,645.847232 -0.000375176699,645.371066 L3.64154236e-14,573.34803 C4.13560981,573.629617 8.29046098,573.895346 12.4643871,574.145361 C456.055848,600.716158 664.653267,452.651702 699.192393,71.8614874 C701.292711,48.7057126 703.096596,24.6765389 704.3307,4.78550533e-12 Z" id="path-4"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-16-+-barbara_Casadei_12_noexiry-Mask" transform="translate(-1.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Group-16" mask="url(#mask-2)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="url(#linearGradient-3)" fill-rule="nonzero" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

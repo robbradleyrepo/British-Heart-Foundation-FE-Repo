@@ -1,0 +1,38 @@
+.c-download-callout {
+    background-color: #f0f0f0;
+    @include border-radius(28px);
+    background-clip: padding-box;
+    width: 274px;
+    margin-left: 10px;
+    padding: 14px 10px 8px;
+    display: flex;
+    justify-content: flex-end;
+
+    @include mq('tablet') {
+        width: 296px;
+        margin-left: 0;
+    }
+
+    &:hover {
+        span:last-child {
+            opacity: .7;
+        }
+    }
+
+    span:first-child {
+        @include font-size(14px);
+        color: $c-body-text;
+        margin-right: 20px;
+        font-weight: bold;
+
+        @include mq('tablet') {
+            @include font-size(15px);
+        }
+    }
+
+    span:last-child {
+        @include font-size(32px);
+        color: #4E5461;
+    }
+
+}

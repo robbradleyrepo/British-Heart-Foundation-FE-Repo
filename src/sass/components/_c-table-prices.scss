@@ -1,0 +1,63 @@
+.c-table-prices {
+    padding: 0 20px;
+
+    @include mq('tablet') {
+        flex-flow: row;
+        padding: 0 25px;
+    }
+
+    @include mq('large') {
+        padding: 0;
+    }
+
+    table {
+    
+        text-align: left;
+
+        caption {
+            text-align: left;
+            @include font-size(22.5px);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        tr {
+
+            border-bottom: 1px solid $c-grey3;
+
+            td, th {
+                padding: 5px 0;
+                @include font-size(18px);
+                font-weight: normal;
+                border-left: 1px solid $c-grey3;
+            }
+
+            th[scope=row] {
+                width: 118px;
+                border-left: 0;
+            }
+            
+            td {
+                width: 107px;
+                text-align: center;
+            }
+
+            &:first-child {
+                th {
+                    font-weight: bold;
+                    @include font-size(20px);
+                    text-align: center;
+                }
+                td {
+                    border-left: 0; 
+                }
+                
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+
+    }
+}

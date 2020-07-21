@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+    <div id="skipto-content"><a href="#main-content">Skip to main content</a></div>
+
+    <!-- **************************************************** -->
+    <!-- BEGIN COMPONENT : NAVIGATION (Desktop/Nav)           -->
+    <!-- **************************************************** -->
+
+    <div class="cs-shelf__row is-marginless">
+        <div class="cs-shelf__column">
+            {% set headerNav = 'microsite' %}
+            {% include 'c-nav-master.njk' %}
+            {% include 'c-nav-mobile.njk' %}
+        
+        </div>
+    </div>
+    <!-- END COMPONENT -->
+
+    <main accesskey="c" id="main-content">
+        <!-- BEGIN COMPONENT : HEADER -->
+        <div class="cs-shelf__row is-marginless">
+            <div class="cs-shelf__column">
+                
+                {% include 'c-full-image-with-curve.njk' %}
+
+            </div>
+        </div>
+    </div>
+    <!-- END COMPONENT -->
+
+    <main accesskey="c" id="main-content">
+
+        <!-- BEGIN COMPONENT -->
+        <div class="cs-shelf__row is-full">
+            <div class="cs-shelf__column">
+                {% include 'c-text-and-image-with-quote.njk' %}
+            </div>
+        </div>
+        <!-- END COMPONENT -->
+    </main>
+
+    
+    
+    {% include '_scripts.njk' %}
+
+</body>
+    
+</html>

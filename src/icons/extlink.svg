@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Utility/External-link</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Utility/External-link" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9,10 L20,10 L20,7 L8,7 C6.8954305,7 6,7.8954305 6,9 L6,29 C6,30.1045695 6.8954305,31 8,31 L28,31 C29.1045695,31 30,30.1045695 30,29 L30,16 L27,16 L27,28 L9,28 L9,10 Z" id="Rectangle" fill="#333333" fill-rule="nonzero"></path>
+        <path d="M28.652198,9.41760712 L21.1473394,16.9224657 L19.0260191,14.8011454 L26.5783382,7.24882628 L22.4237003,7.18361874 L22.4707798,4.18398818 L29.3478666,4.29192489 C30.564665,4.3108779 31.57918,5.32301802 31.6007569,6.53951386 L31.7251705,13.434918 L28.7256587,13.4890381 L28.652198,9.41760712 Z" id="Combined-Shape" fill="#333333"></path>
+    </g>
+</svg>

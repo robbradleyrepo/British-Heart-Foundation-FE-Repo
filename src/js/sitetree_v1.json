@@ -1,0 +1,87 @@
+{
+   "navigation": {
+      "node": [
+         {
+            "node": [
+               {
+                  "_level": "2",
+                  "_parent": "1",
+                  "_children": "3",
+                  "_grandchildren": "4",
+                  "_title": "Conditions",
+                  "_link": "https://www.bhf.org.uk/conditions"
+               },
+               {
+                  "_level": "2",
+                  "_parent": "1",
+                  "_children": "3",
+                  "_grandchildren": "4",
+                  "_title": "Risk Factors",
+                  "_link": "https://www.bhf.org.uk/risk"
+               },
+               {
+                  "_level": "2",
+                  "_parent": "1",
+                  "_children": "3",
+                  "_grandchildren": "4",
+                  "_title": "Support",
+                  "_link": "https://www.bhf.org.uk/support"
+               }
+            ],
+            "_level": "1",
+            "_parent": "0",
+            "_children": "2",
+            "_grandchildren": "3",
+            "_title": "Information and Support",
+            "_link": "https://www.bhf.org.uk/informationsupport"
+         },
+         {
+            "node": [
+               {
+                  "node": [
+                     {
+                        "_level": "3",
+                        "_parent": "2",
+                        "_children": "4",
+                        "_grandchildren": "5",
+                        "_title": "Where your money goes",
+                        "_link": "https://www.bhf.org.uk/money"
+                     }
+                  ],
+                  "_level": "2",
+                  "_parent": "1",
+                  "_children": "3",
+                  "_grandchildren": "4",
+                  "_title": "Donate",
+                  "_link": "https://www.bhf.org.uk/donate"
+               }
+            ],
+            "_level": "1",
+            "_parent": "0",
+            "_children": "2",
+            "_grandchildren": "3",
+            "_title": "How you can help",
+            "_link": "https://www.bhf.org.uk/help"
+         },
+         {
+            "node": [],
+            "_level": "1",
+            "_parent": "0",
+            "_children": "0",
+            "_grandchildren": "0",
+            "_title": "Shop",
+            "_link": "https://www.bhf.org.uk/shop"
+         },
+         {
+            "node": [],
+            "_level": "1",
+            "_parent": "0",
+            "_children": "0",
+            "_grandchildren": "0",
+            "_title": "What we do",
+            "_link": "https://www.bhf.org.uk/whatwedo"
+         }
+      ],
+      "_level": "0"
+   }
+}

@@ -1,0 +1,64 @@
+.c-quote {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include mq('tablet') {
+        padding: 0;
+    }
+
+    &:before {
+        content: '\201C';
+        color: $c-bhf-red;
+        font-family: $font-bhf-bold;
+        position: absolute;
+        left: 20px;
+        top: 28px;
+        @include font-size(100px);
+
+        @include mq('tablet') {
+            left: 0;
+        }
+    }
+
+    &__copy {
+        color: $c-bhf-red;
+        @include font-size(28px);
+        font-family: $font-bhf-bold;
+        line-height: 36px;
+        padding-top: 40px;
+
+        @include mq('tablet') {
+            @include font-size(36px);
+            line-height: 42px;
+        }
+    }
+
+    &__author {
+        @include font-size(18px);
+        line-height: 32px;
+        color: $c-dark-grey;
+
+        @include mq('tablet') {
+            @include font-size(20px);
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &--is-paprika {
+        &:before,
+        .c-quote__copy {
+            color: $c-bhf-wine;
+        }
+    }
+
+    &--is-mine-shaft {
+        &:before,
+        .c-quote__copy {
+            color: $c-body-text;
+        }
+    }
+}

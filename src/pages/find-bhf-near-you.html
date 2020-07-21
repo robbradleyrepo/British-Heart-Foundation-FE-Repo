@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles-mvc.css" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7376432/776862/css/fonts.css" />
+    <meta name="description" content="Being a carer for someone who has a heart condition can be very demanding. Find out where you can find support, and how to care for yourself too">
+    <title>MVC - Content page</title>
+</head>
+
+<body class="sitecore-editingmode">
+    <h1>MVC Layout</h1>
+    <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+        <div>
+            <a href="index.html" class="cta">Return to list</a>
+
+            <div class="cs-shelf__row is-full">
+                <div class="cs-shelf__column">
+                    <div class="c-store-location">
+                        <article class="c-store-location__content">
+                            <header class="c-store-location__header">
+                                <div class="c-store-location__header-copy">
+                                    <h1>Clothing Bank - Harris Academy Chafford Hundred</h1>
+                                    <p>
+                                        Harris Academy Chafford Hundred, Mayflower Road, Chafford Hundred, Grays, UK, RM16 6SA<br>
+                                        01372 477 300
+                                    </p>
+                                </div>
+                            </header>
+                        
+                            <div class="c-store-location__body">
+                                <div class="c-store-location__body-copy">
+                                        <p>Your donations help us continue our life saving work. To help us raise as much money as we can, please make sure your items are in good saleable condition.</p>
+                        <p>Looking to donate? <a href="/shop/donating-goods">Find out how to donate items.</a></p>
+                                </div>
+                                <div class="c-store-location__map">
+                                    <h2>Location</h2>
+
+                                    <div class="c-store-location__map-canvas"  data-addresses="Harris Academy Chafford Hundred, Mayflower Road, Chafford Hundred, Grays, UK, RM16 6S" data-description="Harris Academy Chafford Hundred" data-infowindow="true" data-name="Clothing Bank - Harris Academy Chafford Hundred" data-lat="51.4820625" data-lon="0.2927021" data-id="0e38649b-5091-4f5b-93a0-669115d9bba8">
+                                        <!-- Map is going to be injected here dynamically -->
+                                    </div>
+                                    <div class="c-store-location__panel">
+                                        <h2>Get directions</h2>
+                                    
+                                        <!-- From: <input class="ci-google-from" type="text"></input> -->
+                                        <label class="ci-form2__group first">
+                                            <span class="ci-form2__label">From:</span>
+                                            <input type="text" class="ci-form2__text c-store-location__from" name="" placeholder="Starting point">
+                                        </label>
+
+                                        <img class="c-store-location__current-location" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_my_location_48px-128.png" alt="current location"/>
+                                        <img class="c-store-location__navigate" src="https://www.shareicon.net/download/2015/09/25/107189_navigate_512x512.png" />
+
+                                        <label class="ci-form2__group last">
+                                            <span class="ci-form2__label">I am:</span>
+                                            <select class="ci-form2__select c-store-location__mode">
+                                            <option value="DRIVING">Driving</option>
+                                            <option value="WALKING">Walking</option>
+                                            <option value="BICYCLING">Cycling</option>
+                                            <option value="TRANSIT">In transit</option>
+                                            </select>
+                                        </label>
+
+                                    </div>
+                                    <p class="c-store-location__info">
+                                        <span class="c-store-location__message">waiting for search ...</span>
+                                        <span class="c-store-location__distance">distance:  <span class="c-store-location__distance-number">∞</span></span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    {% include '_scripts.njk' %}
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    // "allowSyntheticDefaultImports": true,
+    // "esModuleInterop": true,
+    // "resolveJsonModule": true
+    // "allowJs": true,
+    "types": ["node", "react"],
+    "typeRoots": ["node_modules/@types"],
+    "target": "es5",
+    "jsx": "react",
+    //"moduleResolution": "classic",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["*", "react/*"]
+    }
+  }
+  // "jsRules": {
+  //   "no-empty": true
+  // }
+}

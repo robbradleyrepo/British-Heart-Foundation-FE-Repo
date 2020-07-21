@@ -1,0 +1,81 @@
+{
+    "name": "frontplate",
+    "version": "0.0.3",
+    "description": "a frontend boilerplate with gulp",
+    "main": "index.js",
+    "scripts": {
+        "build-dev": "gulp build --env development",
+        "build": "gulp build --env production",
+        "start": "gulp serve",
+        "watch": "gulp watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dkbnguyen/frontplate.git"
+    },
+    "keywords": [
+        "fontend",
+        "boilerplate",
+        "gulp",
+        "development"
+    ],
+    "author": "Dan Nguyen <dkbnguyen@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dkbnguyen/frontplate/issues"
+    },
+    "homepage": "https://github.com/dkbnguyen/frontplate#readme",
+    "devDependencies": {
+        "@types/jquery": "^3.3.29",
+        "@types/node": "^7.10.5",
+        "@types/react": "^16.8.10",
+        "@types/react-dom": "^16.8.3",
+        "@types/underscore": "^1.8.14",
+        "browser-sync": "^2.26.3",
+        "browserify": "^16.2.2",
+        "del": "^2.2.1",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.10.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-font-icon": "^1.0.4",
+        "gulp-gh-pages-will": "^0.5.5",
+        "gulp-if": "^2.0.2",
+        "gulp-nunjucks-render": "^2.2.3",
+        "gulp-param": "^1.0.3",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-ruby-sass": "^2.0.6",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-trimlines": "^1.0.1",
+        "gulp-tslint": "^8.1.4",
+        "gulp-typescript": "5.0.0",
+        "gulp-uglify": "^3.0.2",
+        "hoverintent": "^2.2.0",
+        "jquery": "^3.2.1",
+        "jsx": "^0.9.89",
+        "minimist": "^1.2.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "run-sequence": "^1.2.2",
+        "tsify": "^4.0.0",
+        "tslint": "^5.15.0",
+        "typescript": "3.4.1",
+        "underscore": "^1.8.3",
+        "vinyl-buffer": "^1.0.0",
+        "vinyl-source-stream": "^1.1.0"
+    },
+    "dependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/json-query": "^2.2.0",
+        "axios": "^0.18.0",
+        "fs": "0.0.1-security",
+        "js-cookie": "^2.2.0",
+        "json-query": "^2.2.2",
+        "lottie-web": "^5.5.0",
+        "path": "^0.12.7",
+        "prop-types": "^15.7.2",
+        "react-app-polyfill": "^0.2.2"
+    }
+}

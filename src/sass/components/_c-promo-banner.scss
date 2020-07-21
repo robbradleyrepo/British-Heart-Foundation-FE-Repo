@@ -1,0 +1,99 @@
+.c-promo-banner {
+    margin: 100px 0;
+    overflow: hidden;
+	position: relative;
+    color: $c-white;
+    
+    @include mq('tablet') {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+	}
+
+    &:before {
+        content:'';
+        position: absolute; 
+        background-image: url('../img/placeholders/beat2.svg');
+        background-repeat: no-repeat;
+        
+    
+        @include mq('tablet') {
+            content:'';
+            position: absolute;
+            background-image: url('../img/placeholders/beat2.svg');
+            background-repeat: no-repeat;
+            background-size: 170%;
+            background-position: 100% 50%;
+            top: 0;
+            width: 60%;
+            height: 100%;
+            @include transform(translateX(-100%) scale(0, 0.2));
+            z-index: 1;
+            display: block;
+        }
+    }
+
+    .c-promo-banner__image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 250px;
+    
+        @include mq('tablet') {
+            min-height: 400px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .c-promo-banner__content {
+        padding: 10px 20px 30px;
+        @include transition(0.5s);
+        @include transition-delay(0.6s);
+        position: relative;
+        opacity: 0;
+        z-index: 3;
+        background-image: linear-gradient(90deg, #FF0030 0%, #ED1F54 100%);
+
+        @include mq('tablet') {
+            max-width: 50%;
+            padding: 40px 25px 40px 50px;
+            background: none;
+        }
+
+        @include mq('desktop') {
+            padding: 40px 25px 40px 100px;
+        }
+
+        h2 {
+            
+            @include mq('tablet') {
+                @include font-size(36px);
+                margin: 0 0 10px;
+                line-height: 36px;
+            }
+
+            a {
+                color: $c-white;
+                @include transition(all 300ms);
+
+                &:hover {
+                    opacity: .7;
+                }
+            }           
+        }
+    }
+
+    &.animated {
+		.c-promo-banner__content {
+            animation: fade-in 0.7s ease-out forwards 0.6s;
+        }
+
+        &:before {
+		    @include mq('tablet') {
+                animation: slide-in-bounce 0.7s ease-out forwards;
+            }
+        }
+	}
+}

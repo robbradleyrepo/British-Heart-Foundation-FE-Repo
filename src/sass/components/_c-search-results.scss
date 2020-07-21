@@ -1,0 +1,96 @@
+.c-search-results {
+    
+    padding: 0 20px;
+
+    @include mq('tablet') { 
+        padding: 0 25px;
+    }
+    
+    @include mq('large') {
+        padding: 0;
+    }
+
+    h1 {
+        font-family: $bhf; 
+    }
+
+    p.small {
+        @include font-size(14px);
+    }
+    
+    &__zero {
+        ul {
+            list-style-type: square;
+            li {
+                @include font-size(15px);
+            }
+        }
+
+        a {
+            color:  $c-bhf-rubine-red;
+            border-bottom: 1px dotted $c-bhf-rubine-red;
+        }
+    }
+
+    &__wrap {
+        border-top: 1px solid $c-light-grey2;
+        border-bottom: 1px solid $c-light-grey2;
+        padding: 20px 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none !important;
+        
+        li {
+            @include font-size(14px);
+            margin: 20px 0;
+            color: $c-black;    
+
+            a {
+                display: block;
+                @include font-size(16px);
+                color: $c-bhf-rubine-red;
+                font-weight: bold;
+                @include transition(all 0.3s);
+                
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        
+    } 
+
+    &__pagination {
+        margin: 0;
+        padding:  0;
+        
+        li {
+           float : left;
+           padding-right: 10px; 
+        }
+
+        a {
+            @include font-size(14px);
+            color: $c-bhf-rubine-red;
+                
+            &.active {
+                @include font-size(16px);
+                font-weight: bold;
+            }
+
+            &.control {
+                font-weight: bold;
+            }
+
+            @include transition(all 0.3s);
+                
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

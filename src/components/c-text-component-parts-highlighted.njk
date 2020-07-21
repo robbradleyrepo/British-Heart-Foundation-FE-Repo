@@ -1,0 +1,119 @@
+{% if isLongTextComponent == 'true'%}
+
+    <section class="c-text-component is-long">
+        <h2>What is DECHOX?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+        {% if whichButton == 'primary'%}
+            <a href="#" class="cta cta__primary is-white-on-red">Primary button<i class="glyphicon glyphicon-menu-right"></i></a>
+        {% endif %}
+        {% if whichButton == 'secondary'%}
+            <a href="#" class="cta cta__secondary is-white-on-red">Secondary button<i class="glyphicon glyphicon-menu-right"></i></a>
+        {% endif %}
+    </section>
+
+{% else %}
+
+    <section class="c-text-component">
+        <h1 class="is-red">This is a heading H1</h1>
+        <p class="intro">Most people can return to work even if they have been diagnosed with a heart condition, or had a heart attack or heart procedure. Here, you will find advice to help you return to work.</p>
+
+        <h2 class="c-text-component__is-highlighted">When can I return to work?</h2>
+
+        <p>The type of heart condition you have, how severe it is, how quickly you recover, and whether your condition is stable will be major factors in how soon you can return to work. You’re more likely to be able to work if your condition is stable and the symptoms are well controlled. It will also depend on what type of work you do.</p>
+        <p>Your GP or heart specialist will help you decide when you are fit enough to return to work. They will also help you to decide whether you can return to full-time work straight away, or if it would be advisable to work part-time to begin with.</p>
+
+        <h2>Can I go back to the same job?</h2>
+
+        <p class="c-text-component__is-highlighted">You might go back to exactly the same job you were doing before, or you might need to talk to your employer about making changes to your workload or role. This may be temporary or permanent.</p>
+        <p>If your job involves driving, you will need to check with the DVLA and your employer about any restrictions that may apply to you.</p>
+
+        <h3>Unordered list</h3>
+
+        <ul>
+            <li>Call our <a href="//www.google.com" target="_blank">helpline</a></li>
+            <li>Meet people with heart disease in our online community</li>
+            <li>Join a heart support group near you</li>
+            <li>Organisations like the British Cardiac Patients' Association can also help you get in touch with people like you</li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        
+        <ol>
+            <li>first numbered item</li>
+            <li>second numbered item</li>
+            <li>third numbered item</li>
+        </ol>
+
+        <p>Fusce ac nulla ut ante eleifend condimentum. Nullam fringilla arcu sed justo ultrices suscipit. Proin in bibendum nunc. Cras nec elit magna. In scelerisque, quam sed maximus molestie, metus purus varius nibh, id egestas orci nibh sit amet elit. Sed sed finibus velit, sit amet maximus velit. Maecenas sollicitudin, ipsum eu suscipit lobortis, est leo elementum turpis, et dapibus nisi lectus vitae lacus. Pellentesque vulputate venenatis rutrum. In sed cursus libero.</p>
+
+
+        <h3>Definition List</h3>
+
+        <dl class="c-text-component__is-highlighted">
+            <div>
+                <dt>Angiogram</dt>
+                <dd>An angiogram allows your doctor to look inside your coronary arteries.</dd>
+            </div>
+            <div>
+                <dt>Blood tests</dt>
+                <dd>Blood tests can help doctors assess your heart health.</dd>
+            </div>
+            <div>
+                <dt>Checking your pulse</dt>
+                <dd>You can tell if you have a regular or irregular heart rate by checking your.</dd>
+            </div>
+            <div>
+                <dt>Chest x-ray</dt>
+                <dd>A chest x-ray produces a black and white image of your heart, lungs and airways.</dd>
+            </div>
+            <div>
+                <dt>ECG</dt>
+                <dd>An ECG is a simple and useful test which records the electrical activity of your.</dd>
+            </div>
+            <div>
+                <dt>Electrophysiologial studies</dt>
+                <dd>EP studies allow your doctor to look at your heart's electrical activity in great.</dd>
+            </div>
+            <div>
+                <dt>Exercise ECG</dt>
+                <dd>An electrocardiogram that is recorded while you are on a treadmill an exercise.</dd>
+            </div>
+            <div>
+                <dt>Implantable loop recorders</dt>
+                <dd>An implantable loop recorder is a device that records the activity of your heart.</dd>
+            </div>
+            <div>
+                <dt>MRI scans</dt>
+                <dd>Magnetic Resonance Imaging (MRI) is a way of creating detailed images of your organs.</dd>
+            </div>
+            <div>
+                <dt>Myocardial perfusion scan</dt>
+                <dd>A myocardial perfusion scan uses a small amount of radioactive substance to create images which show blood flow.</dd>
+            </div>
+            <div>
+                <dt>Physical assessment</dt>
+                <dd>An assessment may help your doctor decide whether you have a heart problem.</dd>
+            </div>
+            <div>
+                <dt>Radionuclide tests</dt>
+                <dd>Radionuclide tests are performed to assess your heart condition.</dd>
+            </div>
+            <div>
+                <dt>Tilt test</dt>
+                <dd>If you’re having dizzy spells or are blacking out, your doctor may send you for a tilt test.</dd>
+            </div>
+        </dl>
+        <h3>Help and information on heart conditions</h3>
+
+        <ul class="is-black">
+            <li>Call our <a href="//www.google.com" target="_blank">helpline</a></li>
+            <li>Meet people with heart disease in our online community</li>
+            <li>Join a heart support group near you</li>
+            <li>Organisations like the British Cardiac Patients' Association can also help you get in touch with people like you</li>
+        </ul>
+        <p><b>Download a free social pack</b></p>
+        <p><a href="#" class="cta cta__ghost is-red">Download<i class="glyphicon glyphicon-download-alt"></i></a>
+        <span class="is-red">PDF, 24kb</span></p>
+    </section>
+
+{% endif %}

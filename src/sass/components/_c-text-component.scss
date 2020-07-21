@@ -1,0 +1,269 @@
+.c-text-component {
+    
+    padding: 0 20px;
+
+    @include mq('tablet') {
+        flex-flow: row;
+        padding: 0 25px;
+    }
+
+    @include mq('large') {
+        padding: 0;
+    }
+
+    .cs-shelf__row.is-narrow &,
+    .cs-shelf__row.is-equal &,
+    .cs-shelf__row.is-wide-left &,
+    .cs-shelf__row.is-wide-right & ,
+    .cs-shelf__row.is-equal-thirds &,
+    .cs-shelf__row.is-equal-quaters &,
+    .cs-shelf__row.is-wide-middle-narrow-sides &,
+    .cs-shelf__row.is-wide-left-two-quaters &,
+    .cs-shelf__row.is-wide-right-two-quaters & {
+
+        padding: 0 20px;
+        margin: 0;
+        
+        @include mq('tablet') {
+            padding: 0;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        @include mq('large') {
+            padding-left: 0px;
+        }
+
+        img {
+            width: 100%;
+            max-width: none;
+            height: auto;
+        }
+
+        dl { 
+            @include column-count(1); 
+    
+            @include mq('desktop') {
+                @include column-count(2);
+            }
+        }
+
+        &.is-long {
+            margin-bottom: 50px;
+
+            @include mq('tablet') {
+                margin-bottom: 60px;
+            }
+    
+            @include mq('desktop') {
+                margin-bottom: 70px;
+            }
+    
+            @include mq('large') {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    &.reduced-width {
+
+        @include mq('tablet') {
+            width: 75%;
+        }
+    }
+
+    img {
+        display: block;
+        width: 75%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    h2, h3 {
+        font-family: $font-bhf-bold;
+        font-style: normal;
+        font-weight: 500;
+    } 
+
+    h2 { 
+        @include font-size(20px);
+        line-height: 24px;
+        margin: 47px 0 7px;
+
+        &:first-child {
+            margin: 0 0 7px;
+        }
+
+        &.large {
+            @include font-size(36px);
+            line-height: 40px;
+            margin: 47px 0 27px;
+        }
+    }
+
+    h3 {
+        @include font-size(18px);
+        line-height: 22px;
+        margin: 45px 0 0;
+    }
+
+    p {
+        margin: 7px 0 31px;
+
+        &.intro {
+            font-weight: bold;
+            margin-bottom: 46px;
+        }
+
+        &.large {
+            @include font-size(24px);
+        }
+
+        a {
+            @extend .hyperlink-std;
+        }
+
+        a + span {
+            &.is-red {
+                display: block;
+                @include font-size(11px);
+                margin-top: 5px;
+                color: $c-bhf-rubine-red;
+                font-weight: bold;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    h1 {
+        &.is-red {
+            color: $c-bhf-rubine-red;
+            @include font-size(48px);
+            line-height: 60px;
+    
+            @include mq('tablet') {
+                @include font-size(64px); 
+            }
+        }
+    }
+
+    ul {
+        margin: 18px 0 36px;
+        padding: 0;
+
+        li {
+            margin-bottom: 14px;
+            padding: 0 0 0 22px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "\0025A0";
+                font-size: 10px;
+                vertical-align: middle;
+                left: 0;
+                color: $c-bhf-rubine-red;
+            }
+            
+            a {
+                @extend .hyperlink-std;
+            }
+        }
+
+        &.is-black {
+            li {
+                &:before {
+                    color: $c-black;
+                }
+            }
+        }
+    }
+    
+    ol {
+        margin: 18px 0 36px 18px;
+        padding: 0;
+        list-style-position: outside;
+
+        li {
+            margin-bottom: 14px;
+            padding: 0 0 0 5px;
+            
+            a {
+                @extend .hyperlink-std;
+            }
+        }
+    }
+
+    dl {
+        display: block;
+        @include column-count(1);
+        @include column-gap(0px);
+        column-fill: auto;
+        
+        @include mq('tablet') {
+            @include column-count(2);
+            @include column-gap(50px);
+        }
+
+        @include mq('desktop') {
+            @include column-count(3);
+        }
+
+        div {
+            overflow: hidden; /* fix for Firefox */
+            break-inside: avoid-column;
+            -webkit-column-break-inside: avoid;
+        }
+
+        dt {
+            color: $c-bhf-wine;
+            font-weight: bold;
+            @include font-size(18px);
+            margin-bottom: 5px;
+        }
+        dd {
+            margin: 0 0 30px 0;
+            @include font-size(15px);
+        }
+    }
+
+    &.is-long {
+
+        .cs-shelf__column:last-child & {
+            .cs-shelf__row.is-equal &,
+            .cs-shelf__row.is-equal-thirds &,
+            .cs-shelf__row.is-equal-quaters & {
+
+                @include mq('tablet') {
+                    padding-right:20px;
+                }
+            }
+        }
+
+        .cs-shelf__row:first-of-type & {
+            margin-top: 50px;
+
+            @include mq('tablet') {
+                margin-top: 60px;
+            }
+    
+            @include mq('desktop') {
+                margin-top: 70px;
+            }
+    
+            @include mq('large') {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    &__is-highlighted {
+        background: $c-light-grey;
+        padding: 20px;
+        margin: 20px 0;
+
+        @at-root p#{&}, h1#{&}, h2#{&}, h3#{&}, ol#{&}, ul#{&} {
+            margin: 20px 0;
+        }
+    }
+}

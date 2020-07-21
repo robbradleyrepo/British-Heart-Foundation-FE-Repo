@@ -1,0 +1,87 @@
+.c-tiles {
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-flow: column;
+
+    padding: 0 20px;
+
+    @include mq('tablet') { 
+        padding: 0 25px;
+        flex-flow: row;
+    }
+
+    @include mq('desktop') {
+        max-width: 66.66%;    
+    }
+    
+    @include mq('large') {
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%; 
+        color: $c-white;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        @include mq('tablet') { 
+            width: 50%;
+            margin-bottom: 0px;
+            padding: 0 20px 20px;
+        }
+
+        &:first-child {
+            background: $c-bhf-rubine-red; 
+            margin-right: 30px;
+        }
+
+        &:last-child {
+            background: $c-bhf-wine; 
+        }
+
+        h2 {
+            @include font-size(18px);
+            font-family: $bhf;
+            margin: 0;
+
+            @include mq('tablet') { 
+                @include font-size(24px);
+                line-height: 28px;
+                margin: 15px 0 0;
+            }
+
+            @include mq('desktop') { 
+                @include font-size(36px);
+                line-height: 42px;
+            }
+
+        }
+
+        p {
+            @include font-size(14px);
+            margin-bottom: 50px;
+
+            @include mq('tablet') { 
+                @include font-size(16px);
+            }
+        }
+
+    }
+
+    &__cta {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &.is-single {
+
+        .c-tiles__item {
+            width: 100%;
+            margin-right: 0px;
+            background: $c-bhf-rubine-red;
+        }
+
+    }
+}

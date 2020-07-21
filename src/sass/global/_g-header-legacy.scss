@@ -1,0 +1,71 @@
+.g-header-legacy {
+    
+    margin-top: -60px;
+    position: relative;
+    padding-bottom: 20px;
+
+    @include mq('tablet') {
+        margin-top: -65px;
+        padding-bottom: 0;
+    }
+
+    @include mq('desktop-nav') {
+        margin-top: -106px;
+    }
+
+    &__inner {
+        position: relative; 
+        min-height: 70px;
+        height: 70px;
+        overflow: hidden; 
+        background: linear-gradient(to right, #FF0030 0%, #ed1f54 100%);
+        background: -moz-linear-gradient(left, #FF0030 0%, #ed1f54 100%);
+        background: -webkit-linear-gradient(left, #FF0030 0%, #ed1f54 100%);        
+        @include animation('fade-in 1s');
+        
+        @include mq('tablet') {
+            min-height: 80px;
+            height: 80px;
+        }
+        
+        @include mq('desktop-nav') { 
+            height: 117px;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        left: -18px;
+        top: -3px;
+        z-index: 199;
+        overflow: hidden;
+        @include animation('all 0.1s');
+        
+        @include mq('tablet') {
+            left: -11px;
+            top: -12px;
+        }
+        
+        @include mq('desktop-nav') {
+            width: inherit;
+            left: -22px;
+            top: -9px;
+        }
+
+        img {
+            max-width: 98px;
+            @include animation('all 0.1s');
+            
+            @include mq('tablet') {
+                max-width: 125px;
+            }
+            
+            @include mq('desktop-nav') {
+                width: inherit;
+                max-width: 145px; 
+            }
+        }
+    }
+
+}
+

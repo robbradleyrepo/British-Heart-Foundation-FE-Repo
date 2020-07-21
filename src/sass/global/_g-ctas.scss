@@ -1,0 +1,236 @@
+// Primary CTA
+.cta {
+    display: table;
+    font-family: $font-base;
+    font-weight: bold;
+    margin: 12px 0 0;
+    padding: 0 15px;
+    border: none;
+    @include transition(all 0.3s ease-in-out);
+    @include animation('fade-in 2s');
+    white-space: nowrap;
+
+    i {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__primary {
+        @include font-size(16px);
+        height: 35px;
+        line-height: 35px;
+        background: $c-white;
+        color: $c-bhf-rubine-red;
+        @include border-radius(23px);
+
+        &:hover {
+            background: darken($c-white, 15%);
+
+            i {
+                @include vendor-prefix('transform', 'translate(35%, 0)');
+            }
+        }
+
+        i {
+            @include font-size(13px);
+            @include transition(all 300ms);
+            @include vendor-prefix('transform', 'translate(25%, 0)');
+        }
+
+        &.is-dark-grey-on-white {
+            color: $c-dark-grey;
+        }
+
+        &.is-paprika-on-white {
+            color: $c-paprika;
+        }
+
+        &.is-white-on-red {
+            background: $c-bhf-rubine-red;
+            color: $c-white;
+
+            &:hover {
+                background: darken($c-bhf-rubine-red, 15%);
+            }
+        }
+
+        @include mq('tablet') {
+            height: 40px;
+            line-height: 40px;
+
+            i {
+                @include font-size(14px);
+            }
+        }
+
+        @include mq('large') {
+            @include font-size(20px);
+            height: 45px;
+            line-height: 45px;
+            margin: 25px 0 0;
+
+            i {
+                @include font-size(16px);
+            }
+        }
+    }
+}
+
+// Secondary CTA
+.cta__secondary {
+    @include font-size(14px);
+    height: 30px;
+    line-height: 30px;
+    background: $c-white;
+    color: $c-bhf-rubine-red;
+    @include border-radius(23px);
+
+    &:hover {
+        background: darken($c-white, 15%);
+
+        i {
+            @include vendor-prefix('transform', 'translate(35%, 0)');
+        }
+    }
+
+    i {
+        @include font-size(11px);
+        @include transition(all 300ms);
+        @include vendor-prefix('transform', 'translate(25%, 0)');
+    }
+
+    &.is-dark-grey-on-white {
+        color: $c-dark-grey;
+    }
+
+    &.is-paprika-on-white {
+        color: $c-paprika;
+    }
+
+    &.is-white-on-red {
+        background: $c-bhf-rubine-red;
+        color: $c-white;
+
+        &:hover {
+            background: darken($c-bhf-rubine-red, 15%);
+        }
+    }
+
+    @include mq('tablet') {
+        @include font-size(16px);
+        height: 35px;
+        line-height: 35px;
+
+        i {
+            @include font-size(14px);
+        }
+    }
+}
+
+button.cta__secondary {
+    display: inline-flex;
+    align-items: center;
+
+    i { 
+        padding-left: 30px;
+        @include vendor-prefix('transform', 'translate(10%, 0)');
+    }
+
+    &:hover {
+        i {
+            @include vendor-prefix('transform', 'translate(20%, 0)');  
+        }
+    }
+}
+
+.cta__ghost {
+    @extend .cta__secondary;
+    background: none;
+    color: $c-white;
+    border: 2px solid $c-white;
+    line-height: 31px;
+    
+    &:hover {
+        background: none;
+        opacity: 0.7;
+    }
+
+    &.is-red {
+        color: $c-bhf-rubine-red;
+        border: 2px solid $c-bhf-rubine-red;
+    }
+}
+
+
+// Tertiary CTA
+.cta__tertiary {
+    @include font-size(14px);
+    @include border-radius(5px);
+    height: 30px;
+    line-height: 30px;
+    background: $c-white;
+    color: $c-bhf-rubine-red;
+
+    &:hover {
+        background: darken($c-white, 15%);
+    }
+
+    &.is-dark-grey-on-white {
+        color: $c-dark-grey;
+    }
+
+    &.is-paprika-on-white {
+        color: $c-paprika;
+    }
+
+    &.is-white-on-red {
+        background: $c-bhf-rubine-red;
+        color: $c-white;
+
+        &:hover {
+            background: darken($c-bhf-rubine-red, 15%);
+        }
+    }
+}
+
+// 
+.cta__clear-form {
+    margin-left: 40px;
+    color: $c-bhf-wine;
+    border-bottom: 1px solid $c-bhf-wine;
+    opacity: 1;
+    @include transition(all 0.3s);
+    
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.cta__container {
+    
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-flow: column;
+
+    @include mq('tablet') {
+        display: flex;
+        flex-flow: row;
+    }
+
+    & > .cta {
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq('tablet') {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        &.cta__ghost {
+            line-height: 27px;
+            padding: 2px 15px 0;
+        }
+    }
+
+    
+}

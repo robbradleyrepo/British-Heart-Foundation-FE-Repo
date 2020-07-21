@@ -1,0 +1,68 @@
+<section class="c-donate">
+    <div class="c-donate__wrap">
+        <h2>Thanks to you</h2>
+        <p>Our vision is a world in which people do not die or suffer from heart and circulatory conditions.</p>
+        <p>Thanks to you, we've made great progress. With you, we'll beat heartbreak forever.</p>
+
+        <!-- BEs to replace with their preferred endpoint -->
+        <form action="http://localhost:3000/donate.html">
+
+            <div class="c-donate__radios">
+                <div> I want to make a </div>
+                <div>
+                    <label class="c-donate__container" for="c-donate__monthly-donation">
+                        <!-- The "name" attribute has to be the same within the same form,
+                             but unique for every instance of a component -->
+                        <input type="radio" id="c-donate__monthly-donation" name="donation-type" value="monthly" checked="checked">
+                        Monthly donation <i class="c-donate__checkmark"></i>
+                    </label>
+                </div>
+                <div>
+                    <label class="c-donate__container" for="c-donate__single-donation">
+                        <!-- The "name" attribute has to be the same within the same form,
+                             but unique for every instance of a component -->
+                        <input type="radio" id="c-donate__single-donation" name="donation-type" value="single">
+                        Single donation <i class="c-donate__checkmark"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="c-donate__amounts">
+                <div>I want to give </div>
+                <div class="c-donate__presets is-monthly">
+                    <div>
+                        <input class="c-donate__amount" type="button" value="£10">
+                    </div>
+                    <div>
+                        <input class="c-donate__amount" type="button" value="£25">
+                    </div>
+                    <div>
+                        <input class="c-donate__amount" type="button" value="£50">
+                    </div>
+                </div>
+                <div class="c-donate__presets is-single">
+                    <div>
+                        <input class="c-donate__amount" type="button" value="£75">
+                    </div>
+                    <div>
+                        <input class="c-donate__amount" type="button" value="£100">
+                    </div>
+                    <div>
+                        <input class="c-donate__amount" type="button" value="£125">
+                    </div>
+                </div>
+                <div class="c-donate__other">
+                    <label for="c-donate__donation-amount">Other amount </label>
+                    <i class="c-donate__other-amount-wrap">
+                        <input type="text" name="donation-amount" id="c-donate__other-donation-amount" class="c-donate__donation-amount">
+                    </i>
+                    <input type="submit" value="Donate">
+                </div>
+            </div>
+        </form>
+        <div class="c-donate__other-ways">
+            <p>
+                <a href="#">View the other ways that you can donate</a>
+            </p>
+        </div>
+    </div>
+</section>

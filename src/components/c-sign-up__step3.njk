@@ -1,0 +1,174 @@
+<!-- ************** -->
+<!-- START:  STEP 3 -->
+<!-- ************** -->
+
+<fieldset>
+
+    <a href="#" class="next" data-current-block="3" data-next-block="2">
+        <legend>
+            <h3>Step 3</h3>
+            <i class="g-forms__step--status"></i>
+        </legend>
+    </a>
+
+    <div class="g-forms__step g-forms__step--3">
+
+
+            <!-- **************************** -->
+            <!-- START:  STEP 3     -->
+            <!-- **************************** -->
+             
+                
+                <!-- FORM element : EMAIL (SIGN UP) -->
+                <div class="g-forms__element">
+
+                    <label for="g-forms__signup--email">Email<i>*</i></label>
+
+                    <input type="email" name="signup--email" id="g-forms__signup--email" placeholder="Type your email address..." 
+                    
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Email is a required field." 
+                    data-parsley-errors-container="#g-forms__element-error--signup--email"
+                    data-parsley-group="g-forms__step--3"
+
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error--signup--email"></div>
+                </div>
+
+                <!-- FORM element : PASSWORD (SIGN UP) -->
+                <div class="g-forms__element">
+
+                    <label for="g-forms__signup--pw">Password<i>*</i></label>
+
+                    <input type="password" name="password" id="g-forms__signup--pw" placeholder="Type your password..." 
+                    
+                    data-parsley-minlength="8"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Password is a required field and must be at least 8 characters." 
+                    data-parsley-errors-container="#g-forms__element-error--signup--pw"
+                    data-parsley-group="g-forms__step--3"
+
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error--signup--pw"></div>
+                </div>
+
+                <!-- FORM element : CONFIRM PASSWORD (SIGN UP) -->
+                <div class="g-forms__element">
+
+                    <label for="g-forms__signup--pwconfirm">Confirm password<i>*</i></label>
+
+                    <input type="password" name="password-confirm" id="g-forms__signup--pwconfirm" placeholder="Confirm your password..." 
+                    
+                    data-parsley-minlength="8"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout" 
+                    data-parsley-equalto="#g-forms__signup--pw"
+                    data-parsley-error-message="Confirm password is a required field." 
+                    data-parsley-errors-container="#g-forms__element-error--signup--pwconfirm"
+                    data-parsley-group="g-forms__step--3"
+
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error--signup--pwconfirm"></div>
+                </div>
+
+                <!-- FORM element : EMAIL (OPTIONAL) FORGOT PASSWORD) -->
+                <div class="g-forms__element hidden">
+
+                    <label for="g-forms__login--forgotpw">Email<i>*</i></label>
+
+                    <input type="email" name="login--forgotpw" id="g-forms__login--forgotpw" placeholder="Type your email address..." 
+                    
+                    data-parsley-validate-if-empty
+                    data-parsley-required="false" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter a valid email address." 
+                    data-parsley-errors-container="#g-forms__element-error--login--forgotpw"
+
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error--login--forgotpw"></div>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="g-forms__element control-resendpw hidden">
+                    <a href="#" target="new" class="button-red" title="Opens in a new window...." id="g-forms__element--control-resend">Resend Password <i class="glyphicon glyphicon-menu-right"></i></a>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="g-forms__element no-pad">
+                    <a href="#" class="g-forms__element--control-forgotpw">+Forgotten your password?</a>
+                </div>
+ 
+
+        </div>
+        
+        <!-- FORM element : DONATION PAGE URL -->
+        <div class="g-forms__element">
+
+            <label for="g-forms__url">Donation page url<i>*</i></label>
+
+            <input type="text" name="url" id="g-forms__url" placeholder="" 
+            
+            data-parsley-whitespace="squish"
+            data-parsley-pattern="^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9])$"
+            data-parsley-required="true" 
+            data-parsley-trigger="focusout"
+            data-parsley-error-message="Please choose an address that uses only letters, numbers or single hyphens (-), and doesn't start or end with a hyphen." 
+            data-parsley-errors-container="#g-forms__element-error--url"
+            data-parsley-group="g-forms__step--3" 
+            
+            >
+
+            <span class="g-forms__element--status"></span>
+            
+            <div class="g-forms__element--error" id="g-forms__element-error--url"></div>
+        </div>
+
+
+        <!-- FORM element : CONSENT [CHECKBOX] -->
+        <div class="g-forms__element">
+            
+            <div class="g-forms__checkbox">
+            
+                <input type="checkbox" id="g-forms__consent"
+                
+                data-parsley-checkmin="1",
+                data-parsley-required="true"
+                data-parsley-trigger="focusout"
+                data-parsley-error-message="This is a required field." 
+                data-parsley-errors-container="#g-forms__element-error--agree"
+                data-parsley-group="g-forms__step--3"
+                
+                >
+                
+                <label for="g-forms__consent" class="label-checkbox">Checkbox <a href="https://www.justgiving.com/info/terms-of-service-versions/terms-of-service-v10" target="_blank">terms of service</a> and <a href="https://www.justgiving.com/info/privacy-policy-versions/privacy-policy-v20" target="_blank">privacy policy</a><i>*</i><span></span></label>
+            
+            </div>
+ 
+
+        </div>
+
+        <p class="small">By registering you are agreeing to receive information via email and post about Face a Fear.</p>
+        
+        <!-- FORM element : BUTTON -->
+        <div class="g-forms__element btn-disappear-spinner">
+            <a href="#" class="next button-red" data-current-block="3" data-next-block="3">Register <i class="glyphicon glyphicon-menu-right"></i></a>
+        </div>
+        
+        
+    </div>
+
+</fieldset>

@@ -1,0 +1,76 @@
+{
+  "navigation": {
+    "level": "0",
+    "node": [
+      {
+        "url": "https://www.bhf.org.uk/informationsupport",
+        "label": "Information and Support",
+        "grandchildren": "3",
+        "children": "2",
+        "parent": "0",
+        "level": "1",
+        "id": "1",
+        "node": [
+          {
+            "url": "https://www.bhf.org.uk/conditions",
+            "label": "Conditions",
+            "grandchildren": "4",
+            "children": "3",
+            "parent": "1",
+            "level": "2",
+            "id": "2",
+          },
+          {
+            "url": "https://www.bhf.org.uk/risk",
+            "label": "Risk Factors",
+            "grandchildren": "4",
+            "children": "3",
+            "parent": "1",
+            "level": "2",
+            "id": "3",
+          },
+          {
+            "url": "https://www.bhf.org.uk/support",
+            "label": "Support",
+            "grandchildren": "4",
+            "children": "3",
+            "parent": "1",
+            "level": "2",
+            "id": "4",
+          }
+        ]
+      },
+      {
+        "url": "https://www.bhf.org.uk/help",
+        "label": "How you can help",
+        "grandchildren": "3",
+        "children": "2",
+        "parent": "0",
+        "level": "1",
+        "id": "5",
+        "node": [
+          {
+            "url": "https://www.bhf.org.uk/donate",
+            "label": "Donate",
+            "grandchildren": "4",
+            "children": "3",
+            "parent": "1",
+            "level": "2",
+            "id": "6",
+            "node": [
+              {
+                "url": "https://www.bhf.org.uk/money",
+                "label": "Where your money goes",
+                "grandchildren": "5",
+                "children": "4",
+                "parent": "2",
+                "level": "3",
+                "id": "7"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

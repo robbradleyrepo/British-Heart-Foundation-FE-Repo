@@ -1,0 +1,96 @@
+.f-forms {
+   
+    // SELECT
+    .f-forms__select {
+
+        display: inline-block;
+        position: relative; 
+        width: 100%;
+
+        @include mq('tablet') {
+            width: 62%;
+        }
+
+        @include mq('desktop') {
+            width: 50%;
+        }
+
+        .select-arrow {
+            position: absolute; 
+            padding: 11px;
+            color: $c-dark-grey;
+            left: calc(100% - 41px);
+            top: 3px;
+            z-index: 1;
+            pointer-events: none;
+            
+            @include font-size(18px);
+            @include transition(0.1s opacity);
+
+            &.focus {
+               color: $c-amber;
+            }
+        }
+    
+        select {
+            display: block;
+            width: 100%;
+            background-color: $c-white;
+            border: 1px solid $c-dark-grey;
+            padding: 10px 17px;
+            -webkit-appearance: none;
+            -moz-appearance: none; 
+            font-family: $font-base;
+            font-weight: normal; 
+            height: 45px;
+            @include transition(0.1s all);
+            color: $c-nevada;
+            @include font-size(17px);
+            padding-right: 45px;
+
+            &::-ms-expand {
+                display: none;
+            }
+            
+            option {
+                @include font-size(17px);
+                font-family: $font-base;
+                color: $c-body-text;
+                padding: 2px;
+                font-weight: normal;
+            }
+
+            &:invalid {
+                @include font-size(17px);
+                color:  $c-nevada;
+                border: 1px solid $c-green;
+            }
+
+            &.focus, &:focus, &:active { 
+                outline: none;
+                border: 1px solid $c-amber !important;
+                
+                & ~ .select-arrow {
+                    color: $c-amber !important;
+                }
+            }
+
+            &.selected {
+                @include font-size(17px);
+            }
+
+            &[disabled='disabled'],
+            &[disabled],
+            &:disabled {
+                background-color: $c-gallery;
+                border: solid 1px $c-silver;
+                color: $c-gallery;
+
+                & ~ .select-arrow {
+                    color: $c-silver;
+                }
+                
+            }
+        }
+    }
+}

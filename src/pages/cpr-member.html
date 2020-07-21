@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        {# <h1>MVC - ARTICLE EXAMPLE</h1> #}
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">        
+           
+            {# <a href="index.html" class="cta">Return to list</a> #}
+          
+            <div class="cs-shelf__row is-marginless">   
+                <div class="cs-shelf__column">
+                    {% include 'c-nav-master.njk' %}
+                    {% include 'c-nav-mobile.njk' %}
+                </div>
+            </div>
+
+            <!-- COMPONENT -->
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    {% include 'cpr__scp-hero__is-full--alt.njk' %}
+                </div>
+            </div> 
+
+            <!-- COMPONENT -->
+            <div class="cs-shelf__row is-full">
+                <div class="cs-shelf__column">
+                    {% include 'cpr__text-component__school.njk' %}
+                </div>
+            </div>
+
+            <!-- COMPONENT -->
+            <div class="cs-shelf__row is-full">
+                <div class="cs-shelf__column">
+                    {% include 'c-contact.njk' %}
+                </div>
+            </div> 
+
+            
+            <!-- PLACEHOLDER -->
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    {% include '_footer.njk' %}
+                </div>
+            </div>
+ 
+
+                
+        </main>
+
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

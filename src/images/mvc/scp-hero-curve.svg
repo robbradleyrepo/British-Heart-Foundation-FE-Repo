@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="200px" viewBox="0 0 1440 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#ED1F54" offset="0%"></stop>
+            <stop stop-color="#FF0030" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,193.548723 L0,0 L1440,0 L1440,4.86142597 C1179.62073,123.555717 849.488442,187.898267 438.037327,200 L137.879176,200 C133.844445,199.891804 129.802957,199.779446 125.754704,199.662927 C83.0660766,198.428191 41.1493935,196.38639 1.42108547e-14,193.548723 Z" id="path-2"></path>
+    </defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-11" fill="#FFFFFF" x="0" y="0" width="1440" height="200"></rect>
+        <g id="Group-2">
+            <g id="Group-16">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

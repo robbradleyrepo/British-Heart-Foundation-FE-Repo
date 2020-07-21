@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 394.882 371.123" enable-background="new 0 0 394.882 371.123" xml:space="preserve">
+<radialGradient id="outer_x5F_circle1_1_" cx="264.27" cy="418.5738" r="212.6535" gradientTransform="matrix(-0.7071 -0.7071 0.601 -0.601 135.6739 627.0694)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0.4" style="stop-color:#FF0030"/>
+	<stop  offset="0.4701" style="stop-color:#F90030"/>
+	<stop  offset="0.5619" style="stop-color:#E90030"/>
+	<stop  offset="0.6657" style="stop-color:#CE0031"/>
+	<stop  offset="0.7775" style="stop-color:#A80032"/>
+	<stop  offset="0.85" style="stop-color:#8C0032"/>
+</radialGradient>
+<path id="outer_x5F_circle1" fill="url(#outer_x5F_circle1_1_)" d="M349.518,208.622c14.395-81.639-37.655-154.059-109.572-166.74
+	c-49.96-8.809-100.821,8.159-133.534,56.038c-27.461,40.193-60.109,58.622-61.258,114.072
+	c-1.554,65.355,54.5,120.979,132.82,125.099C263.701,341.493,335.123,290.261,349.518,208.622z"/>
+</svg>

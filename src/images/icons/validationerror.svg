@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="26px" viewBox="0 0 29 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>form-validation-error</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="13.5 0 27 24 0 24"></polygon>
+    </defs>
+    <g id="form-validation-error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(1.000000, 1.000000)">
+            <g id="Triangle" stroke-linecap="round" stroke-linejoin="round">
+                <use fill="#ED1F54" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#ED1F54" stroke-width="1" d="M13.5,-1.01986443 L27.8549237,24.5 L-0.854923742,24.5 L13.5,-1.01986443 Z"></path>
+            </g>
+            <g id="Group-3" transform="translate(13.000000, 15.000000) rotate(180.000000) translate(-13.000000, -15.000000) translate(11.000000, 8.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-8" x="0" y="5.38461538" width="3.11538462" height="8.61538462"></rect>
+                <ellipse id="Oval-3" cx="1.55769231" cy="1.61538462" rx="1.55769231" ry="1.61538462"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

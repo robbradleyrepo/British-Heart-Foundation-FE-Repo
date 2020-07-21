@@ -1,0 +1,211 @@
+.c-full-image-with-curve {
+
+    margin-top: 0 !important;    
+    margin-bottom: 0 !important;    
+    @include animation('fade-in 1s');
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__image {
+        
+        overflow: hidden;
+        height: 100vw;
+        max-height: 641px;
+        
+        @include mq($tablet) {
+            height: 58vw; 
+        }
+        
+        @include mq($desktop) {
+            height: 34vw; 
+        }
+
+
+        &:after {
+            display: block;
+            z-index: 0; 
+            content: "";
+            position: absolute;
+            left: 0px;
+            right: 0; 
+            bottom: 0;
+            background-image: url(../img/curve-a0003c@6x.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 17vw;
+             
+            @include mq($desktop) {
+                background-image: url(../img/curve-ffffff@6x.png);
+                height: 16vw;
+                max-height: 345px;
+            }
+        }
+
+        &--item {
+
+            position: absolute;
+            left: 0;
+            right: 0; 
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            span {
+                display: block;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vw;
+                
+                max-height: 640px;
+                
+                @include mq($tablet) {
+                    height: 58vw; 
+                    max-height: 930px;
+                }
+
+                @include mq($desktop) {
+                    height: 46vw;
+                    background-size: 100%;
+                }
+
+
+                &.mobile  {
+                    display: block;
+                    @include mq($tablet) {
+                        display: none;    
+                    }
+                }
+                
+                &.tablet  {
+                    display: none;
+                    @include mq($tablet) {
+                        display: block;    
+                    }
+                    @include mq($desktop) {
+                        display: none;    
+                    }
+                }
+    
+                &.desktop  {
+                    display: none;
+                    @include mq($desktop) {
+                        display: block;    
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__block {
+        z-index: 1000; 
+        max-width: 1170px;
+        width: 100%;
+
+        @include mq($desktop) {
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+            padding: 0;
+            margin-top: -200px;
+
+            .is-grey &{
+                max-height: 200px;
+            }
+
+            overflow: hidden;
+            flex-flow: row;
+            padding: 0 20px;
+            justify-content: flex-end;
+        }
+
+        @include mq($large) {
+            padding: 0 0 0 20px;
+        }
+
+    }
+
+    &__content {
+        padding: 20px; 
+        background-color: $c-paprika;
+        color: $c-white;
+        margin-bottom: 40px;
+
+        .is-grey &{
+            margin-bottom: 0px;
+        }
+
+        @include mq($tablet) {
+            width: 100%;
+        }
+        
+        @include mq($desktop) {
+            max-width: 50%;
+            padding: 10px;
+            position: relative;
+            z-index: 3;
+            padding: 25px;
+        }
+
+        h1 {
+            @include font-size(36px);
+            line-height: 36px;
+            font-family: $bhf;
+            margin: 0;
+            
+            @include mq($desktop) {
+                @include font-size(48px);
+                line-height: 48px;
+            }
+            
+            span {
+                text-transform: uppercase;
+            }
+        }
+        
+        h2 {
+            @include font-size(20px);
+            line-height: 20px;
+            font-family: $bhf;
+            margin: 5px 0 0;
+            
+            @include mq($desktop) {
+                @include font-size(28px);
+                line-height: 30px;
+            }
+            
+            span {
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            @include font-size(16px);
+            line-height: 19px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-top: 15px;
+
+            @include mq($desktop) {
+                @include font-size(20px);
+                line-height: 26px;
+            }      
+        }
+    }
+
+    &.is-grey {
+
+        .c-full-image-with-curve {
+            &__image:after {
+                @include mq($desktop) {
+                    background-image: url(../img/curve-f0f0f0@6x.png);
+                } 
+            }
+
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<!-- FORM element : TYPE = CHECKBOX [validation]-->                
+<div class="f-forms__element" id="f-forms__element__7">
+    <p class="f-forms__label">
+        <span class="f-forms__element--label">Single checkbox option with validation [Core]</span>
+        <span class="f-forms__element--sublabel">This is some help text to further explain the question</span>
+    </p>
+    <div class="f-forms__checkbox">
+    
+        <input type="checkbox" id="f-forms__element-checkbox__7"
+        
+        data-parsley-checkmin="1",
+        data-parsley-required="true"
+        data-parsley-trigger="focusout"
+        data-parsley-error-message="You must check this box."
+        data-parsley-class-handler="#f-forms__element__7"
+        data-parsley-errors-container="#f-forms__element-error__7" 
+        
+        aria-required="true" 
+        aria-describedby="#f-forms__element-error__7"
+
+        >
+        
+        <label for="f-forms__element-checkbox__7">This is a single line option  </label>
+    
+    </div>
+
+    <div class="f-forms__element--error" id="f-forms__element-error__7" role="alert" aria-live="polite"></div>
+
+
+</div>

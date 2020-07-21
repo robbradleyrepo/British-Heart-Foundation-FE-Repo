@@ -1,0 +1,117 @@
+.c-checkout-order {
+
+    ul {
+        margin: 40px 0;
+        padding: 0;
+        border-bottom: 1px solid $c-mid-grey;  
+
+        li {
+            display: flex;
+            flex-flow: row;
+            padding: 20px 0;
+            align-items: center;
+            min-height: 90px;
+            border-top: 1px solid $c-mid-grey;
+        }
+    }
+
+    &__name {
+        width: 38%;
+        @include font-size(14px);
+
+        @include mq($tablet) {
+            font-size: inherit;
+            width: 64%;
+        }
+    }
+
+    &__control,
+    &__label {
+        font-weight: bold;
+    }
+
+    &__label {
+        width: 20%;
+        text-align: center;
+        @include mq($tablet) {
+            width: 12%; 
+        }
+    }
+
+    &__amount {
+        width: 30%;
+        font-weight: bold;
+        text-align: center;
+        @include font-size(18px);
+        @include mq($tablet) {
+            width: 12%;
+            @include font-size(24px);
+        }
+    }
+    
+    &__control {
+        width: 12%;
+        text-align: center;
+        
+        a {
+            text-decoration: underline;
+            color: $c-bhf-wine;
+            @include font-size(12px);
+            opacity: 1;
+            @include transition(0.3s all);
+            
+            @include mq($tablet) {
+                @include font-size(14px);
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.c-checkout-cta {
+    padding-bottom: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    @include mq($tablet) {
+        flex-direction: row;
+    }
+
+    &__item {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @include mq($tablet) {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        &--inner {
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    &__images {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 0;
+    
+        @include mq($tablet) {
+            flex-direction: row;
+            min-height: 100px; 
+        }
+    
+        img {
+            margin: 10px;
+        }
+    }
+}

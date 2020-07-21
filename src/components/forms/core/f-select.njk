@@ -1,0 +1,24 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2: Drop down</h1>
+
+        <p>Select or Drop downs should only be used if there is no suitable alternative. Do not include long or sentence answers in drop down lists. </p>
+        <p>Drop down boxes may use default system styling if it can’t be easily changed. </p> 
+
+        {% include 'forms/elements/f-select.njk' %}
+
+        {% include 'forms/elements/f-select__no-validation.njk' %}
+
+        {% include 'forms/elements/f-select__disabled.njk' %}
+
+        {% include 'forms/elements/f-select__title.njk' %}
+ 
+    </form> 
+
+</section>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Dummy page</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">        
+           
+            <a href="index.html" class="cta">Return to list</a>
+ 
+
+            <!-- PLACEHOLDER -->
+            <div class="cs-shelf__row is-full">
+                <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                <div class="cs-shelf__column">
+                    {% include 'c-two-cards.njk' %}
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER --> 
+            <div class="cs-shelf__row is-marginless">
+                <!-- COMPONENT -->
+                <div class="cs-shelf__column">
+                    {% include 'c-curve-image-and-text-cta.njk' %}
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER -->
+            <div class="cs-shelf__row is-full">
+                <div class="cs-shelf__column first">
+                    <!-- COMPONENT -->
+                    {% include 'c-text-and-image.njk' %}
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER -->
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    {% include '_footer.njk' %}
+                </div>
+            </div>
+ 
+            
+        </main>
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+/*
+  Icon Font: sst_icons
+*/
+
+@font-face {
+    font-family: 'sst_icons';
+    src: url('../fonts/sst_icons.eot');
+    src: url('../fonts/sst_icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sst_icons.woff') format('woff'),
+         url('../fonts/sst_icons.ttf') format('truetype'),
+         url('../fonts/sst_icons.svg#sst_icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'sst_icons';
+      src: url('../fonts/sst_icons.svg#sst_icons') format('svg');
+    }
+  }
+  
+  [data-icon]:before { content: attr(data-icon); }
+  
+  [data-icon]:before,
+  .icon-sst-buffer:before,
+  .icon-sst-digg:before,
+  .icon-sst-facebook:before,
+  .icon-sst-linkedin:before,
+  .icon-sst-reddit:before,
+  .icon-sst-stumbleupon:before,
+  .icon-sst-tumblr:before,
+  .icon-sst-twitter:before {
+    display: inline-block;
+    font-family: 'sst_icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  
+  .icon-sst-buffer:before { content: '\f108'; }
+  .icon-sst-digg:before { content: '\f109'; }
+  .icon-sst-facebook:before { content: '\f10f'; }
+  .icon-sst-linkedin:before { content: '\f10a'; }
+  .icon-sst-reddit:before { content: '\f10b'; }
+  .icon-sst-stumbleupon:before { content: '\f10c'; }
+  .icon-sst-tumblr:before { content: '\f10d'; }
+  .icon-sst-twitter:before { content: '\f10e'; }

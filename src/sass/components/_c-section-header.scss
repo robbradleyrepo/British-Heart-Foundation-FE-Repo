@@ -1,0 +1,27 @@
+.c-section-header{
+    margin: auto; 
+    text-align: center;
+    
+    h2 {
+        font-family: $bhf;
+        @include font-size(28px);
+        line-height: 28px;
+        @include transition(all 0.3s);
+
+        @include mq($tablet) {
+            @include font-size(36px);
+            line-height: 36px;
+        }
+    }
+
+    p {
+        @include font-size(16px);
+        @include transition(all 0.3s);
+        max-width: 570px;
+        margin-right:auto;
+        margin-left:auto;
+        @include mq($tablet) {
+            @include font-size(18px);
+        }
+    }
+}

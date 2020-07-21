@@ -1,0 +1,63 @@
+.c-store-finder {
+    overflow: hidden;
+
+    &__map-canvas {
+        height: 400px;
+        width: 70%;
+        margin-right: 1%;
+        float: left;
+
+        h2 {
+
+        }
+        h4 {
+            margin: 0 0 5px;
+        }
+
+        p {
+            max-width: 150px;
+        }
+    }
+
+    &__panel {
+        width: 29%;
+        float: left;
+
+        h4 {
+            margin: 0 20px 0;
+        }
+    }
+
+    &__map-inputs {
+        input {
+            margin-bottom: 10px;
+        }
+
+        select {
+            height: 24px;
+            -webkit-appearance: menulist;
+        }
+    }
+
+    &__stores-list {
+        overflow-y: auto;
+        margin: 20px 0 0;
+        padding: 0;
+        max-height: 356px;
+        overflow-x: hidden;
+
+        li {
+            cursor: pointer;
+            margin-bottom: 0.5em;
+            padding: 3px 5px;
+
+            &.active {
+                background-color: #ececec;
+            }
+        }
+    }
+
+    &__stores-found {
+        color: red;
+    }
+}

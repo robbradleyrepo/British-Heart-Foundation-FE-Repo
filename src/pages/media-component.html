@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles-mvc.css" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/bhf_icons.css"/>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7376432/776862/css/fonts.css" />
+    <meta name="description" content="Being a carer for someone who has a heart condition can be very demanding. Find out where you can find support, and how to care for yourself too">
+    <title>MVC - Content page</title>
+</head>
+
+<body class="sitecore-editingmode">
+    <h1>MVC Layout</h1>
+    <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+        <div>
+            <a href="index.html" class="cta">Return to list</a>
+
+            <div class="cs-shelf__row is-equal">
+                <h2 style="text-align:center; font-weight: bold;">Equal Width</h2>
+
+                <div class="cs-shelf__column">
+                    {% include 'c-media-component.njk' %}
+                </div>
+
+                <div class="cs-shelf__column">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+            </div>
+
+            <div class="cs-shelf__row is-narrow">
+                <h2 style="text-align:center; font-weight: bold;">Narrow Middle</h2>
+                <div class="cs-shelf__column">
+                    {% include 'c-media-component.njk' %}
+                </div>
+            </div>
+
+            <div class="cs-shelf__row is-wide-left">
+                <h2 style="text-align:center; font-weight: bold;">Wide Left</h2>
+                <div class="cs-shelf__column">
+                    {% include 'c-media-component.njk' %}
+                </div>
+                <div class="cs-shelf__column">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+            </div>
+
+            <div class="cs-shelf__row is-wide-right">
+                <h2 style="text-align:center; font-weight: bold;">Wide Right</h2>
+                <div class="cs-shelf__column">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+                <div class="cs-shelf__column">
+                    {% include 'c-media-component.njk' %}
+                </div>
+            </div>
+
+            <div class="cs-shelf__row is-wide-middle-narrow-sides">
+                <h2 style="text-align:center; font-weight: bold;">Wide Middle with Narrow Sides</h2>
+                <div class="cs-shelf__column first">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+                <div class="cs-shelf__column">
+                    {% include 'c-media-component.njk' %}
+                </div>
+                <div class="cs-shelf__column">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+            </div>
+            <div class="cs-shelf__row is-wide-left-two-quaters">
+                <h2 style="text-align:center; font-weight: bold;">Wide Left with Two Quaters</h2>
+                <div class="cs-shelf__column first">
+                    {% include 'c-media-component.njk' %}
+                </div>
+                <div class="cs-shelf__column second">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+                <div class="cs-shelf__column last">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+            </div>
+
+            <div class="cs-shelf__row is-wide-right-two-quaters">
+                <h2 style="text-align:center; font-weight: bold;">Wide Right with Two Quaters</h2>
+                <div class="cs-shelf__column first">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+                <div class="cs-shelf__column second">
+                    <div class="scEmptyPlaceholder"></div>
+                </div>
+                <div class="cs-shelf__column last">
+                    {% include 'c-media-component.njk' %}
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    
+    {% include '_scripts.njk' %}
+
+</body>
+
+</html>

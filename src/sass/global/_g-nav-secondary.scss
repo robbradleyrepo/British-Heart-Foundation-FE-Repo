@@ -1,0 +1,91 @@
+.g-nav-secondary {
+    width: 100%;
+    max-width: 300px;
+    padding: 0;
+    float: right;
+    @include clearfix;
+    display: none;
+    margin-right: 0px;
+
+    @include mq(desktop) {
+        display: block;        
+        margin-right: 20px;
+    }
+
+    @include mq(large) {
+        display: block;        
+        margin-right: 0px;
+    }
+
+    h2 {
+        background-color: $c-bhf-red;
+        color: $c-white;
+        padding: 10px 15px;
+        margin: 0;
+        font-weight: normal;
+        font-family: $font-base;
+        @include font-size(20px);
+        @include border-radius(10px 10px 0px 0px);
+    }
+
+    ul {
+        margin: 0;
+        padding:  0;
+        list-style: none; 
+            
+        li {
+            
+            position: relative;
+            padding: 0px 15px;
+            background-color: $c-light-grey;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            min-height: 50px;
+            height: 50px; 
+
+            a {
+                position: relative; 
+                display: flex;
+                align-items: center;
+                min-height: 50px;                
+                padding: 0px 30px 0px 10px;
+                text-decoration: none;
+                color: $c-mineshaft; 
+                line-height: 17px;
+                @include font-size(14px);
+                @include border-radius(5px); 
+                @include transition(all 300ms);
+
+                &.menuitem-active {
+                    background-color: $c-mid-grey;
+                }
+                
+                i {
+                    @include vertical-align;
+                    right: 10px;
+                    position: absolute;
+                    color: $c-bhf-red;
+                    @include transition(all 300ms);
+                }
+
+                &:hover {
+                    border: 0;
+                    text-decoration: none;
+                    color: $c-bhf-wine;
+                    i {
+                        right: 5px;
+                    }       
+                }
+                
+            }
+
+            &:first-child {
+                padding: 0px 5px;
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

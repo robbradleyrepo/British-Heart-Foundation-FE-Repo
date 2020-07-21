@@ -1,0 +1,19 @@
+{% if bgSocialShareColour == 'grey'%}
+    <section class="c-social-share is-grey" role="complementary">
+{% else %}
+    <section class="c-social-share" role="complementary">
+{% endif %}
+        <span>Share</span>
+        <!-- BE developers: Replace [SITE_URL] (absolute) and [PAGE_TITLE] below accordingly -->
+        <ul>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//[SITE_URL]&t=[PAGE_TITLE]" target="_blank" aria-label="Share on Facebook" tabindex="0"><span class="bhfi bhfi-fb"></span></a></li>
+            <li><a href="https://twitter.com/home?status=[PAGE_TITLE]%20https%3A//[SITE_URL]" target="_blank" aria-label="Share on Twitter" tabindex="0"><span class="bhfi bhfi-tw"></span></a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://[SITE_URL]&title=[PAGE_TITLE]" target="_blank" aria-label="Share on LinkedIn" tabindex="0"><span class="bhfi bhfi-li"></span></a></li>
+            {# <li><a href="mailto:?Subject=[PAGE_TITLE]%20https://[SITE_URL]" target="_blank" aria-label="Share via Instagram" tabindex="0"><span class="bhfi bhfi-instagram"></span></a></li> #}
+
+            <li><a href="whatsapp://send?text=[PAGE_TITLE] [SITE_URL]" target="_blank" aria-label="Share via Whatsapp" tabindex="0"><span class="bhfi bhfi-whatsapp"></span></a></li>
+            
+            <li><a href="mailto:?Subject=[PAGE_TITLE]%20https://[SITE_URL]" target="_blank" aria-label="Share via Email" tabindex="0"><span class="bhfi bhfi-em"></span></a></li>
+        </ul>
+        {# <a href="whatsapp://send?text=The text to share!">WhatsApp</a> #}
+    </section>

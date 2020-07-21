@@ -1,0 +1,312 @@
+<!-- **************************** -->
+<!-- START: FORM [single step]    -->
+<!-- **************************** -->
+
+<section class="g-forms g-forms-parsley is-grey"> 
+ 
+    <h2>Schools CPR kit application</h2>
+    <p class-"bold">Delivery address</p>
+    <p class="large">
+        Sedbergh School<br/>
+        Malim Lodge<br/>
+        Sedbegh<br/> 
+        LA10 5RY
+    </p> 
+
+    <p class="small">If this is not your school address, please <a href="#">contact us</a>.</p>
+
+    <form novalidate aria-label="Apply for a school CPR kit application">
+        <fieldset class="no-border">
+            
+            <h3>About you</h3>
+
+            <div class="g-forms__inner">
+
+                <!-- FORM element : #1 : TYPE = SELECT  -->
+                <div class="g-forms__element" id="g-forms__element__1">
+                    <label for="g-forms__element-select__1">Title<i>*</i><span></span></label>
+                    
+                    <div class="g-forms__select reduced-width">
+
+                        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                        
+                        <select id="g-forms__element-select__1" 
+                        
+                        data-parsley-required="true"
+                        data-parsley-trigger="change"
+                        data-parsley-min-value="Mr" 
+                        data-parsley-error-message="Select an option." 
+                        data-parsley-class-handler="#g-forms__element__1"
+                        data-parsley-errors-container="#g-forms__element-error__1" 
+                        
+                        aria-required="true"
+                        aria-describedby="g-forms__element-error__1"
+                        
+                        >
+                            <option value="">Select...</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Professor">Professor</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__1" role="alert" aria-live="polite"></div>
+
+                </div> 
+
+
+                <!-- FORM element : FIRST NAME -->
+                <div class="g-forms__element">
+                    <label for="g-forms__firstname">First name<i>*</i></label>
+
+                    <input type="text" name="firstname" id="g-forms__firstname"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-errors-container="#g-forms__element-error--firstname"
+
+                    aria-required="true"
+                    aria-invalid="false"
+                    aria-describedby="g-forms__element-error--firstname"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error--firstname" role="alert"></div>
+                </div>
+
+                 <!-- FORM element : #2 : TYPE = INPUT -->  
+
+                <div class="g-forms__element" id="g-forms__element__2">
+                    <label for="g-forms__element-input__2">First name<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__2"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__2"
+                    data-parsley-errors-container="#g-forms__element-error__2" 
+                    data-parsley-pattern="^[a-zA-Z]+$"
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__2"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__2" role="alert" aria-live="polite"></div>
+
+                </div>
+
+
+                <!-- FORM element : #3 : TYPE = INPUT -->  
+                <div class="g-forms__element" id="g-forms__element__3">
+                    <label for="g-forms__element-input__3">Last name<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__3"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__3"
+                    data-parsley-errors-container="#g-forms__element-error__3" 
+                    data-parsley-pattern="^[a-zA-Z]+$"
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__3"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__3" role="alert" aria-live="polite"></div>
+
+                </div>
+
+                <!-- FORM element : #3 : TYPE = INPUT -->  
+                <div class="g-forms__element" id="g-forms__element__4">
+                    <label for="g-forms__element-input__3">Job title<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__4"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__4"
+                    data-parsley-errors-container="#g-forms__element-error__4" 
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__4"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__4" role="alert" aria-live="polite"></div>
+
+                </div>
+ 
+
+                <!-- FORM element : #5: TYPE = INPUT [EMAIL] -->
+                <div class="g-forms__element" id="g-forms__element__5">
+                    <label for="g-forms__element-input__5">School email address<i>*</i></label>
+
+                    <input type="email" id="g-forms__element-input__5" placeholder="Must be a school email address" 
+                    
+                    data-parsley-required="true"
+                    data-parsley-trigger="focusout" 
+                    data-parsley-error-message="Enter a valid email address."
+                    data-parsley-class-handler="#g-forms__element__5"
+                    data-parsley-errors-container="#g-forms__element-error__5" 
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__5"
+
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__5" role="alert" aria-live="polite"></div>
+
+                </div>
+
+                <!-- FORM element : #6: TYPE = INPUT [PHONE NUMBER] -->
+                <div class="g-forms__element"  id="g-forms__element__6">
+                    <label for="g-forms__element-input__6">Phone number<i>*</i></label>
+
+                    <input type="text" id="g-forms__element-input__5"
+                    
+                    data-parsley-length="[8, 20]"
+                    data-parsley-pattern="^\+?[()0-9 ]+$"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout" 
+                    data-parsley-error-message="Enter number." 
+                    data-parsley-class-handler="#g-forms__element__6"
+                    data-parsley-errors-container="#g-forms__element-error__6" 
+                    
+
+                    aria-required="true" 
+                    aria-describedby="g-forms__element-error__6"
+                    
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__6" role="alert" aria-live="polite"></div>
+                </div>
+
+                 <!-- FORM element : #6b : TYPE = SELECT  -->
+                <div class="g-forms__element" id="g-forms__element__6b">
+                    <label for="g-forms__element-select__6b">What size kit do you need?<i>*</i><span></span></label>
+                    
+                    <div class="g-forms__select reduced-width">
+
+                        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                        
+                        <select id="g-forms__element-select__6b" 
+                        
+                        data-parsley-required="true"
+                        data-parsley-trigger="change"
+                        data-parsley-min-value="10" 
+                        data-parsley-error-message="Select an option." 
+                        data-parsley-class-handler="#g-forms__element__6b"
+                        data-parsley-errors-container="#g-forms__element-error__6b" 
+                        
+                        aria-required="true"
+                        aria-describedby="g-forms__element-error__6b"
+                        
+                        >
+                            <option value="">Select...</option>
+                            <option value="10">Small (10 manikins)</option>
+                            <option value="30">Large (30 manikins)</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__6b" role="alert" aria-live="polite"></div>
+
+                    <p>If your school is under 200 pupils you will get a small kit.</p>
+                </div>
+
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="g-forms__inner">
+                
+                <h3>Terms and Conditions</h3>
+
+                <p>In order for us to send you a CPR Kit, you must accept the following conditions:</p>
+
+                <p class="small">All CPR training provided will be free of charge to attendees. If any donations (either in money or goods) are received in return for CPR training I will donate it to the BHF.</p>
+
+                <p class="small">In the event the equipment ceases to be used for training, I will arrange for it to be donated for free to another organisation for continued use in CPR training. Alternatively, I will arrange at my own expense for the equipment to be returned to the BHF.</p>
+                
+                <p class="small">We will send you email communication about the delivery of your kit as well as information about resources, stories, top tips and CPR events to help you with your training.</p>
+                
+                <p class="small">I will provide the BHF with the number of people trained using our kit.</p>
+
+                <!-- FORM element : #7 : TYPE = CHECKBOX (NO VALIDATION)  -->
+                <div class="g-forms__element" id="g-forms__element__7">
+                
+                    <div class="g-forms__checkbox">
+                    
+                        <input type="checkbox" id="g-forms__element-checkbox__7"
+                        
+                        data-parsley-checkmin="1",
+                        data-parsley-required="true"
+                        data-parsley-trigger="focusout"
+                        data-parsley-error-message="You must accept the Terms &amp; Conditions to proceed."
+                        data-parsley-class-handler="#g-forms__element__7"
+                        data-parsley-errors-container="#g-forms__element-error__7" 
+                        
+                        aria-required="true" 
+                        aria-describedby="#g-forms__element-error__7"
+
+                        >
+                        
+                        <label for="g-forms__element-checkbox__7">I accept the terms and conditions<i>*</i><span></span></label>
+                    
+                    </div>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__7" role="alert" aria-live="polite"></div>
+
+
+                </div>
+
+            </div>
+        </fieldset>
+
+            
+                <!-- FORM element : BUTTON -->
+                <div class="g-forms__element">
+
+                    <button type="submit" value="Submit" class="cta cta__secondary is-white-on-red" />Submit <i class="glyphicon glyphicon-menu-right"></i></button>
+
+                    <a href="#" class="cta__clear-form">Clear form</a>
+
+                </div>
+
+
+                <p class="g-forms__validation--notice hidden"><i>*</i> Please complete all required fields before pressing continue.</p>
+        
+
+            </div>
+
+        </fieldset>
+    </form> 
+
+</section>

@@ -1,0 +1,330 @@
+.c-donate {
+    padding: 20px;
+    background-color: $c-grey;
+
+    @include mq('tablet') {
+        padding: 40px;
+    }
+
+    .g-forms & {
+        padding: 0 !important;
+    }
+
+    &__wrap {
+        h2 {
+            font-family: $font-bhf-bold;
+            @include font-size(18px);
+            line-height: 37px;
+            margin: 0;
+
+            @include mq('tablet') {
+                @include font-size(24px);
+                line-height: 44px;
+                margin: 0 0 7px;
+            }
+
+            @include mq('desktop') {
+                @include font-size(36px);
+            }
+        }
+
+        p { 
+            @include font-size(14px);
+            line-height: 20px;
+
+            @include mq('tablet') {
+                @include font-size(16px);
+                line-height: 26px;
+                margin: 10px 0;
+            }
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+
+        .c-donate__form,
+        form {
+            margin: 20px 0 16px;
+            padding: 25px 0;
+            border-top: 1px solid $c-placeholder-grey;
+            border-bottom: 1px solid $c-placeholder-grey;
+
+            @include mq('desktop') {
+                margin: 20px 0 22px;
+            }
+
+            input[type="button"],
+            input[type="submit"] {
+                background-color: $c-bhf-rubine-red;
+                @include transition(all 0.3s ease-in-out);
+                @include animation('fade-in 2s');
+                border: none;
+                color: $c-white;
+                padding: 10px;
+                min-width: 86px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                @include font-size(14px);
+                border-radius: 30px;
+                font-weight: bold;
+
+                @include mq('tablet') {
+                    @include font-size(18px);
+                    min-width: 72px;
+                }
+
+                @include mq('desktop') {
+                    min-width: 90px;
+                }
+    
+                &:hover {
+                    background-color: darken($c-bhf-rubine-red, 15%);
+                }
+            }
+
+            input[type="submit"] {
+                margin-left: 6px;
+                min-width: 86px;
+
+                @include mq('tablet') {
+                    margin-left: 5px;
+                    min-width: 72px;
+                }
+
+                @include mq('desktop') {
+                    min-width: 90px;
+                }
+            }
+
+            input[type="text"] {
+                font-family: $font-bhf-bold;
+                border: 2px solid $c-placeholder-grey;
+                max-width: 86px;
+                outline: none;
+                border-radius: 30px;
+                padding: 8px 10px 8px 25px;
+
+                @include mq('tablet') {
+                    padding-left: 30px;
+                    @include font-size(18px);
+                }
+            }
+
+            label {
+                @include font-size(14px);
+
+                @include mq('tablet') {
+                    @include font-size(16px);
+                }
+            }
+        }
+
+        .c-donate__form {
+            border-top: 0;
+            border-bottom: none;
+            margin: 0 0 30px;
+            padding: 0 0 40px;
+        }
+    }
+
+    &__radios,
+    &__amounts {
+        display: flex;
+        flex-flow: column;
+
+        @include mq('tablet') {
+            flex-flow: row;
+        }
+
+        div {
+            margin-bottom: 3px;
+            margin-right: 20px;
+            line-height: 24px;
+            @include font-size(14px);
+
+            @include mq('tablet') {
+                margin-bottom: 0;
+                @include font-size(16px);
+            }
+ 
+        }
+    }
+
+    &__amounts {
+        margin-top: 20px;
+        flex-direction: column;
+
+        @include mq('tablet') {
+            flex-direction: row;
+            margin-top: 25px;
+        }
+
+        div {
+            margin-right: 10px;
+
+            @include mq('tablet') {
+                line-height: 40px;
+            }
+        }
+
+        &-selection {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__other {
+        margin-top: 5px;
+
+        @include mq('tablet') {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+
+            @include mq('tablet') {
+                display: inline;
+                margin-right: 2px;
+            }
+        }
+    }
+
+    &__presets {
+        display: flex;
+        flex-flow: row;
+
+        &.is-single {
+            display: none;
+        }
+    }
+
+    &__other-amount-wrap {
+        position: relative;
+
+        &:after {
+            content: '\00a3';
+            font-family: $font-bhf-bold;
+            font-style: normal;
+            display: inline-block;
+            font-weight: bold;
+            position: absolute;
+            top: -4px;
+            left: 15px;
+            @include font-size(14px);
+
+            @include mq('tablet') {
+                @include font-size(18px);
+                top: -11px;
+            }
+        }
+    }
+
+    &__container {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        line-height: 28px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+
+            &:checked ~ .c-donate__checkmark:after {
+                display: block;
+            }
+        }
+
+        &:hover {
+            input ~ .c-donate__checkmark {
+                background-color: $c-light-grey;
+            }
+        }
+
+        &:checked ~ .c-donate__checkmark {
+            background-color: $c-white;
+        }
+
+        .c-donate__checkmark:after {
+            top: -1px;
+            left: -1px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: $c-dark-grey;
+        }
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        border: 5px solid $c-dark-grey;
+        border-style: double;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+
+    &__other-ways {
+        p {
+            margin-bottom: 0;
+
+            a {
+                color: $c-bhf-wine;
+                text-decoration: underline;
+                
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+// when within form
+.g-forms {
+    .c-boost-donation,
+    .c-donate {
+        background-color: transparent;
+
+        &__wrap {
+            h2 {
+                font-family: $font-base;
+                @include font-size(18px);
+                @include mq('tablet') {
+                    @include font-size(24px);
+                }
+            }
+            p {
+                line-height: 20px;
+                @include font-size(14px);
+                width: 75%;
+                @include mq('tablet') {
+                    @include font-size(16px);
+                    line-height: 28.8px;
+                    margin-bottom: 0;  
+                }
+            }  
+            
+            img {
+                height: 70px;
+            }
+        }
+    }
+}

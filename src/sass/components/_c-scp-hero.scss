@@ -1,0 +1,169 @@
+.c-scp-hero {
+
+    @at-root section#{&} {
+        .cs-shelf__column & {
+    
+            margin-top: -60px;
+            position: relative;
+        
+            @include mq('tablet') {
+                margin-top: -65px;
+            }
+
+            @include mq('desktop-nav') {
+                margin-top: -106px;
+            }
+        }
+    }
+
+    position: relative;
+    display: flex;
+    padding-bottom: 9.5vw;
+    color: $c-white;
+    background: linear-gradient(to right, $c-bhf-red 0%, $c-bhf-rubine-red 100%);
+    background: -moz-linear-gradient(left, $c-bhf-red 0%, $c-bhf-rubine-red 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $c-bhf-red 0%,$c-bhf-rubine-red 100%); /* Chrome10-25,Safari5.1-6 */
+    overflow: hidden;
+
+    @include mq('tablet') {
+        padding-bottom: 1.5vw;
+    }
+
+    .cs-shelf__column & {
+        margin: 0 auto 40px;
+    }
+
+    header {
+        padding: 0 20px; 
+        overflow: hidden;
+        margin: 0 auto;
+
+        @include mq('tablet') {
+            max-width: $max-width;
+            padding: 0 25px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        @include mq('large') {
+            padding: 0;
+        }
+    }
+
+    &__mask {
+        position: absolute;
+        left: -3px;
+        right: 0;
+        bottom: -7px;
+        overflow: hidden;
+        background-color: $c-white;
+
+        img {
+            position: relative;
+            width: 101%;
+            height: auto;
+            margin-top: -1px;
+        }
+
+        img[src$=".svg"] {
+            width: 101%;
+        }
+    }
+
+    header {
+        width: 100%;
+    }
+
+    &__copy {
+        position: relative;
+        z-index: 101;
+        margin-top: 110px;
+
+        @include mq('tablet') {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-family: $font-bhf-bold;
+            @include font-size(26px);
+            line-height: 30px;
+            margin: 12px 0;
+
+            @include mq('tablet') {
+                @include font-size(36px);
+                line-height: 50px;
+            }
+
+            @include mq('desktop') {
+                @include font-size(46px);
+                line-height: 52px;
+            }
+
+            &.large {
+
+                @include mq('desktop') {
+                    @include font-size(76px);
+                    line-height: 75px;
+                }
+
+            }
+        }
+
+        p {
+            font-family: $font-base;
+            @include font-size(16px);
+            line-height: 22px;
+
+            @include mq('desktop') {
+                @include font-size(18px);
+                line-height: 25px;
+            }
+        }
+
+        a.c-scp-hero__link {
+            font-family: $font-base;
+            @include font-size(14px);
+            line-height: 18px;
+            color: $c-white;
+            text-decoration: underline;
+            @include transition(all 0.3s);
+            opacity: 1;
+
+            @include mq('desktop') {
+                @include font-size(16px);
+                line-height: 22px;
+                margin-top: 40px;
+                display: inline-block;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__inner {
+        position: relative;
+        
+        @include mq('tablet') {
+            width: 47%;
+            margin: 180px auto 0;
+        }
+    }
+
+    &__is-full {
+        position: relative;
+        width: 100%;
+        max-width: 700px;
+        margin: 130px auto 0 0;
+        
+        @include mq('tablet') {
+            margin: 160px auto 0 0;
+        }
+
+        @include mq('desktop') {
+            margin: 190px auto 0 0;
+        }
+    }
+
+}

@@ -1,0 +1,64 @@
+<!-- FORM element : TYPE = CHECKBOX [group with validation]-->                
+<fieldset>
+
+    <div class="f-forms__element" id="f-forms__element__17">
+        <p class="f-forms__label">
+            <span class="f-forms__element--label">This is a multiple checkbox fieldset with validation [Core].</span>
+            <span class="f-forms__element--sublabel">This is some help text to further explain the question</span>
+        </p>
+        <div class="f-forms__checkbox">
+        
+            <input type="checkbox" id="f-forms__element-checkbox__17a"
+            
+            data-parsley-checkmin="1"
+            data-parsley-required="true"
+            data-parsley-trigger="focusout"
+            data-parsley-error-message="You must check at least one of these boxes."
+            data-parsley-class-handler="#f-forms__element__17"
+            data-parsley-errors-container="#f-forms__element-error__17"
+            data-parsley-multiple="f-forms__element__17"
+
+            aria-required="true" 
+            aria-describedby="#f-forms__element-checkbox__17a"
+
+            >
+            
+            <label for="f-forms__element-checkbox__17a">This is a single line option but with it's label sitting on two lines.</label>
+        
+        </div>
+
+        <div class="f-forms__checkbox">
+        
+            <input type="checkbox" id="f-forms__element-checkbox__17b"
+              
+            data-parsley-multiple="f-forms__element__17"
+            
+            aria-required="true" 
+            aria-describedby="#f-forms__element-checkbox__17b"
+
+            >
+            
+            <label for="f-forms__element-checkbox__17b">This is a single line option  </label>
+        
+        </div>
+
+        <div class="f-forms__checkbox">
+        
+            <input type="checkbox" id="f-forms__element-checkbox__17c"
+              
+            data-parsley-multiple="f-forms__element__17"
+            
+            aria-required="true" 
+            aria-describedby="#f-forms__element-checkbox__17c"
+
+            >
+            
+            <label for="f-forms__element-checkbox__17c">This is a single line option  </label>
+        
+        </div>
+
+        <div class="f-forms__element--error" id="f-forms__element-error__17" role="alert" aria-live="polite"></div>
+
+    </div>
+
+</fieldset>

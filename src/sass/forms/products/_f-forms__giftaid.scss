@@ -1,0 +1,24 @@
+.f-forms__giftaid {
+    padding-top: 40px;
+
+    &.hidden {
+        display: none;
+    }
+
+    .f-forms__element {
+        background-color: $c-whiteice; 
+        padding: 15px;
+        margin-top: 15px; 
+
+        input[type="text"] {
+            padding-left: 25px;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 5px;
+    }
+
+}

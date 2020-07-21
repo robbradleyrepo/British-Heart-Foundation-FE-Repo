@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-share-facebook@1.5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page---June-mobile-v2" transform="translate(-137.000000, -2667.000000)" fill="#35578C">
+            <g id="Group-9-Copy-2" transform="translate(50.000000, 2657.000000)">
+                <path d="M106.428,26.006 L104.186,26.006 L104.186,34 L100.864,34 L100.864,26.006 L99.284,26.006 L99.284,23.182 L100.864,23.182 L100.864,21.354 C100.864,20.045 101.485,18 104.216,18 L106.677,18.01 L106.677,20.752 L104.891,20.752 C104.6,20.752 104.186,20.897 104.186,21.522 L104.186,23.182 L106.719,23.182 L106.428,26.006 L106.428,26.006 Z M103,10 C94.164,10 87,17.164 87,26 C87,34.838 94.164,42 103,42 C111.837,42 119,34.838 119,26 C119,17.164 111.837,10 103,10 L103,10 Z" id="icon-share-facebook"></path>
+            </g>
+        </g>
+    </g>
+</svg>

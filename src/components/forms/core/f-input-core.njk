@@ -1,0 +1,28 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2 - Input [Core]</h1>
+
+        <p>A single line FORM element that has available states/options below.</p>
+
+        {% include 'forms/elements/f-input.njk' %}
+
+        {% include 'forms/elements/f-input__half-width.njk' %}
+
+        {% include 'forms/elements/f-input__no-validation.njk' %}
+
+        {% include 'forms/elements/f-input__disabled.njk' %}
+
+        {% include 'forms/elements/f-input__email.njk' %} 
+
+        {% include 'forms/core/f-submit.njk' %} 
+
+        <p><br/><br/>For custom variations, see <a href="forms-elements__input-custom.html">Forms - Input [Custom]</a>
+    </form> 
+
+</section>

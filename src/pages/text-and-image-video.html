@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Two cards [SCROLL DOWN]</h1>
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        {% include 'c-text-and-image-video-large.njk' %}
+                    </div>
+                </div>  
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        {% include 'c-text-and-image-video.njk' %}
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

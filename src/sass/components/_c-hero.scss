@@ -1,0 +1,83 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 84vh;
+
+    @include mq('tablet') {   
+        flex-direction: row;
+        min-height: 84vh;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    &__half {
+        min-height: 50vh;
+
+        @include mq('tablet') {
+            min-height: calc(84vh - 45px);
+        }
+
+        &:first-child {
+            display: flex;
+            -ms-flex: 1;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: paleturquoise;
+        }
+
+        &:last-child {
+            background: url('../../assets/img/mvc/hero-image.jpg') no-repeat left top;
+            background-size: cover;
+            order: -1;
+
+            @include mq('tablet') {
+                display: flex;
+                -ms-flex: 1;
+                flex: 1;
+                order: 0;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        width: calc(100% - 40px);
+        max-width: 600px;
+        flex-direction: column;
+
+        @include mq('tablet') {
+            width: calc(100% - 80px);
+        }
+    }
+
+    &__breadcrumbs {
+        margin: 10px 0;
+        padding: 5px;
+    }
+
+    &__copy {
+        margin: 20px auto 40px;
+        padding: 20px;
+        @include border-radius(10px);
+        background-color: palegoldenrod;
+    }
+
+    &__cta {
+        text-decoration: none;
+        color: #333333;
+        padding: 5px 20px;
+        border: 3px solid #333333;
+        border-radius: 5px;
+        
+        &:hover {
+            background-color: paleturquoise;
+        }
+    }
+
+}

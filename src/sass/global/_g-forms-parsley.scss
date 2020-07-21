@@ -1,0 +1,78 @@
+.g-forms-parsley {
+    
+    .g-forms__element {
+        
+        &.parsley-error {
+
+            input[type=url],
+            input[type=date],
+            input[type=password],
+            input[type=number],
+            input[type=tel],
+            input[type=text],
+            input[type=email] {
+                border: 2px solid $c-bhf-rubine-red;
+            }
+
+            .g-forms__select {
+                
+                select {
+                    @include font-size(12px);
+                    color: $c-dove-grey;
+                    border: 2px solid $c-bhf-rubine-red;
+                }
+
+                .select-arrow {
+                    background-color: $c-bhf-rubine-red;
+                }
+            
+            }
+            
+            .g-forms__checkbox {    
+        
+                label:before { 
+                    border-color: $c-bhf-rubine-red !important;
+                }
+            }
+
+            .g-forms__element--status {
+                @extend .icon-error;
+            }
+
+            
+        }
+
+        &.parsley-success {
+            
+            input[type=date],
+            input[type=url],
+            input[type=password],
+            input[type=number],
+            input[type=tel],
+            input[type=text],
+            input[type=email] {
+                border: 2px solid $c-green;
+            }
+
+            .g-forms__select {
+
+                select {
+                    @include font-size(16px);
+                    color:  $c-body-text;
+                    border: 2px solid $c-green;
+                }
+                
+                .select-arrow {
+                    background-color: $c-green;
+                }
+            }
+
+            .g-forms__element--status {
+                @extend .icon-success;
+            }
+        }
+
+    }
+
+
+}

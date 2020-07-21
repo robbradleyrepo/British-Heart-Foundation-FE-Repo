@@ -1,0 +1,39 @@
+.f-forms {
+    
+    &__textarea { 
+        
+        position: relative;
+
+        textarea {
+            @extend input, [type=text];
+            min-height: 90px;
+            max-height: 700px;
+            @include transition(0.2s all ease-in-out);
+            resize: none;
+
+            &:focus,
+            &:active {
+
+                & + .f-forms__textarea--chars {
+                    opacity: 1;
+                    @include transition(0.2s all ease-in-out);
+                }
+            }
+
+            &:disabled {
+                background-color: $c-gallery;
+                border: solid 1px $c-silver;
+            }
+        }
+
+        &--chars {
+            @include transition(0.2s all ease-in-out);
+            opacity: 0;
+            float: right;
+            font-style: normal;
+            @include font-size(13px);
+            color: $c-nevada;
+        } 
+    }
+
+}

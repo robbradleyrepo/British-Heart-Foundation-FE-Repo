@@ -1,0 +1,39 @@
+.c-searchbox {
+    
+    padding: 0 20px;
+
+    @include mq('tablet') { 
+        padding: 0 25px;
+    }
+    
+    @include mq('large') {
+        padding: 0;
+    }
+
+    .g-forms__element {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        flex-flow: column;
+
+        @include mq('tablet') { 
+            flex-flow: row;
+            align-items: center;
+        }
+        
+        input[type=text] { 
+            width: 85%;
+            margin-right: 20px; 
+            @include mq('tablet') { 
+                width: calc(100% - 150px);
+            }
+        }
+
+        .cta { 
+            margin-top: 20px;
+            @include mq('tablet') { 
+                margin-top: inherit;
+            }
+        }
+    }
+}

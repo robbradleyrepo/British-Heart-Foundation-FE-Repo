@@ -1,0 +1,126 @@
+.c-two-cards {
+    display: flex;
+    flex-flow: column;
+    padding: 0 20px;
+
+    @include mq('tablet') {
+        flex-flow: row;
+        padding: 0 25px;
+    }
+
+    @include mq('large') {
+        padding: 0;
+    }
+
+    // IE specific as it does not support nested Flexboxes
+    .no-smil & {
+        display: block;
+
+        @include mq('tablet') {
+            display: flex;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        color: $c-body-text;
+        display: flex;
+        flex-flow: column;
+
+        // IE specific as it does not support nested Flexboxes
+        .no-smil & {
+            display: block;
+        }
+
+
+        @include mq('tablet') {
+            width: 48.62%;
+        }
+
+        &:first-child {
+            margin-bottom: 60px;
+
+            @include mq('tablet') {
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        img + a {
+            margin-top: 27px;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-family: 'BHF Beats Bold';
+            @include font-size(18px);
+            line-height: 22px;
+
+            @include mq('tablet') {
+                @include font-size(24px);
+                line-height: 35px;
+            }
+
+            @include mq('desktop') {
+                @include font-size(28px);
+            }
+
+            a {
+                color: $c-body-text;
+                border-bottom: none;
+                @include transition(all 300ms);
+                background-color: transparent;
+                font-size: inherit;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+
+        p {
+            padding: 0 18% 0 0;
+            margin-top: 26px;
+            @include font-size(14px);
+            line-height: 22px;
+
+            @include mq('tablet') {
+                @include font-size(16px);
+                line-height: 26px;
+            }
+        }
+
+        h2 + p {
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+
+        p + a {
+            margin-top: 0;
+        }
+
+        h2 + a {
+            margin-top: 17px;
+        }
+    }
+
+    &__image {
+        height: 350px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__copy {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}

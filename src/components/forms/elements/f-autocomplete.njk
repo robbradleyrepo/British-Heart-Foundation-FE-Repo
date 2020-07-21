@@ -1,0 +1,77 @@
+<!-- FORM element : TYPE = AUTOCOMPLETE -->
+<fieldset class="f-forms--autocomplete">
+
+    <div class="f-forms__element" id="f-forms__element__1ac">
+        <label for="f-forms__element-autocomplete__1">
+            <span class="f-forms__element--label">Enter your search term</span> 
+            <span class="f-forms__element--sublabel">This is autocomplete with validation. Search for keyword "book".</span>
+        </label>
+
+        <input type="text" name="f-forms__element-autocomplete__1" id="f-forms__element-autocomplete__1"
+        
+        class="f-forms__element--actual is-with-button"
+
+        data-parsley-required="true" 
+        aria-required="false" 
+        data-parsley-required-message="This is a required field." 
+        data-parsley-trigger="focusout"
+        data-parsley-trigger-after-failure="focusout" 
+        data-parsley-class-handler="#f-forms__element__1ac"
+        data-parsley-errors-container="#f-forms__element-error__1ac"
+        data-parsley-pattern="a{90000000000000}"
+        data-parsley-pattern-message="Please select a value from the list." 
+        
+        aria-required="true"
+        aria-describedby="f-forms__element-error__1ac"
+        
+        data-autocomplete-url="https://fakerestapi.azurewebsites.net/api/Books"
+        data-autocomplete-display="Title PageCount"
+        data-autocomplete-select="Title PageCount"
+        data-autocomplete-query="book"
+
+        >
+        <button type="submit" value="Search" class="cta cta__tertiary is-white-on-red hidden" />Search</button> 
+
+        <div class="f-forms__element--error" id="f-forms__element-error__1ac" role="alert" aria-live="polite"><span></span></div>
+    </div>
+
+</fieldset>
+
+<!-- FORM element : TYPE = AUTOCOMPLETE -->
+<fieldset class="f-forms--autocomplete">
+
+    <div class="f-forms__element">
+        <label for="f-forms__element-input__2343">
+            <span class="f-forms__element--label">Enter your search term</span> 
+            <span class="f-forms__element--sublabel">This is autocomplete with no validation. Search for the keyword "del".</span>
+        </label>
+
+        <input type="text" name="f-forms__element-input__2343" id=""
+        
+        class="f-forms__element--actual"
+
+        data-parsley-required="false" 
+        aria-required="false" 
+
+        data-autocomplete-url="https://jsonplaceholder.typicode.com/todos"
+        data-autocomplete-display="title"
+        data-autocomplete-select="title"
+        data-autocomplete-query="et"
+
+        >
+
+    </div>
+
+</fieldset>
+{% include 'forms/core/f-submit.njk' %} 
+{# <form action="#" class="c-search-with-image__form" id="g-forms__product-cpr__search">
+    <input type="hidden" id="g-forms__product-cpr__schoolID" value="" />
+    
+    <div class="g-forms__element no-pad"> 
+        <label for="g-forms__product-cpr__searchbox">Find your school</label>
+    </div>
+    <div class="g-forms__element no-pad">
+        <input type="text" id="g-forms__product-cpr__searchbox" class="g-forms__spinner" placeholder="School address or postcode" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-labelledby="g-forms__product-cpr__searchbox"  />
+        <button type="submit" value="Search" class="cta cta__secondary is-white-on-red" />Search <i class="glyphicon glyphicon-menu-right"></i></button>
+    </div>
+</form> #}

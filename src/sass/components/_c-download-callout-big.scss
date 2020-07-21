@@ -1,0 +1,155 @@
+.c-download-callout-big {
+    background-color: $c-porcelain;
+    min-height: 100px;
+    padding: 30px 0;
+
+    @include mq('tablet') {
+        padding: 122px 0 80px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 970px;
+        padding: 0 20px;
+
+        @include mq('tablet') {
+            flex-direction: row;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 25px;
+        }
+    }
+
+    &__icons {
+        margin-bottom: 21px;
+
+        @include mq('tablet') {
+            display: flex;
+            position: absolute;
+            top: -60px;
+            left: -4px;
+        }
+
+        span {
+            font-size: 25px;
+            width: 17px;
+
+            @include mq('tablet') {
+                font-size: 50px;
+                width: 36px;
+            }
+            
+            &:last-child {
+
+                @include mq('tablet') {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+
+    &__copy {
+        flex-grow: 3;
+        order: 1;
+
+        @include mq('tablet') {
+            order: 0;
+            padding-right: 490px;
+        }
+
+        h2 {
+            font-family: $font-bhf-bold;
+            @include font-size(26px);
+            line-height: 31px;
+            text-align: center;
+            margin: 23px 0 3px;
+
+            @include mq('tablet') {
+                position: relative;
+                @include font-size(48px);
+                line-height: 48px;
+                margin: 0 0 12px;
+                text-align: left;
+                margin-top: 11px;
+            }
+
+
+            a {
+                color: $c-body-text;
+                @include transition(all 300ms);
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+
+        p {
+            @include font-size(18px);
+            line-height: 24px;
+            text-align: center;
+            margin: 3px 0 0;
+
+            @include mq('tablet') {
+                @include font-size(20px);
+                margin: 0 0 31px;
+                text-align: left;
+            }
+        }
+
+        input[type=button] {
+            color: $c-body-text;
+            padding: 8px 9px 7px;
+            background-color: transparent;
+            border: 2px solid $c-body-text;
+            -webkit-appearance: none;
+            @include border-radius(10px);
+            cursor: pointer;
+            display: block;
+            margin: 23px auto 0;
+            font-weight: bold;
+            font-size: 18px;
+            @include transition(all 300ms);
+
+            @include mq('tablet') {
+                padding: 12px 35px 11px;
+                font-size: 20px;
+                margin-top: 0;
+                display: inline-block
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__image {
+        order: 0;
+        position: relative;
+
+        @include mq('tablet') {
+            order: 1;
+            position: absolute;
+            top: 42%;
+            right: 10px;
+            @include vendor-prefix('transform', 'translate(0, -50%)');
+        }
+
+        img {
+            flex-grow: 1;
+            max-width: 160px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+            @include mq('tablet') {
+            max-width: 320px;
+                margin: 0;
+                display: inline-block;
+            }
+        }
+    }
+}

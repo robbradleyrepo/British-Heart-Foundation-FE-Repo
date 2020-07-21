@@ -1,0 +1,716 @@
+{% if headerNav == 'microsite'%}
+
+<nav class="g-nav-primary is-microsite-nav" aria-label="British Heart Foundation primary navigation" role="menubar">
+
+    <div class="g-nav-brand">
+        <a href="/" class="g-logo" title="British Heard Foundation - Face a Fear">
+            <span></span>
+        </a>
+        <h1><a href="/" title="Face a Fear home">Microsite header</a></h1>
+    </div>
+
+    <ul role="menubar" class="g-nav-primary__top" aria-label="British Heart Foundation - Preliminary primary navigation list">
+        <li class="is-wine"><a href="http://www.bhf.org.uk/" role="menuitem" tabindex="0">Visit bhf.org.uk<span class="bhfi bhfi-extlink"></span></a>
+         <span>|</span></li>
+        <li class="is-wine"><a href="http://www.bhf.org.uk/donate" role="menuitem" tabindex="0">Donate<span class="bhfi bhfi-extlink"></span></a></li>
+    </ul>
+    <ul role="menubar" class="g-nav-primary__bottom is-white" aria-label="British Heart Foundation - Main primary navigation list">
+        <li>
+            <a href="#" role="menuitem" class="g-nav-primary__touch g-nav-primary__touch--hasicon mobile-control" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                <span class="bhfi bhfi-menu g-nav-primary__touch--icon" aria-hidden="true"></span>
+                <span class="g-nav-primary__touch--label">Menu</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" role="menuitem" class="g-nav-primary__link" aria-haspopup="false" aria-label="Home" tabindex="0">Lorem</a>
+        </li>
+        <li>
+            <a href="#" role="menuitem" class="g-nav-primary__link" aria-haspopup="false" aria-label="Home" tabindex="0">ipsum</a>
+        </li>
+        <li>
+            <a href="#" role="menuitem" class="g-nav-primary__link" aria-haspopup="false" aria-label="Home" tabindex="0">dolor sit amet</a>
+        </li>
+        <li>
+            <a href="#" role="menuitem" class="g-nav-primary__link" aria-haspopup="false" aria-label="Home" tabindex="0">consectetur</a>
+        </li>
+        <li>
+            <a href="#" role="menuitem" class="g-nav-primary__link" aria-haspopup="false" aria-label="Home" tabindex="0">adipiscing</a>
+        </li>
+        <li><a href="#" role="menuitem" class="g-nav-primary__link g-nav-primary__button" tabindex="0">Sign up</a></li>
+    </ul>
+</nav>
+
+{% else %}
+
+<div class="g-screen"></div>
+                
+<nav class="g-nav-primary" aria-label="British Heart Foundation primary navigation">
+    <ul class="g-nav-primary__top" aria-label="British Heart Foundation - Preliminary primary navigation list">
+        <li><a href="#"  tabindex="0">For Professionals</a></li>
+        
+        {% if headerVariant == 'my-account-loggedin'%}
+            <li><a href="#"  tabindex="0">My ACCOUNT</a></li>
+            <li><a href="#"  tabindex="0">SIGN OUT</a></li>
+        {% else %}
+            {% if headerVariant == 'my-account'%}
+                <li><a href="#"  tabindex="0">Sign in/Register</a></li>
+            {% else %}
+                <li><a href="#"  tabindex="0">Login/Register</a></li>
+            {% endif %}
+        {% endif %}
+        <li><a href="#"  aria-haspopup="true" aria-expanded="false" tabindex="0" class="g-nav-primary__search--control"><span class="bhfi bhfi-search" aria-hidden="true"></span>Search</a></li>
+    </ul>
+    <ul class="g-nav-primary__bottom" aria-label="British Heart Foundation - Main primary navigation list">
+        <li>
+            <a href="#"  class="g-nav-primary__touch g-nav-primary__touch--hasicon mobile-control" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                <span class="bhfi bhfi-menu g-nav-primary__touch--icon" aria-hidden="true"></span>
+                <span class="g-nav-primary__touch--label">Menu</span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  class="g-nav-primary__touch g-nav-primary__touch--hasicon search-control" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                <span class="bhfi bhfi-search g-nav-primary__touch--icon" aria-hidden="true"></span>
+                <span class="g-nav-primary__touch--label">Search</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.google.com"  class="g-nav-primary__link" aria-haspopup="true" aria-expanded="false" aria-label="Press Enter key to expand submenu and then use tab key to navigate through subitems" tabindex="0">Information &amp; support</a>
+            <!-- #1 MEGANAV - Information & Support -->
+            <div  class="g-nav-primary__mega" aria-hidden="true"> 
+                <ul role="menu" aria-label="Information & Support">
+                    <li>
+                        <a href="http://www.google.com" class="g-nav-primary__mega--promo"  tabindex="0">Information &amp; support</a>
+                    </li>
+                    <li>
+                        <a href="http://www.google.com"  class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Conditions</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Conditions - Navigation" aria-hidden="true" role="menu">
+                            <a href="http://www.google.com" >Conditions</a>
+                            <ul >
+                                <li><a href="#">Find a condition</a></li>
+                                <li><a href="#">Most searched conditions</a></li>
+                                <li><a href="#">Find the cure</a></li>
+                                <li><a href="#">Donate now</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Risk factors factors factors factors factors</a>
+                        <!-- SUBNAV--> 
+                        <div class="g-nav-primary__mega--subnav" aria-label="Risk factors - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Risk factors</a>
+                            <ul >
+                                <li><a href="#">Smoking</a></li>
+                                <li><a href="#">Your weight and heart disease</a></li>
+                                <li><a href="#">High cholesterol</a></li>
+                                <li><a href="#">High cholesterol FB1</a></li>
+                                <li><a href="#">High cholesterol FB2</a></li>
+                                <li><a href="#">High cholesterol FB3</a></li>
+                                <li><a href="#">Diabetes</a></li>
+                                <li><a href="#">High blood pressure</a></li>
+                                <li><a href="#">High blood pressure FB1</a></li>
+                                <li><a href="#">High blood pressure FB2</a></li>
+                                <li><a href="#">High blood pressure FB3</a></li>
+                                <li><a href="#">Whart's your heart age?</a></li>
+                                <li><a href="#">Family history</a></li>
+                                <li><a href="#">Research into risk factors</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Support</a>
+                        <!-- SUBNAV-->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Support - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Support</a>
+                            <ul >
+                                <li><a href="#">Healthy living</a></li>
+                                <li><a href="#">Your ethnicity and heart disease</a></li>
+                                <li><a href="#">Health advice and emotional support</a></li>
+                                <li><a href="#">Practical advice</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Online community</a>
+                        <!-- SUBNAV-->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Online community - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Online community</a>
+                            <ul >
+                                <li><a href="#">About our Online community</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  aria-haspopup="true" aria-expanded="false" tabindex="0">Heart Helpline</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Tests</a>
+                        <!-- SUBNAV-->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Tests - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Tests</a>
+                            <ul >
+                                <li><a href="#">Anglogram</a></li>
+                                <li><a href="#">Blood tests</a></li>
+                                <li><a href="#">Checking your pulse</a></li>
+                                <li><a href="#">Chest x-ray</a></li>
+                                <li><a href="#">Echocardiogram</a></li>
+                                <li><a href="#">ECG</a></li>
+                                <li><a href="#">Electrophysiological studies</a></li>
+                                <li><a href="#">Exercise EDG</a></li>
+                                <li><a href="#">Implantable loop recorders</a></li>
+                                <li><a href="#">MRI scans</a></li>
+                                <li><a href="#">Physical assessment</a></li>
+                                <li><a href="#">Radionuclide Tests</a></li>
+                                <li><a href="#">Tilt test</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Treatments</a>
+                        <!-- SUBNAV-->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Treatments - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Treatments</a>
+                            <ul >
+                                <li><a href="#">Podcast</a></li>
+                                <li><a href="#">Heart Matters</a></li>
+                                <li><a href="#">Find the cure</a></li>
+                                <li><a href="#">Cardiomyopathy</a></li>
+                                <li><a href="#">Echocardiogram</a></li>
+                                <li><a href="#">Ablation</a></li>
+                                <li><a href="#">Cardioversion</a></li>
+                                <li><a href="#">Coronary angioplasty and stents</a></li>
+                                <li><a href="#">Coronary bypass surgery</a></li>
+                                <li><a href="#">Implantable cardioverter defribrilator (ICD)</a></li>
+                                <li><a href="#">Medicines for heart conditions</a></li>
+                                <li><a href="#">Pacemakers</a></li>
+                                <li><a href="#">Statins</a></li>
+                                <li><a href="#">TAVI</a></li>
+                                <li><a href="#">Heart valve surgery</a></li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">How your heart works</a>
+                        <!-- SUBNAV-->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Treatments - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Treatments</a>
+                            <ul >
+                                <li><a href="#">Know your heart</a></li>
+                                <li><a href="#">How a healthy heart works</a></li>
+                                <li><a href="#">Your heart and circulation</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">BHF booklets and guides</a>
+                        <!-- SUBNAV-->
+                        <div class="g-nav-primary__mega--subnav" aria-label="BHF booklets and guides - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">BHF booklets and guides</a>
+                            <ul >
+                                <li><a href="#">Heart Matters</a></li>
+                                <li><a href="#">Campaigning toolkit</a></li>
+                                <li><a href="#">Business case toolkit</a></li>
+                                <li><a href="#">Health at work</a></li>
+                                <li><a href="#">Conditions</a></li>
+                                <li><a href="#">Treatments and tests</a></li>
+                                <li><a href="#">Healthy living</a></li>
+                                <li><a href="#">Fundraising</a></li>
+                                <li><a href="#">For children and young people</a></li>
+                                <li><a href="#">For professionals</a></li>
+                                <li><a href="#">Statistics</a></li>
+                                <li><a href="#">Welsh</a></li>
+                                <li><a href="#">BHF</a></li>
+                                <li><a href="#">DVDs</a></li>
+                                <li><a href="#">Heart of the community newsletter</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  aria-haspopup="true" aria-expanded="false" tabindex="0">Heart Matters magazine</a>
+                    </li>
+                </ul>
+                <aside>
+                    <div class="g-primary-nav__mega--promo intro">
+                        Original designs for the main nav had a small piece of intro text for each of intro text for each of intro text for each of intro text for each of the 4 drop down panels.
+                    </div>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio1.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio2.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.google.com"  class="g-nav-primary__link" aria-haspopup="true" aria-expanded="false" aria-label="Press Enter key to expand submenu and then use tab key to navigate through subitems" tabindex="0">How you can help</a>
+            <!-- #2 MEGANAV - How you can help -->
+            <div  class="g-nav-primary__mega" aria-hidden="true"> 
+                <ul role="menu" aria-label="How you can help"> 
+                    <li>
+                        <a href="#"  tabindex="0" class="g-nav-primary__mega--promo">How you can help</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Donate</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Donate - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Donate</a>
+                            <ul >
+                                <li><a href="#">Donate money</a></li>
+                                <li><a href="#">How your donations are spent</a></li>
+                                <li><a href="#">Give in memory</a></li>
+                                <li><a href="#">Give in celebration</a></li>
+                                <li><a href="#">Leave a gift in your will</a></li>
+                                <li><a href="#">Donate goods to our shops</a></li>
+                                <li><a href="#">Major gifts</a></li>
+                                <li><a href="#">Raffles</a></li>
+                                <li><a href="#">Donate through your salary</a></li>
+                                <li><a href="#">Give as you Live</a></li>
+                                <li><a href="#">Other ways to donate</a></li>
+                            </ul>
+                        </div>
+                    </li> 
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Fundraise</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Fundraise - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Fundraise</a>
+                            <ul > 
+                                <li><a href="#">Pay in your fundraising</a></li>
+                                <li><a href="#">DECHOX</a></li>
+                                <li><a href="#">Fundraising ideas</a></li>
+                                <li><a href="#">Do your own fundraising event</a></li>
+                                <li><a href="#">Get help with fundraising</a></li> 
+                                <li><a href="#">Fundraising for businesses</a></li>
+                                <li><a href="#">Become a fundraising volunteer</a></li>
+                                <li><a href="#">Fundraising for schools</a></li>
+                                <li><a href="#">Local fundraising groups</a></li>
+                                <li><a href="#">Tandem Skydive</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Take part in an event</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Take part in an event - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Take part in an event</a>
+                            <ul >
+                                <li><a href="#">Bike rides</a></li>
+                                <li><a href="#">Run</a></li>
+                                <li><a href="#">Walks and treks</a></li>
+                                <li><a href="#">More sports</a></li>
+                                <li><a href="#">Overseas challenges</a></li> 
+                                <li><a href="#">Skydives</a></li>
+                                <li><a href="#">Schools</a></li>
+                                <li><a href="#">Social events</a></li>
+                                <li><a href="#">Fundraising materials</a></li>
+                                <li><a href="#">Fundraising for an event</a></li> 
+                                <li><a href="#">Spread the word</a></li>
+                                <li><a href="#">Pay in your fundraising</a></li>
+                                <li><a href="#">Run for us</a></li>
+                                <li><a href="#">Training zone</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Leave a gift in your will</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Take part in an event - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Leave a gift in your will</a>
+                            <ul >
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Glossary of terms</a></li>
+                                <li><a href="#">Tax guide</a></li>
+                                <li><a href="#">Tribute funds</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">How to write or amend a will</a></li>
+                                <li><a href="#">Why include us in your will</a></li>
+                                <li><a href="#">How to include us in your will</a></li>
+                                <li><a href="#">Legacy events</a></li>
+                                <li><a href="#">Solicitors and executors</a></li>
+                                <li><a href="#">Free Wills Network</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Volunteer</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Volunteer - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Volunteer</a>
+                            <ul >
+                                <li><a href="#">Why volunteer?</a></li>
+                                <li><a href="#">How you can volunteer</a></li>
+                                <li><a href="#">Register your interest</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Get involved in your area</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Get involved in your area - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Get involved in your area</a>
+                            <ul >
+                                <li><a href="#">Supporter events</a></li>
+                                <li><a href="#">Heart heroes</a></li>
+                                <li><a href="#">Making change happen across the UK</a></li>
+                                <li><a href="#">Local appeals</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Learn how to save a life</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Learn how to save a life - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Learn how to save a life</a>
+                            <ul >    
+                                <li><a href="#">What is CPR</a></li>
+                                <li><a href="#">How to do CPR</a></li>
+                                <li><a href="#">CPR training kits</a></li>
+                                <li><a href="#">Hands only CPR</a></li>
+                                <li><a href="#">Defibrillators</a></li> 
+                                <li><a href="#">CPR training for school</a></li>
+                                <li><a href="#">CPR training for workplaces</a></li>
+                                <li><a href="#">CPR training for communities</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Promote health at work</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Promote health at work - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Promote health at work</a>
+                            <ul >
+                                <li><a href="#">About health at work</a></li>
+                                <li><a href="#">The business case</a></li>
+                                <li><a href="#">Healthy ideas</a></li> 
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Case studies</a></li>
+                                <li><a href="#">Resources</a></li> 
+                                <li><a href="#">What is workplace health</a></li>
+                                <li><a href="#">Join health at work</a></li>
+                                <li><a href="#">Our members</a></li> 
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Health at work blogs</a></li>
+                                <li><a href="#">Latest news</a></li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Become a corporate partner</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Become a corporate partner - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Become a corporate partner</a>
+                            <ul >
+                                <li><a href="#">Why partner with us</a></li>
+                                <li><a href="#">Ways to support the BHF</a></li>
+                                <li><a href="#">Our corporate partners</a></li> 
+                                <li><a href="#">Fundraising at work</a></li>
+                                <li><a href="#">Donate time to our shops</a></li>
+                                <li><a href="#">Get in touch</a></li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Campaigning</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Campaigning - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Campaigning</a>
+                            <ul >
+                                <li><a href="#">Our campaign successes </a></li>
+                                <li><a href="#">Every child a lifesaver</a></li>
+                                <li><a href="#">Patient involvement at the BHF</a></li> 
+                                <li><a href="#">Prescription charges</a></li>
+                                <li><a href="#">The cardio and vascular coalition</a></li>
+                                <li><a href="#">Organ donation</a></li>
+                                <li><a href="#">Campaigning toolkit</a></li>
+                                <li><a href="#">Heart watch</a></li>
+                                <li><a href="#">CVD outcomes stragegy</a></li>
+                                <li><a href="#">Parliamentary report on living with heart failure</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <aside>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio3.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio4.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.google.com"  class="g-nav-primary__link" aria-haspopup="true" aria-expanded="false" aria-label="Press Enter key to expand submenu and then use tab key to navigate through subitems" tabindex="0">Shop</a>
+            <!-- #3 MEGANAV - Shop -->
+            <!-- Every <a> tag either needs .g-nav-primary__promo only if contains subnav -->
+            <div  class="g-nav-primary__mega" aria-hidden="true"> 
+                <ul role="menu" aria-label="Shop">
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo" target="new"  tabindex="0">Find your local shop</a>
+                    </li> 
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Furniture and electrical shops</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Furniture and electrical shops - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Furniture and electrical shops</a>
+                            <ul >
+                                <li><a href="#">Book a free furniture collection</a></li>
+                                <li><a href="#">Find your local shop</a></li>
+                                <li><a href="#">Shop directory</a></li>
+                                <li><a href="#">Shopping inspiration</a></li>
+                                <li><a href="#">Interior design</a></li>
+                                <li><a href="#">Upcycling</a></li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">High street shops</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="High street shops - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">High street shops</a>
+                            <ul > 
+                                <li><a href="#">Find your local shop</a></li>
+                                <li><a href="#">Shop directory</a></li>
+                                <li><a href="#">A little love note goes a long way</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo" target="new"  tabindex="0">Online shop</a>
+                    </li> 
+                    <li>
+                        <a href="http://stores.ebay.co.uk/British-Heart-Foundation-Shop" class="g-nav-primary__mega--promo" target="new"  tabindex="0">Ebay shop <span class="bhfi bhfi-extlink"></span></a> 
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link" target="new"  tabindex="0">Donate to our shops</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Donate to our shops - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Donate to our shops</a>
+                            <ul >
+                                <li><a href="#">Find the BHF near you</a></li>
+                                <li><a href="#">Book a furniture collection</a></li>
+                                <li><a href="#">Ebay shop</a></li>
+                                <li><a href="#">Fire labels</a></li>
+                                <li><a href="#">Small items collection</a></li>
+                                <li><a href="#">Items we can't sell</a></li>
+                                <li><a href="#">GiftAid</a></li>
+                                <li><a href="#">Bag it Beat it</a></li>
+                                <li><a href="#">House clearance services</a></li>
+                                <li><a href="#">How your donations help</a></li>
+                                <li><a href="#">Partner with our shops</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link" target="new"  tabindex="0">Volunteer in our shops</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Volunteer in our shops - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Volunteer in our shops</a>
+                            <ul >
+                                <li><a href="#">Volunteer</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link" target="new"  tabindex="0">Shop customer services</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Shop customer services - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Shop customer services</a>
+                            <ul >    
+                                <li><a href="#">Storage of purchased furniture and electrical items</a></li>
+                                <li><a href="#">Payments and receipts</a></li>
+                                <li><a href="#">Our refund policy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo" target="new"  tabindex="0">Small badges. Big heart</a> 
+                    </li>
+                </ul>
+                <aside>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio5.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio2.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words, sentences or paragraphs.</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.google.com"  class="g-nav-primary__link" aria-haspopup="true" aria-expanded="false" aria-label="Press Enter key to expand submenu and then use tab key to navigate through subitems" tabindex="0">What we do</a>
+            <!-- #4 MEGANAV - What we do -->
+            <div  class="g-nav-primary__mega" aria-hidden="true"> 
+                <ul role="menu" aria-label="What we do">
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">What we do</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Our research</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Our research - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Our research</a>
+                            <ul >
+                                <li><a href="#">Heart disease research</a></li>
+                                <li><a href="#">Circulatory conditions research</a></li>
+                                <li><a href="#">Risk factors research</a></li>
+                                <li><a href="#">Our successes</a></li>
+                                <li><a href="#">Conditions we research</a></li>
+                                <li><a href="#">Grand challenge</a></li>
+                                <li><a href="#">Research projects</a></li>
+                                <li><a href="#">Do more together</a></li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">How we've made heart history</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="How we've made heart history - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">How we've made heart history</a>
+                            <ul >
+                                <li><a href="#">Our successes</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">How your donations help</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">News, articles &amp; blogs</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="News, articles & blogs - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">News, articles &amp; blogs</a>
+                            <ul >
+                                <li><a href="#">Sign up to our research newsletter</a></li>
+                                <li><a href="#">Science blogs</a></li>
+                                <li><a href="#">Contact the press office</a></li>
+                                <li><a href="#">News by category</a></li>
+                                <li><a href="#">Conditions we research</a></li>
+                                <li><a href="#">News archive</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">Influencing change</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">Our people</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="Our people - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">Our people</a>
+                            <ul >
+                                <li><a href="#">Exec</a></li>
+                                <li><a href="#">Trustees</a></li>
+                                <li><a href="#">Patron</a></li>
+                                <li><a href="#">Ambassadors &amp; celeb supporters</a></li>
+                                <li><a href="#">Professors</a></li>
+                                <li><a href="#">Advisory council</a></li>
+                                <li><a href="#">Fundraising board</a></li>
+                                <li><a href="#">Governance</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">Find the BHF near you</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--link"  aria-haspopup="true" aria-expanded="false" tabindex="0">BHF nations</a>
+                        <!-- SUBNAV -->
+                        <div class="g-nav-primary__mega--subnav" aria-label="BHF nations - Navigation" aria-hidden="true" role="menu">
+                            <a href="#">BHF nations</a>
+                            <ul > 
+                                <li><a href="#">BHF NI</a></li>
+                                <li><a href="#">BHF Scotland</a></li>
+                                <li><a href="#">BHF Wales</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">Annual review and accounts</a>
+                    </li>
+                    <li>
+                        <a href="#" class="g-nav-primary__mega--promo"  tabindex="0">Our strategy</a>
+                    </li>
+                </ul>
+                <aside>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio6.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                    <div class="g-primary-nav__mega--promo">
+                        <img src="assets/img/placeholders/donate-radio1.jpg" alt="Image description">
+                        <div>
+                            <h3>This is a heading</h3>
+                            <p>Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters, words</p>
+                            <a href="#">Find out more</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </li>
+        <li><a href="#"  class="g-nav-primary__button g-nav-primary__button--book" tabindex="0">Book a collection</a></li>
+        <li><a href="#"  class="g-nav-primary__button g-nav-primary__touch--hasicon g-nav-primary__button--donate" tabindex="0"><span class="bhfi bhfi-donate g-nav-primary__touch--icon" aria-hidden="true"></span> Donate</a></li>
+        <li class="g-nav-primary__search" aria-hidden="true">
+            <div class="g-nav-primary__search--wrapper" role="search">
+                <!-- SEARCH FORM (non hidden elements import from sitecore) -->
+                <form action="/landing-page1" class="form-inline  text-left" data-wffm="" data-wffm-ajax="True" data-wffm-redirect="/search/all" enctype="multipart/form-data" id="wffmfc537408d3c14284bfd9d538769e0331" method="post" role="form">
+
+                    <input name="__RequestVerificationToken" type="hidden" value="boKlm-wOiHBGoXpizJhMjJWpNjCiBDT_ROYHAocc8yhCxZ6RrrA9kF4qBpOmhvCSsm35S1AsQmi-A7WvhgzXDE8hWAvNMz5ZNmVu6VYPH7U1feC_gz7gCdZWLqKk5ILQ0"><input id="" name="wffmfc537408d3c14284bfd9d538769e0331.Id" type="hidden" value="fc537408-d3c1-4284-bfd9-d538769e0331"><input id="wffmfc537408d3c14284bfd9d538769e0331_FormItemId" name="wffmfc537408d3c14284bfd9d538769e0331.FormItemId" type="hidden" value="{70CDB626-5FE5-41C8-858D-6315FA9294B4}">
+                    <div class="has-error has-feedback">
+                        <div class="validation-summary-valid" data-valmsg-summary="true">
+                            <ul class="list-group">
+                                <li style="display:none"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input id="wffmfc537408d3c14284bfd9d538769e0331_Sections_0__Fields_0__Id" name="wffmfc537408d3c14284bfd9d538769e0331.Sections[0].Fields[0].Id" type="hidden" value="{83A9D930-0B55-4256-8A10-BFDA1D6D966C}">
+                        <label class="control-label sr-only" for="wffmfc537408d3c14284bfd9d538769e0331_Sections_0__Fields_0__Value">Search</label>
+                        <input class=" form-control text-box single-line" data-val="true" data-val-length="The field Search must be a string with a minimum length of 3 and a maximum length of 256." data-val-length-max="256" data-val-length-min="3" id="wffmfc537408d3c14284bfd9d538769e0331_Sections_0__Fields_0__Value" name="wffmfc537408d3c14284bfd9d538769e0331.Sections[0].Fields[0].Value" placeholder="Enter keyword(s)" style="" type="text" value="">
+                        <span class="field-validation-valid help-block sr-only" data-valmsg-for="wffmfc537408d3c14284bfd9d538769e0331.Sections[0].Fields[0].Value" data-valmsg-replace="true"></span>
+                    </div>
+                    <input class="btn btn-default" type="submit" value="Search">
+                </form>
+            </div>
+        </li>
+    </ul>
+</nav>  
+{% endif %}

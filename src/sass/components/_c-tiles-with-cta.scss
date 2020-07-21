@@ -1,0 +1,67 @@
+.c-tiles-with-cta {
+
+    &__inner {
+        background-color: $c-white;
+        padding: 10px 0 40px;
+        text-align: center;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.05);
+
+        @include mq('tablet') {
+            margin: inherit;    
+        }
+    }
+
+    h2 {
+        @include font-size(28px);
+        line-height: 28px;
+        font-family: $bhf;
+        
+        @include mq('desktop') {
+            @include font-size(36px);
+            line-height: 36px;
+        }
+    }
+
+    header {
+        margin-bottom: 10px;
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            @include font-size(18px);
+            font-weight: bold;
+            margin: 0;
+            padding: 0px 10px 20px;
+
+            @include mq('desktop') {
+                padding: 0 50px 20px;
+            }
+
+            &:empty {
+                padding: 0;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        @include font-size(14px);
+        line-height: 1.36;
+        
+        padding: 0 10px;
+        
+        @include mq('desktop') {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    .cta {
+        margin: 20px auto 0;
+    }
+}

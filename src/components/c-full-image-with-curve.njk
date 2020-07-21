@@ -1,0 +1,45 @@
+{% if isHeroComponentGrey == 'true'%}
+    <header class="c-full-image-with-curve is-grey">
+        <div class="c-full-image-with-curve__wrap">
+            <div class="c-full-image-with-curve__image">
+                
+                <div class="c-full-image-with-curve__image--item">
+                    <span style="background-image: url(assets/img/product/temp-banner-mobile-1.jpg)" class="mobile"></span>
+                    <span style="background-image: url(assets/img/product/temp-banner-tablet-1.jpg)" class="tablet"></span>
+                    <span style="background-image: url(assets/img/product/temp-banner-desktop-1.jpg)" class="desktop"></span>
+                </div> 
+        
+            </div>
+        </div>
+        <div class="c-full-image-with-curve__block">
+            <div class="c-full-image-with-curve__content">
+                <h1>Lorem Ipsum</h1>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer fringilla varius libero, ut facilisis neque imperdiet a. </p>
+                <a href="#" class="cta cta__secondary is-paprika-on-white">Secondary button<i class="glyphicon glyphicon-menu-right"></i></a>
+            </div>
+        </div>
+    </header>
+{% else %}
+    <header class="c-full-image-with-curve">
+        <div class="c-full-image-with-curve__wrap">
+            <div class="c-full-image-with-curve__image">
+                
+                <div class="c-full-image-with-curve__image--item">
+                    <span style="background-image: url(assets/img/product/temp-banner-mobile-1.jpg)" class="mobile"></span>
+                    <span style="background-image: url(assets/img/product/temp-banner-tablet-1.jpg)" class="tablet"></span>
+                    <span style="background-image: url(assets/img/product/temp-banner-desktop-1.jpg)" class="desktop"></span>
+                </div> 
+        
+            </div>
+        </div>
+        <div class="c-full-image-with-curve__block">
+            <div class="c-full-image-with-curve__content">
+                <h1>Lorem Ipsum</h1>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Nulla feugiat blandit eros, non finibus libero suscipit ac. Morbi vel placerat est. in porta ante, id iaculis magna. Sed tortor ante, lacinia tellus in, tristique libero. </p>
+                <a href="#" class="cta cta__secondary is-paprika-on-white">Secondary button<i class="glyphicon glyphicon-menu-right"></i></a>
+            </div>
+        </div>
+    </header>
+{% endif %}

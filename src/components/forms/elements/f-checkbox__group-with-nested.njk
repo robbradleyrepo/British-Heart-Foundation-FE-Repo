@@ -1,0 +1,96 @@
+<!-- FORM element : TYPE = CHECKBOX [nested group with validation]-->                
+<fieldset class="f-forms__fieldset--nested">
+    <div class="f-forms__element" id="f-forms__element__18">
+        <p class="f-forms__label">
+            <span class="f-forms__element--label">Checkbox fieldset with validation.</span>
+            <span class="f-forms__element--sublabel">Selecting the last checkbox will reveal an additional input field.</span>
+        </p>
+        
+        <div class="f-forms__checkbox">
+        
+            <input type="checkbox" id="f-forms__element-checkbox__18a"
+            
+            data-parsley-checkmin="1"
+            data-parsley-required="true"
+            data-parsley-trigger="focusout"
+            data-parsley-error-message="You must check at least one of these boxes."
+            data-parsley-class-handler="#f-forms__element__18"
+            data-parsley-errors-container="#f-forms__element-error__18"
+            data-parsley-multiple="f-forms__element__18"
+
+            aria-required="true" 
+            aria-describedby="#f-forms__element-checkbox__18a"
+
+            >
+            
+            <label for="f-forms__element-checkbox__18a">This is a single line option</label>
+        
+        </div>
+
+        <div class="f-forms__checkbox">
+        
+            <input type="checkbox" id="f-forms__element-checkbox__18b"
+              
+            data-parsley-multiple="f-forms__element__18"
+            
+            aria-required="true" 
+            aria-describedby="#f-forms__element-checkbox__18b"
+
+            >
+            
+            <label for="f-forms__element-checkbox__18b">This is a single line option.</label>
+        
+        </div>
+
+        <div class="f-forms__checkbox">
+        
+            <input type="checkbox" id="f-forms__element-checkbox__18c"
+            
+            class="f-forms__element--parsley-toggle"
+
+            data-parsley-multiple="f-forms__element__18"
+            
+            aria-required="true" 
+            aria-describedby="#f-forms__element-checkbox__18c"
+
+            >
+            
+            <label for="f-forms__element-checkbox__18c">This reveals an input field and this label cannot exceed over two lines of copy.</label>
+        
+        </div>
+    
+
+        <!-- FORM element : TYPE = INPUT [toggled] -->
+        <div class="f-forms__element nested hidden" id="f-forms__element__19">
+            <label for="f-forms__element-input__18b">
+                <span class="f-forms__element--label">Input box - validation when active</span>
+            </label>
+
+            <input type="text" name="" id="f-forms__element-input__19"
+            
+            data-parsley-trigger="focusout"
+            data-parsley-trigger-after-failure="focusout"
+            data-parsley-length="[2, 255]"
+            data-parsley-length-message="Must be between 2 and 255 characters."
+            data-parsley-required="false"
+            data-parsley-excluded="true" 
+            data-parsley-required-message="This is a required field." 
+            data-parsley-class-handler="#f-forms__element__19"
+            data-parsley-errors-container="#f-forms__element-error__19"
+            data-parsley-validation-threshold="2"
+
+            aria-required="false"
+            aria-describedby="g-forms__element-error__19"
+                
+            >
+            <span class="f-forms__element--status"></span>
+        
+            <div class="f-forms__element--error" id="f-forms__element-error__19" role="alert" aria-live="polite"></div>
+        
+        </div>
+
+        <div class="f-forms__element--error" id="f-forms__element-error__18" role="alert" aria-live="polite"></div>
+
+    </div>
+
+</fieldset>

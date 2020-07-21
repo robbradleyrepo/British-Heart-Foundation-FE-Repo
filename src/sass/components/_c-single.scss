@@ -1,0 +1,11 @@
+.c-single { 
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__copy {
+        text-align: center;   
+    }
+}

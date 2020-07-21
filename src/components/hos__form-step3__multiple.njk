@@ -1,0 +1,109 @@
+<!-- ************************************** -->
+<!-- START: FORM [single step / generic]    -->
+<!-- ************************************** -->
+
+<section class="g-forms is-grey" role="group">
+
+    <div class="g-forms__breadcrumb">
+        <ul>
+            <li><a href="#">Engraving</a><i>&gt;</i></li>
+            <li><a href="#">Your details</a><i>&gt;</i></li>
+            <li class="current">Checkout<i>&gt;</i></li>
+            <li>Confirmation</li>
+        </ul>
+        <a href="#"><i class="glyphicon glyphicon-menu-left"></i> Back</a>
+        <span>Step 3 of 4</span>
+    </div>
+
+    <form novalidate data-parsley-validate="" aria-label="BHF Heart of Steel - Checkout">
+        
+        <div class="g-forms__inner">
+
+            <h1>Checkout</h1>
+
+            <p>You've almost finished!</p>
+            
+        </div>
+
+
+        <!-- Checkout itinerary -->
+        <div class="c-checkout-order">
+            <h3>Your order</h3>
+            <ul>
+                <li>
+                    <div class="c-checkout-order__name">Sarah Richards<br>02.04.2018</div>
+                    <div class="c-checkout-order__label"></div>
+                    <div class="c-checkout-order__amount">£20.00</div>
+                    <div class="c-checkout-order__control"><a href="#">Remove</a></div>
+                </li>
+                <li>
+                    <div class="c-checkout-order__name">Michael Richards</div>
+                    <div class="c-checkout-order__label"></div>
+                    <div class="c-checkout-order__amount">£20.00</div>
+                    <div class="c-checkout-order__control"><a href="#">Remove</a></div>
+                </li>
+                <li class='donation-item hidden'>
+                    <div class="c-checkout-order__name">Donation</div>
+                    <div class="c-checkout-order__label"></div>
+                    <div class="c-checkout-order__amount">£25.00</div>
+                    <div class="c-checkout-order__control"><a href="#">Remove</a></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Add a donation -->
+        {% include 'c-donate-in-form.njk' %}
+
+        <!-- Boost your donation -->
+        {% include 'c-boost-donation.njk' %}
+
+        <!-- Total -->
+        <div class="c-checkout-order total-amount">
+            <ul>
+                <li>
+                    <div class="c-checkout-order__name"></div>
+                    <div class="c-checkout-order__label">Total</div>
+                    <div class="c-checkout-order__amount">£65.00</div>
+                    <div class="c-checkout-order__control"></div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- TWO CTA -->
+        <section class="c-checkout-cta">
+
+
+            <!-- Paypal -->
+            <div class="c-checkout-cta__item">
+                <div class="c-checkout-cta__item--inner">
+                    <h4>Secure payment powered by Paypal</h4>
+
+                    <div class="c-checkout-cta__images">           
+                        <img src="assets/img/icons/paypal-logo.png" alt="Paypal logo" />
+                    </div>
+
+                    <button type="submit" value="Submit" class="cta cta__secondary is-white-on-red" />Pay by Paypal </button>
+                </div>
+            </div>
+
+            <!-- Worldpay -->
+            <div class="c-checkout-cta__item">
+                <div class="c-checkout-cta__item--inner">
+                    <h4>Secure payment powered by Worldpay</h4>
+
+                    <div class="c-checkout-cta__images">           
+                        <img src="assets/img/icons/mastercard-logo.png" alt="Mastercard logo" />
+                        <img src="assets/img/icons/visa-logo.png" alt="Visa logo" />
+                        <img src="assets/img/icons/maestro-logo.png" alt="Maestro logo" />
+                    </div>
+
+                    <button type="submit" value="Submit" class="cta cta__secondary is-white-on-red" />Pay by Credit/Debit card </button>
+                </div>
+            </div>
+
+        </section>
+
+    </form> 
+
+</section>  
