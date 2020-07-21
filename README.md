@@ -6,13 +6,11 @@ British Heart Foundation, London — Lead Front End Developer
 
 Greenfield build.
 
-(Perm) 
+(Contract) DEC 2017 - SEP 2018
 
-SEP 2018 - AUGUST 2019
+(Perm) SEP 2018 - AUGUST 2019
 
-(Contract) 
 
-DEC 2017 - SEP 2018
 
 # TECH STACK
 
