@@ -13,6 +13,8 @@ Greenfield build.
 
 Primary: HTML5 / TypeScript / Parsley / jQuery 3 / CSS3 / SASS > Integration to Sitecore. 
 
+GULP / GIT / AGILE / JIRA
+
 URL of UI component library: https://alinacode17.github.io/BHF.FrontEnd/
 
 Live Site: https://www.bhf.org.uk/
