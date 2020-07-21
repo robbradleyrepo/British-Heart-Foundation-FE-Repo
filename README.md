@@ -12,9 +12,9 @@ Greenfield build.
 
 
 
-# Tech Stack
+## Tech Stack
 
-# Primary 
+## Primary 
 
 HTML5 / TypeScript /  jQuery 3 / Axios / Parsley / CSS3 / SASS / Nunjucks / NPM / Git Bash 
 
@@ -28,7 +28,7 @@ URL of UI component library: https://alinacode17.github.io/BHF.FrontEnd/
 
 Live Site: https://www.bhf.org.uk/
 
-# Secondary 
+## Secondary 
 
 React / Typescript / Axios / API
 
@@ -36,7 +36,8 @@ WIP for Revised Mobile Navigation: ```/ts/react/```
 
 Primary & Secondary stacks builds concurrently - GULP. 
 
-# RESPONSIBILITIES (from CV)
+
+## RESPONSIBILITIES (from CV)
 
 - FE Lead on rebrand of bhf.org.uk. Agile / Jira. 
 - Leading and managing a growing team of FE devs, responsible for the delivery, refinement and
