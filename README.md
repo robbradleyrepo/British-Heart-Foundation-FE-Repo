@@ -1,5 +1,37 @@
-# frontplate
-A simple and custom frontend boilerplate with Gulp build systems
+# British Heard Foundation. Front End Repo. 
+
+Author: Rob Bradley
+
+British Heart Foundation, London — Lead Front End Developer 
+
+Greenfield build.
+
+(Perm) SEP 2018 - AUGUST 2019
+(Contract) DEC 2017 - SEP 2018
+
+# TECH STACK
+
+HTML5 / TypeScript / Parsley / jQuery 3 / CSS3 / SASS > Integration to Sitecore. 
+
+Live URL of UI component library: https://alinacode17.github.io/BHF.FrontEnd/
+
+
+# RESPONSIBILITIES (from CV)
+
+- FE Lead on rebrand of bhf.org.uk. Agile / Jira. HTML5 / TypeScript / Axios / Parsley / jQuery 3 /
+CSS3 / SASS / Nunjucks / NPM / Git Bash.
+- Leading and managing a growing team of FE devs, responsible for the delivery, refinement and
+architecture of a large scale UI interlocking, tightly scoped, scalable component library.
+- Port of call for stakeholders on all FE technical solutions, strategies and deliverables.
+- Architecture and build of an advanced Form UI Library with some 30 interlocking, scalable field
+components with multiple levels of FE validation, API endpoints and extensive error handling.
+(Generated approx. £0.5m in revenue in the last fiscal year with minimal ongoing FE resource).
+- Integrated React into the FE ecosystem to meet long term business and technical objectives.
+- Technical documentation, deployment protocols, anticipating feature changes and ongoing
+scalable product refinement.
+- Code reviews, career development and empowerment. Contributed towards recruitment of
+CTO.
+
 
 ## Environment configuration
 * Install Node JS
