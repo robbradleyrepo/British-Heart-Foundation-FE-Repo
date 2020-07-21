@@ -11,11 +11,15 @@ Greenfield build.
 
 # TECH STACK
 
-HTML5 / TypeScript / Parsley / jQuery 3 / CSS3 / SASS > Integration to Sitecore. 
+Primary: HTML5 / TypeScript / Parsley / jQuery 3 / CSS3 / SASS > Integration to Sitecore. 
 
 URL of UI component library: https://alinacode17.github.io/BHF.FrontEnd/
 
 Live Site: https://www.bhf.org.uk/
+
+Secondary: React / Typescript / Axios / API
+
+WIP for Revised Mobile Navigation: ```/ts/react/```
 
 # RESPONSIBILITIES (from CV)
 
