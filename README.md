@@ -12,9 +12,11 @@ Greenfield build.
 
 
 
-# TECH STACK
+# Tech Stack
 
-Primary: HTML5 / TypeScript /  jQuery 3 / Axios / Parsley / CSS3 / SASS / Nunjucks / NPM / Git Bash 
+# Primary 
+
+HTML5 / TypeScript /  jQuery 3 / Axios / Parsley / CSS3 / SASS / Nunjucks / NPM / Git Bash 
 
 GULP / GIT 
 
@@ -26,9 +28,13 @@ URL of UI component library: https://alinacode17.github.io/BHF.FrontEnd/
 
 Live Site: https://www.bhf.org.uk/
 
-Secondary: React / Typescript / Axios / API
+# Secondary 
+
+React / Typescript / Axios / API
 
 WIP for Revised Mobile Navigation: ```/ts/react/```
+
+Primary & Secondary stacks builds concurrently - GULP. 
 
 # RESPONSIBILITIES (from CV)
 
