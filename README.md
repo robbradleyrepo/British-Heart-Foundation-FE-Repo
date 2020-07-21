@@ -1,4 +1,4 @@
-# British Heard Foundation. Front End Repo. 
+# British Heart Foundation. Front End Repo. 
 
 Author: Rob Bradley
 
@@ -14,9 +14,13 @@ Greenfield build.
 
 # TECH STACK
 
-Primary: HTML5 / TypeScript / Parsley / jQuery 3 / CSS3 / SASS > Integration to Sitecore. 
+Primary: HTML5 / TypeScript /  jQuery 3 / Axios / Parsley / CSS3 / SASS / Nunjucks / NPM / Git Bash 
 
-GULP / GIT / AGILE / JIRA
+GULP / GIT 
+
+BEMIT / ATOMIC methodologies
+
+Integration to Sitecore. 
 
 URL of UI component library: https://alinacode17.github.io/BHF.FrontEnd/
 
@@ -28,8 +32,7 @@ WIP for Revised Mobile Navigation: ```/ts/react/```
 
 # RESPONSIBILITIES (from CV)
 
-- FE Lead on rebrand of bhf.org.uk. Agile / Jira. HTML5 / TypeScript / Axios / Parsley / jQuery 3 /
-CSS3 / SASS / Nunjucks / NPM / Git Bash.
+- FE Lead on rebrand of bhf.org.uk. Agile / Jira. 
 - Leading and managing a growing team of FE devs, responsible for the delivery, refinement and
 architecture of a large scale UI interlocking, tightly scoped, scalable component library.
 - Port of call for stakeholders on all FE technical solutions, strategies and deliverables.
