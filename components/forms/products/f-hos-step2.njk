@@ -1,0 +1,30 @@
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+
+        <h1>Your engraving</h1>
+        <section class="c-text-component">
+            <ul>
+                <li>up to 50 characters</li>
+                <li>engraving can include a name and a date</li>
+                <li>you can donate for up to 10 engravings</li>
+                <li>£20 donation per engraving</li>
+            </ul>
+        </section>
+        <p>Need ideas for engraving? <a href="" class="engraving-guidelines">See our examples</a></p>
+        
+        {% include 'c-inventory-basket.njk' %}
+
+        <div class="cta__container left-aligned continue-button hidden">
+            <a href="#" class="cta cta__secondary is-white-on-red cta__href">Continue to your details<i class="glyphicon glyphicon-menu-right"></i></a>
+        </div>
+        
+    </form>
+
+</section>
+
+    {% include '../products/f-hos-step2-remove-item-modal.njk' %}
+
+    {% include '../products/f-hos-step2-edit-item-modal.njk' %}
+
+    {% include '../products/f-hos-step2-engraving-guidelines-modal.njk' %}

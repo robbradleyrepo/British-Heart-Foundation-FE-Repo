@@ -1,0 +1,112 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+
+        <div class="jg-forms">
+
+            <!-- JG: HEADER CONTENT -->
+
+            <div class="jg-forms--header">
+
+                <h1>Log in to JustGiving</h1>
+                <p>Your email is already linked to a JustGiving account – so you know JustGiving makes it really easy for your friends and family to sponsor your Dechox.</p> 
+                <p>Enter your password to login and create your JustGiving page for Dechox.</p>
+
+            </div>
+
+            <!-- JG: CONTROL VIEWS --> 
+            <div class="jg-forms--control">
+
+            </div>
+
+            <!-- FORM -->
+            <fieldset>
+                 
+                <div class="f-forms__element" id="f-forms__element__656">
+                    <label for="f-forms__element-input__656" disabled="disabled">
+                        <span class="f-forms__element--label">Email</span>
+                    </label>
+
+                    <input type="email" name="" id="f-forms__element-input__656"
+                    
+                    disabled
+
+                    value="email@email.com"
+
+                    class="f-forms__element--actual"
+                    data-parsley-excluded="true"
+                    
+                    aria-required="false"
+                    aria-describedby="f-forms__element-error__656"
+                        
+                    >
+
+                </div>
+
+                {% include 'forms/elements/f-input__password.njk' %}
+                
+                <a href="#" class="f-forms--microform__control">Forgot Password?</a>
+
+
+                <!-- START: Forgot Password Microform --> 
+                <fieldset class="f-forms--microform hidden">
+                    
+                     <!-- FORM element : TYPE = INPUT [RESEND EMAIL] -->
+                    <div class="f-forms__element" id="f-forms__element__32">
+                        <label for="f-forms__element-input__32">
+                            <span class="f-forms__element--label">Email</span>
+                            <span class="f-forms__element--sublabel">This email is used to recover your password from JustGiving</span>
+                        </label>
+
+                        <input id="f-forms__element-input__32" 
+                        
+                        class="f-forms__element--actual" 
+
+                        type="email" 
+                        data-parsley-trigger="focusout"
+                        data-parsley-trigger-after-failure="focusout"
+                        data-parsley-required="false" 
+                        data-parsley-excluded="true" 
+                        data-parsley-class-handler="#f-forms__element__32"
+                        data-parsley-errors-container="#f-forms__element-error__32"
+                        data-parsley-error-message="Must be a valid email address."
+                        data-parsley-whitespace="trim"
+
+                        data-parsley-remote 
+                        data-parsley-remote-validator="resend-password"
+                        value=""
+
+                        aria-required="false"
+                        aria-describedby="f-forms__element-error__32"
+
+                        >
+
+                        <span class="f-forms__element--status"></span>
+                        
+                        <div class="f-forms__element--error" id="f-forms__element-error__32" role="alert" aria-live="polite"><span></span></div>
+
+                    </div>
+
+                    {% include 'forms/core/f-cta.njk' %}
+
+                    <div class="f-forms__element--success">
+                        <i></i><span>JustGiving will send you an email soon.</span>
+                    </div>
+
+                </fieldset>
+                <!-- END: Forgot Password Microform --> 
+
+                {% include 'forms/elements/f-checkbox__single.njk' %}
+            </fieldset>
+
+        <div>        
+
+        {% include 'forms/core/f-submit.njk' %}
+
+    </form>
+
+</section>

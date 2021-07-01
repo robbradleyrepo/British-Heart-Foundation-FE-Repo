@@ -1,0 +1,508 @@
+ <!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2 - Postcode Lookup [API]</h1>
+
+        <fieldset class="f-forms__postcode-lookup">
+
+            {# <legend>Enter your address</legend> #}
+ 
+            <!-- FORM element : TYPE = INPUT [CORE] [with CTA]-->  
+            <div class="f-forms__element is-postcode-lookup" id="f-forms__element__1134">
+                
+                <label for="f-forms__element-input__postcode">
+                    <span class="f-forms__element--label is-postcode-label">Postcode</span>
+                </label>
+
+                <div class="f-forms__element with-cta">
+                    <input type="text" name="" id="f-forms__element-input__1134"
+                    
+                    class="f-forms__element--actual f-forms__element--postcode"
+
+                    data-parsley-trigger="keyup focusout paste"
+                    data-parsley-trigger-after-failure="keyup focusout paste"
+                    data-parsley-debounce="300"     
+                    data-parsley-length="[2, 255]"
+                    data-parsley-length-message="Must be between 2 and 255 characters."
+                    data-parsley-required="true"
+                    data-parsley-required-message="This is a required field." 
+                    data-parsley-class-handler="#f-forms__element__1134"
+                    data-parsley-errors-container="#f-forms__element-error__1134" 
+                    data-parsley-whitespace="trim"                
+                    data-parsley-pattern="^(([gG][iI][rR] {0,}0[aA]{2})|((([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y]?[0-9][0-9]?)|(([a-pr-uwyzA-PR-UWYZ][0-9][a-hjkstuwA-HJKSTUW])|([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y][0-9][abehmnprv-yABEHMNPRV-Y]))) {0,}[0-9][abd-hjlnp-uw-zABD-HJLNP-UW-Z]{2}))$"
+                    data-parsley-pattern-message="Must be a valid postcode." 
+                    data-parsley-excluded="false"
+                    aria-required="true"
+                    aria-describedby="f-forms__element-error__1134"
+                    
+                    data-url="https://bhf-sandbox.azurewebsites.net/bhfapi/events/postcodelookup?searchTerm="
+                    data-url-error="The postcode you entered could not be found. Please try another postcode or enter your address manually."
+                    data-api-error="Our postcode lookup isn't working at this time, please enter your address manually."
+                    
+                    >
+
+                    <span class="f-forms__element--status"></span>
+                </div>
+
+                <div class="f-forms__element is-cta">
+                    <a href="#" class="cta cta__tertiary is-white-on-red is-postcode-button">Find address</a>
+                </div>
+
+                <div class="f-forms__element--error" id="f-forms__element-error__1134" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <div class="f-forms__element hidden">
+                <label>
+                    <span class="f-forms__element--label">Select address</span>
+                </label>
+
+                <div class="f-forms__listbox">
+                    <div class="f-forms__listbox--inner">
+                        <ul>
+                            {# <li><a href="#">123 Great Holder Street, London SW11JK</a></li> #}
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORM element : TYPE = INPUT [CORE] -->  
+            <div class="f-forms__element" id="f-forms__element__0">
+                <label for="f-forms__element-input__0">
+                    <span class="f-forms__element--label">Address line 1</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__0"
+                
+                class="f-forms__element--actual f-forms__element--address1"
+
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"        
+                data-parsley-length="[2, 255]"
+                data-parsley-length-message="Must be between 2 and 255 characters."
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."
+                data-parsley-required="true"
+                data-parsley-required-message="This is a required field." 
+                data-parsley-class-handler="#f-forms__element__0"
+                data-parsley-errors-container="#f-forms__element-error__0" 
+                data-parsley-whitespace="trim"
+
+                aria-required="true"
+                aria-describedby="f-forms__element-error__0"
+                    
+                >
+
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__0" role="alert" aria-live="polite"><span></span></div>
+            </div>
+ 
+            <!-- FORM element : TYPE = INPUT [Custom] -->
+            <div class="f-forms__element" id="f-forms__element__239">
+                <label for="f-forms__element-input__239">
+                    <span class="f-forms__element--label">Address line 2</span> 
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__239"
+
+                class="f-forms__element--actual f-forms__element--address2"
+                
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"   
+                data-parsley-length="[2, 255]"
+                data-parsley-length-message="Must be between 2 and 255 characters."
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."      
+                data-parsley-required="false" 
+                data-parsley-class-handler="#f-forms__element__239"
+                data-parsley-errors-container="#f-forms__element-error__239" 
+                data-parsley-whitespace="trim"
+
+                aria-required="false"
+                aria-describedby="f-forms__element-error__239"
+                    
+                >
+
+                <span class="f-forms__element--status"></span>
+
+                <div class="f-forms__element--error" id="f-forms__element-error__239" role="alert" aria-live="polite"><span></span></div>
+            </div>
+            
+            
+            <!-- FORM element : TYPE = INPUT [no validation] -->
+            <div class="f-forms__element" id="f-forms__element__1e">
+                <label for="f-forms__element-input__1e">
+                    <span class="f-forms__element--label">Address line 3</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__1e"
+
+                class="f-forms__element--actual f-forms__element--address3"
+
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"  
+                data-parsley-excluded="true"
+                data-parsley-required="false"
+                data-parsley-class-handler="#f-forms__element__1e"
+                data-parsley-errors-container="#f-forms__element-error__1e" 
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."   
+                data-parsley-whitespace="trim"
+
+                aria-required="false"
+                aria-describedby="f-forms__element-error__1e"
+                    
+                >
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__1e" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <!-- FORM element : TYPE = INPUT [CORE] [half-width] -->  
+            <div class="f-forms__element" id="f-forms__element__34">
+                <label for="f-forms__element-input__34">
+                    <span class="f-forms__element--label">City</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__34"
+                
+                class="f-forms__element--actual f-forms__element--city half-width"
+
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"        
+                data-parsley-length="[2, 255]"
+                data-parsley-length-message="Must be between 2 and 255 characters."
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."  
+                data-parsley-required="true"
+                data-parsley-required-message="This is a required field." 
+                data-parsley-class-handler="#f-forms__element__34"
+                data-parsley-errors-container="#f-forms__element-error__34" 
+                data-parsley-whitespace="trim"
+
+                aria-required="true"
+                aria-describedby="f-forms__element-error__34"
+                    
+                >
+
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__34" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <!-- FORM element : TYPE = INPUT [no validation] -->
+            <div class="f-forms__element" id="f-forms__element__31231">
+                <label for="f-forms__element-input__1e">
+                    <span class="f-forms__element--label">County</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__31231"
+
+                class="f-forms__element--actual f-forms__element--county half-width"
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"  
+                data-parsley-excluded="true"
+                data-parsley-required="false"
+                data-parsley-class-handler="#f-forms__element__31231"
+                data-parsley-errors-container="#f-forms__element-error__31231" 
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."
+                data-parsley-whitespace="trim"
+
+                aria-required="false"
+                aria-describedby="f-forms__element-error__31231"
+                    
+                >
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__31231" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <!-- FORM element : TYPE = SELECT [CUSTOM]  -->
+            <!-- OPTIONAL field within this component  -->
+            <div class="f-forms__element" id="f-forms__element__40">
+                <label for="f-forms__element-input__40">
+                    <span class="f-forms__element--label">Country</span>
+                </label>
+                
+                <div class="f-forms__select">
+                    
+                    <select id="f-forms__element-select__40" 
+                    
+                    data-parsley-required="true"
+                    data-parsley-trigger="change" 
+                    data-parsley-min-value="uk" 
+                    data-parsley-error-message="Select an option." 
+                    data-parsley-class-handler="#f-forms__element__40"
+                    data-parsley-errors-container="#f-forms__element-error__40" 
+                    
+                    aria-required="true"
+                    aria-describedby="f-forms__element-error__40"
+
+                    class="f-forms__element--country"
+                    
+                    >
+                        <option value="">Select</option>
+                        <option value="uk" selected >United Kingdom</option>
+                        <option>Afghanistan</option>
+                        <option>Aland Islands</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>American Samoa</option>
+                        <option>Andorra</option>
+                        <option>Angola</option>
+                        <option>Anguilla</option>
+                        <option>Antarctica</option>
+                        <option>Antigua and Barbuda</option>
+                        <option>Argentina</option>
+                        <option>Armenia</option>
+                        <option>Aruba</option>
+                        <option>Australia</option>
+                        <option>Austria</option>
+                        <option>Azerbaijan</option>
+                        <option>Bahamas</option>
+                        <option>Bahrain</option>
+                        <option>Bangladesh</option>
+                        <option>Barbados</option>
+                        <option>Belarus</option>
+                        <option>Belgium</option>
+                        <option>Belize</option>
+                        <option>Benin</option>
+                        <option>Bermuda</option>
+                        <option>Bhutan</option>
+                        <option>Bolivia</option>
+                        <option>Bosnia and Herzegovina</option>
+                        <option>Botswana</option>
+                        <option>Bouvet Island</option>
+                        <option>Brazil</option>
+                        <option>British Indian Ocean Territory</option>
+                        <option>Brunei</option>
+                        <option>Bulgaria</option>
+                        <option>Burkina Faso</option>
+                        <option>Burundi</option>
+                        <option>Cambodia</option>
+                        <option>Cameroon</option>
+                        <option>Canada</option>
+                        <option>Cape Verde</option>
+                        <option>Cayman Islands</option>
+                        <option>Central African Republic</option>
+                        <option>Chad</option>
+                        <option>Chad</option>
+                        <option>Chile</option>
+                        <option>China</option>
+                        <option>Christmas Island</option>
+                        <option>Cocos Islands</option>
+                        <option>Colombia</option>
+                        <option>Comoros</option>
+                        <option>Congo</option>
+                        <option>Cook Islands</option>
+                        <option>Costa Rica</option>
+                        <option>Cote dIvoire</option>
+                        <option>Croatia</option>
+                        <option>Cuba</option>
+                        <option>Cyprus</option>
+                        <option>Czech Republic</option>
+                        <option>Democratic Republic of the Congo</option>
+                        <option>Denmark</option>
+                        <option>Djibouti</option>
+                        <option>Dominica</option>
+                        <option>Dominican Republic</option>
+                        <option>East Timor</option>
+                        <option>Ecuador</option>
+                        <option>Egypt</option>
+                        <option>El Salvador</option>
+                        <option>Equatorial Guinea</option>
+                        <option>Eritrea</option>
+                        <option>Estonia</option>
+                        <option>Ethiopia</option>
+                        <option>Falkland Islands</option>
+                        <option>Faroe Islands</option>
+                        <option>Fiji</option>
+                        <option>Finland</option>
+                        <option>France</option>
+                        <option>French Guiana</option>
+                        <option>French Polynesia</option>
+                        <option>French Southern Territories</option>
+                        <option>Gabon</option>
+                        <option>Gambia</option>
+                        <option>Georgia</option>
+                        <option>Germany</option>
+                        <option>Ghana</option>
+                        <option>Gibraltar</option>
+                        <option>Greece</option>
+                        <option>Greenland</option>
+                        <option>Grenada</option>
+                        <option>Guadeloupe</option>
+                        <option>Guam</option>
+                        <option>Guatemala</option>
+                        <option>Guernsey</option>
+                        <option>Guinea</option>
+                        <option>Guinea-Bissau</option>
+                        <option>Guyana</option>
+                        <option>Haiti</option>
+                        <option>Heard Island and McDonald Islands</option>
+                        <option>Honduras</option>
+                        <option>Hong Kong</option>
+                        <option>Hungary</option>
+                        <option>Iceland</option>
+                        <option>India</option>
+                        <option>Indonesia</option>
+                        <option>Iran</option>
+                        <option>Iraq</option>
+                        <option>Ireland</option>
+                        <option>Isle of Man</option>
+                        <option>Israel</option>
+                        <option>Italy</option>
+                        <option>Jamaica</option>
+                        <option>Japan</option>
+                        <option>Jersey</option>
+                        <option>Jordan</option>
+                        <option>Kazakhstan</option>
+                        <option>Kenya</option>
+                        <option>Kiribati</option>
+                        <option>Kuwait</option>
+                        <option>Kyrgyzstan</option>
+                        <option>Lao Peoples Democratic Republic</option>
+                        <option>Latvia</option>
+                        <option>Lebanon</option>
+                        <option>Lesotho</option>
+                        <option>Liberia</option>
+                        <option>Libya</option>
+                        <option>Liechtenstein</option>
+                        <option>Lithuania</option>
+                        <option>Luxembourg</option>
+                        <option>Macao</option>
+                        <option>Macedonia The former Yugoslav Republic of</option>
+                        <option>Madagascar</option>
+                        <option>Malawi</option>
+                        <option>Malaysia</option>
+                        <option>Maldives</option>
+                        <option>Mali</option>
+                        <option>Malta</option>
+                        <option>Marshall Islands</option>
+                        <option>Martinique</option>
+                        <option>Mauritania</option>
+                        <option>Mauritius</option>
+                        <option>Mayotte</option>
+                        <option>Mexico</option>
+                        <option>Micronesia</option>
+                        <option>Moldova</option>
+                        <option>Monaco</option>
+                        <option>Mongolia</option>
+                        <option>Montenegro</option>
+                        <option>Montserrat</option>
+                        <option>Morocco</option>
+                        <option>Mozambique</option>
+                        <option>Myanmar</option>
+                        <option>Namibia</option>
+                        <option>Nauru</option>
+                        <option>Nepal</option>
+                        <option>Netherlands</option>
+                        <option>Netherlands Antilles</option>
+                        <option>New Caledonia</option>
+                        <option>New Zealand</option>
+                        <option>Nicaragua</option>
+                        <option>Niger</option>
+                        <option>Nigeria</option>
+                        <option>Niue</option>
+                        <option>Norfolk Island</option>
+                        <option>Northern Marianas</option>
+                        <option>North Korea</option>
+                        <option>Norway</option>
+                        <option>Oman</option>
+                        <option>Pakistan</option>
+                        <option>Palau</option>
+                        <option>Palestinian Territory Occupied</option>
+                        <option>Panama</option>
+                        <option>Papua New Guinea</option>
+                        <option>Papua New Guinea</option>
+                        <option>Paraguay</option>
+                        <option>Peru</option>
+                        <option>Philippines</option>
+                        <option>Pitcairn Islands</option>
+                        <option>Poland</option>
+                        <option>Portugal</option>
+                        <option>Puerto Rico</option>
+                        <option>Qatar</option>
+                        <option>Reunion</option>
+                        <option>Romania</option>
+                        <option>Russia</option>
+                        <option>Rwanda</option>
+                        <option>Saint Helena</option>
+                        <option>Saint Kitts and Nevis</option>
+                        <option>Saint Lucia</option>
+                        <option>Saint Pierre and Miquelon</option>
+                        <option>Saint Vincent and the Grenadines</option>
+                        <option>Samoa</option>
+                        <option>San Marino</option>
+                        <option>Saudi Arabia</option>
+                        <option>Senegal</option>
+                        <option>Serbia</option>
+                        <option>Seychelles</option>
+                        <option>Sierra Leone</option>
+                        <option>Singapore</option>
+                        <option>Slovakia</option>
+                        <option>Slovenia</option>
+                        <option>Soa Tome and Principe</option>
+                        <option>Solomon Islands</option>
+                        <option>Somalia</option>
+                        <option>South Africa</option>
+                        <option>South Georgia and the South Sandwich Islands</option>
+                        <option>South Korea</option>
+                        <option>Spain</option>
+                        <option>Sri Lanka</option>
+                        <option>Sudan</option>
+                        <option>Suriname</option>
+                        <option>Svalbard and Jan Mayen</option>
+                        <option>Swaziland</option>
+                        <option>Sweden</option>
+                        <option>Switzerland</option>
+                        <option>Syria</option>
+                        <option>Taiwan</option>
+                        <option>Tajikistan</option>
+                        <option>Tanzania</option>
+                        <option>Thailand</option>
+                        <option>Togo</option>
+                        <option>Tokelau</option>
+                        <option>Tonga</option>
+                        <option>Trinidad and Tobago</option>
+                        <option>Tunisia</option>
+                        <option>Turkey</option>
+                        <option>Turkmenistan</option>
+                        <option>Turks and Caicos Islands</option>
+                        <option>Tuvalu</option>
+                        <option>Uganda</option>
+                        <option>Ukraine</option>
+                        <option>United Arab Emirates</option>
+                        <option>United States</option>
+                        <option>United States Minor Outlying Islands</option>
+                        <option>Uzbekistan</option>
+                        <option>Vatican City</option>
+                        <option>Venezuela</option>
+                        <option>Vietnam</option>
+                        <option>Wallis and Futuna</option>
+                        <option>Western Sahara</option>
+                        <option>Yemen</option>
+                        <option>Zambia</option>
+                        <option>Zimbabwe</option>
+                    </select>
+
+                    <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                </div>
+
+                <div class="f-forms__element--error" id="f-forms__element-error__40" role="alert"></div>
+
+            </div>
+        </fieldset>
+
+        {% include 'forms/core/f-submit.njk' %}
+
+    </form> 
+
+</section>

@@ -1,0 +1,38 @@
+<!-- FORM element : TYPE = TEXTAREA [with validation] -->
+<div class="f-forms__element" id="f-forms__element__9b">
+    <label for="f-forms__element-textarea__9">
+        <span class="f-forms__element--label">Textarea [Core]</span>
+        <span class="f-forms__element--sublabel">This is a textarea with validation.</span>
+    </label>
+
+    <div class="f-forms__textarea">
+
+        <textarea id="f-forms__element-textarea__9b" maxlength="500" 
+        
+        class="f-forms__element--actual"
+        
+        data-parsley-trigger="focusout"
+        data-parsley-trigger-after-failure="focusout"        
+        data-parsley-minlength="2"
+        data-parsley-minlength-message="Must be at least 2 characters."
+        data-parsley-maxlength="500"
+        data-parsley-maxlength-message="Must be a maximum of 500 characters."
+        data-parsley-required="true"
+        data-parsley-required-message="This is a required field." 
+        data-parsley-class-handler="#f-forms__element__9b"
+        data-parsley-errors-container="#f-forms__element-error__9b"
+        data-parsley-validation-threshold="6"
+        
+        aria-required="true" 
+        aria-describedby="f-forms__element-textarea__9b"
+        
+        ></textarea>
+
+        <i class="f-forms__textarea--chars"></i>
+
+        <span class="f-forms__element--status for-textarea"></span>
+    </div>
+    
+    <div class="f-forms__element--error" id="f-forms__element-error__9b" role="alert" aria-live="polite"><span></span></div>
+
+</div>   

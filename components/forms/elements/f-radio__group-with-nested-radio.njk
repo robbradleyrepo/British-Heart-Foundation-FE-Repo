@@ -1,0 +1,192 @@
+<!-- ***************************** -->
+<!-- FIELDSET : with NESTED        -->
+<!-- ***************************** -->
+<fieldset class="f-forms__fieldset--nested">
+        
+    <legend>Radio Buttons with Nested Radio Buttons - Validation</legend>
+
+    <!-- ********************************** -->
+    <!-- FORM element : RADIO -->
+    <!-- ********************************** -->
+    <div class="f-forms__element" id="f-forms__radio__16">
+
+        <div class="f-forms__radio">
+            <label class="f-forms__radio--element" for="f-forms__radio__16a">
+                
+                <input type="radio" 
+                
+                id="f-forms__radio__16a" 
+                name="f-forms__radio__16" 
+                value="option__1a"
+                
+                data-parsley-required="true"
+                data-parsley-required-message="Please make a selection."
+                data-parsley-trigger="click" 
+                data-parsley-class-handler="#f-forms__radio__16"
+                data-parsley-multiple="f-forms__radio__16"
+                data-parsley-errors-container="#f-forms__radio-error__16" 
+
+                >
+
+                <i></i>
+            
+                <span class="f-forms__radio--label">This is option 1a</span>
+            </label>
+            
+        </div>
+
+        <div class="f-forms__radio">
+            <label class="f-forms__radio--element" for="f-forms__radio__16b">
+                
+                <input type="radio" 
+                
+                id="f-forms__radio__16b" 
+                name="f-forms__radio__16" 
+                value="option__1b"
+                
+                data-parsley-required="true"
+                data-parsley-required-message="Please make a selection."
+                data-parsley-trigger="click" 
+                data-parsley-class-handler="#f-forms__radio__16"
+                data-parsley-multiple="f-forms__radio__16"
+                data-parsley-errors-container="#f-forms__radio-error__16" 
+
+                >
+
+                <i></i>
+
+                <span class="f-forms__radio--label">This is option 1b which has a very long label and which spans over one line. Indeed, it's quite long and should wrap on to the next line - which would be nice, wouldn't it?</span>
+            </label>
+            
+        </div>
+
+        <div class="f-forms__radio">
+            <label class="f-forms__radio--element" for="f-forms__radio__16c">
+                
+                <input type="radio" 
+
+                class="f-forms__element--parsley-toggle is-nested-radio"
+                
+                id="f-forms__radio__16c" 
+                name="f-forms__radio__16" 
+                value="option__1c"
+                
+                data-parsley-required="true"
+                data-parsley-required-message="Please make a selection."
+                data-parsley-trigger="click" 
+                data-parsley-class-handler="#f-forms__radio__16"
+                data-parsley-multiple="f-forms__radio__16"
+                data-parsley-errors-container="#f-forms__radio-error__16" 
+
+                >
+
+                <i></i>
+
+                <span class="f-forms__radio--label">This is option 1c</span>
+            </label>
+        </div>
+
+        
+        <!-- ******************* -->
+        <!-- FORM : NESTED GROUP -->
+        <!-- ******************* -->
+
+        <!-- FORM element : TYPE = RADIO [toggled] -->
+        <div class="f-forms__element nested hidden" id="f-forms__radio__17">
+            
+            <div class="f-forms__radio">
+                <label class="f-forms__radio--element" for="f-forms__radio__17a">
+                    
+                    <input type="radio" 
+                    
+                    id="f-forms__radio__17a" 
+                    name="f-forms__radio__17" 
+                    value="option__2a"
+                    
+                    data-parsley-required="false"
+                    data-parsley-required-message="Please make a selection."
+                    data-parsley-trigger="click change" 
+                    data-parsley-class-handler="#f-forms__radio__17"
+                    data-parsley-errors-container="#f-forms__radio-error__17" 
+                    data-parsley-excluded="true"
+
+                    aria-required="false"
+                    >
+
+                    <i></i>
+                
+                    <span class="f-forms__radio--label">Option 2a</span>
+                </label>
+                
+            </div>
+
+            <div class="f-forms__radio">
+                <label class="f-forms__radio--element" for="f-forms__radio__17b">
+                    
+                    <input type="radio" 
+                    
+                    id="f-forms__radio__17b" 
+                    name="f-forms__radio__17" 
+                    value="option__2b"
+                    
+                    data-parsley-required="false"
+                    data-parsley-required-message="Please make a selection."
+                    data-parsley-trigger="click change" 
+                    data-parsley-class-handler="#f-forms__radio__17"
+                    data-parsley-errors-container="#f-forms__radio-error__17"
+                    data-parsley-excluded="true"
+
+                    aria-required="false" 
+
+                    >
+
+                    <i></i>
+
+                    <span class="f-forms__radio--label">This is option 2b which has a very long label and which spans over one line.</span>
+                </label>
+                
+            </div>
+
+            <div class="f-forms__radio">
+                <label class="f-forms__radio--element" for="f-forms__radio__17c">
+                    
+                    <input type="radio" 
+                    
+                    id="f-forms__radio__17c" 
+                    name="f-forms__radio__17" 
+                    value="option__2c"
+                    
+                    data-parsley-required="false"
+                    data-parsley-required-message="Please make a selection."
+                    data-parsley-trigger="click change" 
+                    data-parsley-class-handler="#f-forms__radio__17"
+                    data-parsley-errors-container="#f-forms__radio-error__17" 
+                    data-parsley-excluded="true"
+
+                    aria-required="false"
+
+                    >
+
+                    <i></i>
+
+                    <span class="f-forms__radio--label">Option 2c</span>
+                </label>
+            </div>
+
+            <div class="f-forms__element--error" id="f-forms__radio-error__17" role="alert" aria-live="polite"><span></span></div>
+        </div>
+
+        
+        <!-- ******************* -->
+        <!-- FORM : END NESTED  -->
+        <!-- ******************* -->
+
+
+        <div class="f-forms__element--error" id="f-forms__radio-error__16" role="alert" aria-live="polite"><span></span></div>
+
+    </div>
+
+</fieldset>
+<!-- ***************************** -->
+<!-- FIELDSET : END                -->
+<!-- ***************************** -->

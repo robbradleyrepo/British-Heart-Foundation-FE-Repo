@@ -1,0 +1,27 @@
+ <!-- FORM element : NUMBER SELECTOR: STANDARD INPUT -->
+<div class="f-forms__element" id="f-forms__element__3">
+    <label for="f-forms__element-input__3">
+        <span class="f-forms__element--label">Number selector</span>
+    </label>
+    <div class="f-forms--number-selector-wrapper">
+        <i class="minus-indicator disabled"></i>
+        <input id="f-forms__element-input__3" 
+        class="f-forms--number-selector__input" 
+        type="number" 
+        value="0"
+        data-parsley-trigger="focusout"
+        data-parsley-trigger-after-failure="focusout"
+        data-parsley-required="true" 
+        data-parsley-pattern="^[0-9][0-9]?$"
+        data-parsley-class-handler="#f-forms__element__3"
+        data-parsley-errors-container="#f-forms__element-error__3"
+        data-parsley-error-message="Please enter a number between 0 and 99"
+        data-parsley-whitespace="trim"
+
+        aria-required="true"
+        aria-describedby="f-forms__element-error__3">
+        <i class="plus-indicator"></i>    
+    </div>
+    
+    <div class="f-forms__element--error" id="f-forms__element-error__3" role="alert" aria-live="polite"><span></span></div>
+</div>

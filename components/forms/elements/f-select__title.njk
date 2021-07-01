@@ -1,0 +1,38 @@
+<!-- FORM element : TYPE = SELECT [TITLE]  -->
+<div class="f-forms__element" id="f-forms__element__50">
+    <label for="f-forms__element-input__0">
+        <span class="f-forms__element--label">Title [Custom]</span>
+        <span class="f-forms__element--sublabel">Optional help line of text.</span>
+    </label>
+    
+    <div class="f-forms__select"> 
+    
+        <select id="f-forms__element-select__50" 
+        
+        data-parsley-required="true"
+        data-parsley-trigger="change"
+        data-parsley-min-value="Mr" 
+        data-parsley-error-message="Select an option." 
+        data-parsley-class-handler="#f-forms__element__50"
+        data-parsley-errors-container="#f-forms__element-error__50" 
+        
+        aria-required="true"
+        aria-describedby="f-forms__element-error__50"
+        
+        >
+            <option value="">Select...</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+            <option value="Professor">Professor</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+    </div>
+
+    <div class="f-forms__element--error" id="f-forms__element-error__50" role="alert"></div>
+
+</div>

@@ -1,0 +1,58 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+
+        <div class="jg-forms">
+
+            <!-- JG: HEADER CONTENT -->
+
+            <div class="jg-forms--header is-signup">
+
+                <h1>Sign up for a new JustGiving account</h1>
+                <p>We didn’t find a JustGiving account for the email you provided.</p>
+                <p>Collecting sponsorships through a JustGiving online donation page is an easy way to maximise your Dechox efforts. </p>
+                <p>If you already have an account, please log in below – or create a new one in a few simple steps. </p> 
+
+            </div>
+
+            <!-- FORM -->
+            <fieldset> 
+                 
+                <div class="f-forms__element" id="f-forms__element__656">
+                    <label for="f-forms__element-input__656" disabled="disabled">
+                        <span class="f-forms__element--label">Email</span>
+                        <span class="f-forms__element--sublabel">Tihs email is used to recover your password from JustGiving</span>
+                    </label>
+
+                    <input type="email" name="" id="f-forms__element-input__656"
+                    
+                    disabled
+
+                    value="email@email.com"
+
+                    class="f-forms__element--actual"
+                    data-parsley-excluded="true"
+                    
+                    aria-required="false"
+                    aria-describedby="f-forms__element-error__656"
+                        
+                    >
+
+                </div>
+
+                {% include 'forms/elements/f-input__password.njk' %}
+
+                {% include 'forms/elements/f-checkbox__single.njk' %}
+            </fieldset>
+
+        <div>        
+
+        {% include 'forms/core/f-submit.njk' %}
+
+    </form>
+
+</section>

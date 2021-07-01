@@ -1,0 +1,57 @@
+ <!-- FORM element : TYPE = INPUT [EMAIL] -->
+<div class="f-forms__element" id="f-forms__element__3">
+    <label for="email">
+        <span class="f-forms__element--label">Email</span>
+        <span class="f-forms__element--sublabel">If you already have a Justgiving account, please use the email you registerd with.</span>
+    </label>
+
+    <input id="email" name="email" 
+    
+    class="f-forms__element--actual f-forms--justgiving-email" 
+
+    type="email" 
+
+    data-parsley-trigger="focusout paste"
+    data-parsley-trigger-after-failure="focusout paste"
+    data-parsley-required="true" 
+    data-parsley-class-handler="#f-forms__element__3"
+    data-parsley-errors-container="#f-forms__element-error__3"
+    data-parsley-required-message="Must be a valid email address."
+    data-parsley-whitespace="trim"
+    data-parsley-error-message="Please re-enter your email address."
+    data-parsley-validate-if-empty
+    data-parsley-validate-if-empty-message="Must"
+
+    aria-required="true"
+    aria-describedby="f-forms__element-error__3"
+
+    data-parsley-remote="https://bhfuat2.precedenthost.co.uk/api/JustGiving/GetPagesForUser?eventId=4998418"
+    data-parsley-remote-validator="justgiving-api"
+    data-parsley-remote-options='{ "type": "GET", "contentType": "application/json; charset=utf-8" }'
+    
+    data-error="It seems like you have already signed up to Dechox with this email address. <a href='https://www.justgiving.com/sso'>Login to your fundraising page</a>."
+
+    >
+
+    <span class="f-forms__element--status"></span>
+    
+    <div class="f-forms__element--error" id="f-forms__element-error__3" role="alert" aria-live="polite"><span></span></div>
+</div>
+
+{#    data-parsley-remote="https://bhfuat2.precedenthost.co.uk/api/JustGiving/GetPagesForUser"
+    data-parsley-remote-message="Error"
+    data-parsley-remote-reverse="true"
+    data-parsley-remote-options='{ "type": "GET", "dataType": "jsonp", "data": { "eventId": "4998418" }}'  #}
+
+{# data-parsley-remote
+    data-parsley-remote-validator="justgiving-api"
+    #}
+
+{# maoandip@hotmail.com
+eventId=4998418 #}
+{# 
+
+    data-parsley-remote-message="It seems like you have already signed up to Dechox with this email address. <a href='#'>Login to your fundraising page</a>."  #}
+
+{#     
+    data-parsley-remote-options='{ "type": "GET", "contentType": "application/json; charset=utf-8" }' #}

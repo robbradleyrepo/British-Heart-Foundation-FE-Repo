@@ -1,0 +1,33 @@
+<!-- FORM element : TYPE = INPUT [CUSTOM] -->  
+<div class="f-forms__element" id="f-forms__element__2">
+    <label for="f-forms__element-input__2">
+        <span class="f-forms__element--label">Last name [Custom]</span>
+        <span class="f-forms__element--sublabel">This is some help text to further explain the question</span>
+    </label>
+
+    <input type="text" name="" id="f-forms__element-input__2"
+    
+    class="f-forms__element--actual"
+
+    data-parsley-trigger="focusout"
+    data-parsley-trigger-after-failure="focusout"        
+    data-parsley-length="[2, 50]"
+    data-parsley-length-message="Must be between 2 and 50 characters."
+    data-parsley-required="true"
+    data-parsley-required-message="This is a required field." 
+    data-parsley-class-handler="#f-forms__element__2"
+    data-parsley-errors-container="#f-forms__element-error__2"
+    data-parsley-validation-threshold="2"
+    data-parsley-pattern="([a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]|^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]+[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF \-—–']*[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF])+$"
+    data-parsley-pattern-message="Characters only. Hyphens and spaces are permitted." 
+    data-parsley-whitespace="trim"
+
+    aria-required="true"
+    aria-describedby="f-forms__element-error__2"
+        
+    >
+
+    <span class="f-forms__element--status"></span>
+    
+    <div class="f-forms__element--error" id="f-forms__element-error__2" role="alert" aria-live="polite"><span></span></div>
+</div>

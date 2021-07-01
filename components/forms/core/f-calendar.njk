@@ -1,0 +1,19 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        {% if isOptional == 'true'%}
+            <h1>MVC - Forms v2: Calendar picker - Optional</h1>
+        {% else %}
+            <h1>MVC - Forms v2: Calendar picker</h1>
+        {% endif %}
+
+        {% include 'forms/elements/f-input__calendar.njk' %} 
+ 
+    </form> 
+
+</section>

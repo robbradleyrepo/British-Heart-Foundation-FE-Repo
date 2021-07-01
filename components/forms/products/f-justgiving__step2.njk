@@ -1,0 +1,26 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+
+        <h1>Tell us about yourself [Dechox Step 2].</h1>
+
+        <p>We'll send you tips on fundraising and surviving Dechox and set up your JustGiving page.</p>
+
+        {% include 'forms/products/f-justgiving__email-api.njk' %}
+
+        {% include 'forms/elements/f-select__title.njk' %}
+
+        {% include 'forms/elements/f-input__firstname.njk' %}
+
+        {% include 'forms/elements/f-input__lastname.njk' %}
+        
+        {% include 'forms/elements/f-input__mobile.njk' %}
+
+        {% include 'forms/core/f-register.njk' %}
+    </form>
+
+</section>

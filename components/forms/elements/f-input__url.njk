@@ -1,0 +1,27 @@
+<!-- FORM element : TYPE: INPUT [DONATION PAGE URL] -->
+<div class="f-forms__element" id="f-forms__element__777">
+
+    <label for="f-forms__element-input__777">
+        <span class="f-forms__element--label">Donation page url</span>
+        <span class="f-forms__element--sublabel">Choose a name for your donation page and add it in the space below.</span>
+    </label>
+    
+    <span class="f-forms__element--suggestion">www.justgiving.com/dechox2018</span>
+ 
+    <!-- BE note - enter email value within placeholder attribute -->
+    <input type="text" name="url" id="f-forms__url" placeholder="" 
+    
+    data-parsley-whitespace="squish"
+    data-parsley-pattern="^([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9])$"
+    data-parsley-required="true" 
+    data-parsley-trigger="focusout"
+    data-parsley-error-message="Please choose an address that uses only letters, numbers or single hyphens (-), and doesn't start or end with a hyphen." 
+    data-parsley-errors-container="#f-forms__element-error__777"
+    data-parsley-class-handler="#f-forms__element__777" 
+    >
+
+    <span class="f-forms__element--status"></span>
+
+    <div class="f-forms__element--error" id="f-forms__element-error__777" role="alert" aria-live="polite"><span></span></div>
+</div>
+

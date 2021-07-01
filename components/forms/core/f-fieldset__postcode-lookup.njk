@@ -1,0 +1,234 @@
+ <!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2 - Postcode Lookup [API]</h1>
+
+        <fieldset class="f-forms__postcode-lookup">
+
+            {# <legend>Enter your address</legend> #}
+ 
+            <!-- FORM element : TYPE = INPUT [CORE] [with CTA]-->  
+            <div class="f-forms__element is-postcode-lookup" id="f-forms__element__1134">
+                
+                <label for="f-forms__element-input__postcode">
+                    <span class="f-forms__element--label is-postcode-label">Postcode</span>
+                </label>
+
+                <div class="f-forms__element with-cta">
+                    <input type="text" name="" id="f-forms__element-input__1134"
+                    
+                    class="f-forms__element--actual f-forms__element--postcode"
+
+                    data-parsley-trigger="keyup focusout paste"
+                    data-parsley-trigger-after-failure="keyup focusout paste"
+                    data-parsley-debounce="300"     
+                    data-parsley-length="[2, 255]"
+                    data-parsley-length-message="Must be between 2 and 255 characters."
+                    data-parsley-required="true"
+                    data-parsley-required-message="This is a required field." 
+                    data-parsley-class-handler="#f-forms__element__1134"
+                    data-parsley-errors-container="#f-forms__element-error__1134" 
+                    data-parsley-whitespace="trim"                
+                    data-parsley-pattern="^(([gG][iI][rR] {0,}0[aA]{2})|((([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y]?[0-9][0-9]?)|(([a-pr-uwyzA-PR-UWYZ][0-9][a-hjkstuwA-HJKSTUW])|([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y][0-9][abehmnprv-yABEHMNPRV-Y]))) {0,}[0-9][abd-hjlnp-uw-zABD-HJLNP-UW-Z]{2}))$"
+                    data-parsley-pattern-message="Must be a valid postcode." 
+                    data-parsley-excluded="false"
+                    
+                    aria-required="true"
+                    aria-describedby="f-forms__element-error__1134"
+                    
+                    data-url="https://bhf-sandbox.azurewebsites.net/bhfapi/events/postcodelookup?searchTerm="
+                    data-url-error="The postcode you entered could not be found. Please try another postcode or enter your address manually."
+                    data-api-error="Our postcode lookup isn't working at this time, please enter your address manually."
+                    
+                    >
+
+                    <span class="f-forms__element--status"></span>
+                </div>
+
+                <div class="f-forms__element is-cta">
+                    <a href="#" class="cta cta__tertiary is-white-on-red is-postcode-button">Find address</a>
+                </div>
+
+                <div class="f-forms__element--error" id="f-forms__element-error__1134" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <div class="f-forms__element hidden">
+                <label>
+                    <span class="f-forms__element--label">Select address</span>
+                </label>
+
+                <div class="f-forms__listbox">
+                    <div class="f-forms__listbox--inner">
+                        <ul>
+                            {# <li><a href="#">123 Great Holder Street, London SW11JK</a></li> #}
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FORM element : TYPE = INPUT [CORE] -->  
+            <div class="f-forms__element" id="f-forms__element__0">
+                <label for="f-forms__element-input__0">
+                    <span class="f-forms__element--label">Address line 1</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__0"
+                
+                class="f-forms__element--actual f-forms__element--address1"
+
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"        
+                data-parsley-length="[2, 255]"
+                data-parsley-length-message="Must be between 2 and 255 characters."
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."
+                data-parsley-required="true"
+                data-parsley-required-message="This is a required field." 
+                data-parsley-class-handler="#f-forms__element__0"
+                data-parsley-errors-container="#f-forms__element-error__0" 
+                data-parsley-whitespace="trim"
+
+                aria-required="true"
+                aria-describedby="f-forms__element-error__0"
+                    
+                >
+
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__0" role="alert" aria-live="polite"><span></span></div>
+            </div>
+ 
+            <!-- FORM element : TYPE = INPUT [Custom] -->
+            <div class="f-forms__element" id="f-forms__element__239">
+                <label for="f-forms__element-input__239">
+                    <span class="f-forms__element--label">Address line 2</span> 
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__239"
+
+                class="f-forms__element--actual f-forms__element--address2"
+                
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"   
+                data-parsley-length="[2, 255]"
+                data-parsley-length-message="Must be between 2 and 255 characters."
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."      
+                data-parsley-required="false" 
+                data-parsley-class-handler="#f-forms__element__239"
+                data-parsley-errors-container="#f-forms__element-error__239" 
+                data-parsley-whitespace="trim"
+
+                aria-required="false"
+                aria-describedby="f-forms__element-error__239"
+                    
+                >
+
+                <span class="f-forms__element--status"></span>
+
+                <div class="f-forms__element--error" id="f-forms__element-error__239" role="alert" aria-live="polite"><span></span></div>
+            </div>
+            
+            
+            <!-- FORM element : TYPE = INPUT [no validation] -->
+            <div class="f-forms__element" id="f-forms__element__1e">
+                <label for="f-forms__element-input__1e">
+                    <span class="f-forms__element--label">Address line 3</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__1e"
+
+                class="f-forms__element--actual f-forms__element--address3"
+
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"  
+                data-parsley-excluded="true"
+                data-parsley-required="false"
+                data-parsley-class-handler="#f-forms__element__1e"
+                data-parsley-errors-container="#f-forms__element-error__1e" 
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."   
+                data-parsley-whitespace="trim"
+
+                aria-required="false"
+                aria-describedby="f-forms__element-error__1e"
+                    
+                >
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__1e" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <!-- FORM element : TYPE = INPUT [CORE] [half-width] -->  
+            <div class="f-forms__element" id="f-forms__element__34">
+                <label for="f-forms__element-input__34">
+                    <span class="f-forms__element--label">City</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__34"
+                
+                class="f-forms__element--actual f-forms__element--city half-width"
+
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"        
+                data-parsley-length="[2, 255]"
+                data-parsley-length-message="Must be between 2 and 255 characters."
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."  
+                data-parsley-required="true"
+                data-parsley-required-message="This is a required field." 
+                data-parsley-class-handler="#f-forms__element__34"
+                data-parsley-errors-container="#f-forms__element-error__34" 
+                data-parsley-whitespace="trim"
+
+                aria-required="true"
+                aria-describedby="f-forms__element-error__34"
+                    
+                >
+
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__34" role="alert" aria-live="polite"><span></span></div>
+            </div>
+
+            <!-- FORM element : TYPE = INPUT [no validation] -->
+            <div class="f-forms__element" id="f-forms__element__31231">
+                <label for="f-forms__element-input__1e">
+                    <span class="f-forms__element--label">County</span>
+                </label>
+
+                <input type="text" name="" id="f-forms__element-input__31231"
+
+                class="f-forms__element--actual f-forms__element--county half-width"
+                data-parsley-trigger="focusout"
+                data-parsley-trigger-after-failure="focusout"  
+                data-parsley-excluded="true"
+                data-parsley-required="false"
+                data-parsley-class-handler="#f-forms__element__31231"
+                data-parsley-errors-container="#f-forms__element-error__31231" 
+                data-parsley-pattern="[a-zA-Z0-9 \.\-_—']+$"
+                data-parsley-pattern-message="Characters and numbers only. Hyphens, spaces, dots, apostrophes and underscores are permitted."
+                data-parsley-whitespace="trim"
+
+                aria-required="false"
+                aria-describedby="f-forms__element-error__31231"
+                    
+                >
+                <span class="f-forms__element--status"></span>
+                
+                <div class="f-forms__element--error" id="f-forms__element-error__31231" role="alert" aria-live="polite"><span></span></div>
+            </div>
+            
+        </fieldset>
+
+        {% include 'forms/core/f-submit.njk' %}
+
+    </form> 
+
+</section>

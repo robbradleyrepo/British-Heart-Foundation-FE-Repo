@@ -1,0 +1,659 @@
+<!-- ************************************** -->
+<!-- START: FORM [single step / generic]    -->
+<!-- ************************************** -->
+
+<section class="g-forms g-forms-parsley is-grey" role="group">
+
+    <div class="g-forms__breadcrumb">
+        <ul>
+            <li><a href="#">Engraving</a><i>&gt;</i></li>
+            <li class="current">Your details<i>&gt;</i></li>
+            <li>Checkout<i>&gt;</i></li>
+            <li>Confirmation</li>
+        </ul>
+        <span>Step 2 of 4</span>
+    </div>
+
+    <form novalidate data-parsley-validate="" aria-label="BHF Heart of Steel - Enter your details">
+        
+        <div class="g-forms__inner">
+
+            <h1>Your details</h1>
+
+            <p>Now we need your details to finish the order and send you your certificate to commemorate your engraving.</p>
+            <p>By completing this form, you agree to us using your details to get in touch with you about the Heart of Steel.</p> 
+
+        </div>
+
+        <fieldset class="no-border">
+            
+            <div class="g-forms__inner"> 
+
+            
+                <!-- FORM element : #0 : TYPE = SELECT  -->
+                <div class="g-forms__element" id="g-forms__element__0">
+                    <label for="g-forms__element-select__0">Title<i>*</i><span></span></label>
+                    
+                    <div class="g-forms__select reduced-width">
+
+                        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                        
+                        <select id="g-forms__element-select__0" 
+                        
+                        data-parsley-required="true"
+                        data-parsley-trigger="change"
+                        data-parsley-min-value="Mr" 
+                        data-parsley-error-message="Select an option." 
+                        data-parsley-class-handler="#g-forms__element__0"
+                        data-parsley-errors-container="#g-forms__element-error__0" 
+                        
+                        aria-required="true"
+                        aria-describedby="g-forms__element-error__0"
+                        
+                        >
+                            <option value="">Select...</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Professor">Professor</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__0" role="alert"></div>
+
+                </div>
+
+                <!-- FORM element : #1 : TYPE = INPUT -->
+                <div class="g-forms__element" id="g-forms__element__1">
+                    <label for="g-forms__element-input__1">First name<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__1"
+                    data-parsley-whitespace="trim"
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__1"
+                    data-parsley-errors-container="#g-forms__element-error__1"
+                    data-parsley-pattern="^[a-zA-Z]+$"
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__1"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__1" role="alert" aria-live="polite"></div>
+                </div>
+
+                
+                <!-- FORM element : #2 : TYPE = INPUT -->  
+                <div class="g-forms__element" id="g-forms__element__2">
+                    <label for="g-forms__element-input__2">Last name<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__2"
+                    data-parsley-whitespace="trim"
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__2"
+                    data-parsley-errors-container="#g-forms__element-error__2"
+                    data-parsley-pattern="^[a-zA-Z]+$"
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__2"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__2" role="alert" aria-live="polite"></div>
+                </div>
+
+               
+                <!-- FORM element : #3: TYPE = INPUT [EMAIL] -->
+                <div class="g-forms__element"  id="g-forms__element__3">
+                    <label for="g-forms__element-input__3">Email Address<i>*</i></label>
+
+                    <input type="email" id="g-forms__element-input__3" 
+                    
+                    data-parsley-required="true"
+                    data-parsley-trigger="focusout" 
+                    data-parsley-error-message="Enter a valid email address."
+                    data-parsley-class-handler="#g-forms__element__3"
+                    data-parsley-errors-container="#g-forms__element-error__3" 
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__3"
+
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__3" role="alert" aria-live="polite"></div>
+
+                </div>
+
+                <!-- FORM element : #4 : TYPE = INPUT [DATE] -->
+                <div class="g-forms__element half-width" id="g-forms__element__4">
+                    <label for="g-forms__element-input__4">Date of birth<i>*</i></label>
+                    <input type="date" name="" id="g-forms__element-input__4" max="9999-12-31"
+                    
+                    data-parsley-required="true"
+                    data-parsley-trigger="focusout" 
+                    data-parsley-error-message="Enter a date."
+                    data-parsley-class-handler="#g-forms__element__4"
+                    data-parsley-errors-container="#g-forms__element-error__4" 
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__4"
+                    
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__4" role="alert" aria-live="polite"></div>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="no-border">
+            
+            <div class="g-forms__inner"> 
+
+            
+                {# <!-- FORM element : #6 : BUTTON -->
+                <div class="g-forms__element no-pad">
+                    <a href="#" class="cta cta__secondary is-white-on-red disabled" id="g-forms__button--lookup-address">Find address <i class="glyphicon glyphicon-menu-right"></i></a>
+                </div> #}
+
+                {# <!-- FORM element  : #7 :  ADDRESS LOOKUP [SELECT] -->
+                <div class="g-forms__element address-lookup lookup-hidden">
+                    <label for="g-forms__address-lookup">Select an address</label>
+                    
+                    <div class="g-forms__select">
+                        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                        
+                        <select id="g-forms__address-lookup">
+                            <option value="">Select your address</option>
+                        </select>
+                    </div>
+
+                </div> #}
+
+                
+                <!-- FORM element : #7b : TYPE = INPUT (OPTIONAL) -->
+                <div class="g-forms__element" id="g-forms__element__7b">
+                    <label for="g-forms__element-input__8b">Address line 1<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__7b"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__7b"
+                    data-parsley-errors-container="#g-forms__element-error__7b" 
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__7b"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__7b" role="alert" aria-live="polite"></div>
+                </div>
+
+                <!-- FORM element : ADDRESS 2 -->
+                <div class="g-forms__element address-hidden">
+                    
+                    <label for="g-forms__element-input__7c">Address line 2</label>
+
+                    <input type="text" name="address2" id="g-forms__element-input__7c">
+
+                </div>
+
+                <!-- FORM element : ADDRESS 3 -->
+                <div class="g-forms__element address-hidden">
+                    
+                    <label for="g-forms__element-input__7d">Address line 3</label>
+
+                    <input type="text" name="address3" id="g-forms__element-input__7d">
+
+                </div>
+
+                <div class="g-forms__element no-pad">
+                    <a href="#" class="g-forms__element--control-address">+Add address line</a>
+                </div>
+
+                <!-- FORM element : TOWN / CITY -->
+                <div class="g-forms__element" id="g-forms__element__7e">
+                    <label for="g-forms__element-input__8b">Town/City<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__7e"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="true" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__7e"
+                    data-parsley-errors-container="#g-forms__element-error__7e" 
+
+                    aria-required="true"
+                    aria-describedby="g-forms__element-error__7e"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__7e" role="alert" aria-live="polite"></div>
+                </div>
+
+                <!-- FORM element : COUNTY -->
+                <div class="g-forms__element" id="g-forms__element__7f">
+                    
+                    <label for="g-forms__element-input__7f">County</label>
+
+                    <input type="text" name="county" id="g-forms__element-input__7f">
+
+                </div>
+
+                <!-- FORM element : #7g : INPUT [POSTCODE] -->
+                <div class="g-forms__element half-width"  id="g-forms__element__7g">
+                    <label for="g-forms__element-input__7g">Postcode<i>*</i></label>
+
+                    <input type="text" id="g-forms__element-input__7g" class="g-forms__element--postcode" 
+                    data-parsley-whitespace="trim"
+                    data-parsley-pattern="^([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))\s?[0-9][A-Za-z]{2})$" 
+                    data-parsley-required="true" 
+                    data-parsley-trigger="keyup focusout paste" 
+                    data-parsley-error-message="Enter a valid postcode."
+                    data-parsley-class-handler="#g-forms__element__7g"
+                    data-parsley-errors-container="#g-forms__element-error__7g" 
+                    
+                    >
+
+                    <span class="g-forms__element--status"></span>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__7g" role="alert" aria-live="polite"></div>
+                </div>
+        
+            </div>
+        </fieldset>
+
+        <fieldset class="no-border">
+            
+            <div class="g-forms__inner"> 
+
+                <!-- FORM element : #8 : TYPE = SELECT  -->     
+                <div class="g-forms__element" id="g-forms__element__8">
+                    
+                    <label for="g-forms__element-select__8">
+                        <p><b>You’re doing something amazing by donating to the Heart of Steel.</b><br/>We’d love to hear why you chose to get an engraving:<i>*</i></p>
+                    </label>
+                    
+                    <div class="g-forms__select">
+
+                        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                        
+                        <select id="g-forms__element-select__8" class="expand-field"
+                        
+                        data-parsley-required="true"
+                        data-parsley-trigger="change"
+                        data-parsley-min-value="To remember or celebrate a loved one" 
+                        data-parsley-error-message="Select an option." 
+                        data-parsley-class-handler="#g-forms__element__8"
+                        data-parsley-errors-container="#g-forms__element-error__8" 
+                        
+                        aria-required="true"
+                        aria-describedby="g-forms__element-error__8"
+                        
+                        >
+                            <option value="">Select...</option>
+                            <option value="loved_one">To remember or celebrate a loved one</option>
+                            <option value="celebrate">To celebrate an important event, such as a birth or marriage </option>
+                            <option value="gift">To give as a gift</option>
+                            <option value="pride">To show my pride in my local area</option>
+                            <option value="support">To support the BHF</option>
+                            <option value="other">Other</option>
+                            <optgroup label=""></optgroup>
+                        </select>
+                    </div>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__8" role="alert" aria-live="polite"></div>
+
+                </div>
+
+                <!-- FORM element : #8b : TYPE = INPUT -->
+                <div class="g-forms__element hidden" id="g-forms__element__8b">
+                    <label for="g-forms__element-input__8b">Please state<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__8b"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="false" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__8b"
+                    data-parsley-errors-container="#g-forms__element-error__8b" 
+
+                    aria-required="false"
+                    aria-describedby="g-forms__element-error__8b"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__8b" role="alert" aria-live="polite"></div>
+                </div>
+            
+            
+            </div>
+        </fieldset>
+
+        <fieldset class="no-border">
+            
+            <div class="g-forms__inner"> 
+
+                <!-- FORM element : #9 : TYPE = TEXTAREA -->
+                <div class="g-forms__element" id="g-forms__element__9">
+                    <label for="g-forms__element-textarea__9">If you'd like to, you can tell us more about your engraving:</label>
+
+                    <textarea id="g-forms__element-textarea__9" maxlength="255" 
+                    
+                    data-parsley-required="false"
+                    
+                    aria-required="false" 
+                    aria-describedby="g-forms__element-textarea__9"
+                    
+                    ></textarea>
+                    
+                </div>   
+
+
+                <!-- FORM element : #9b : TYPE = CHECKBOX -->                
+                <div class="g-forms__element" id="g-forms__element__9b">
+
+                    <p>We may like to use your story on our website or in marketing communications to encourage others to donate to the Heart of Steel. 
+                    </p>
+
+                    <div class="g-forms__checkbox">
+                    
+                        <input type="checkbox" id="g-forms__element-checkbox__9b" data-parsley-required="false" aria-required="false"
+                        aria-invalid="false" aria-describedby="g-forms__element-checkbox-label__9b">
+            
+                        <label for="g-forms__element-checkbox__9b" id="g-forms__element-checkbox-label__9b">By ticking this box you agree you are happy with this.</label>
+                    
+                    </div>
+                </div>
+            
+            </div>
+        </fieldset>
+
+        <fieldset class="no-border">
+            
+            <div class="g-forms__inner"> 
+
+                <!-- FORM element : #10 : TYPE = SELECT -->
+                <div class="g-forms__element" id="g-forms__element__10">
+                    <label for="g-forms__element-select__10">How did you hear about this?<i>*</i></label>
+                    
+                    <div class="g-forms__select half-width">
+
+                        <i class="select-arrow glyphicon glyphicon-menu-down"></i>
+                        
+                        <select id="g-forms__element-select__10" class="expand-field"
+                        
+                        data-parsley-required="true"
+                        data-parsley-trigger="change"
+                        data-parsley-min-value="email"  
+                        data-parsley-error-message="Select an option." 
+                        data-parsley-class-handler="#g-forms__element__10"
+                        data-parsley-errors-container="#g-forms__element-error__10"
+
+                        aria-required="true"
+                        aria-describedby="g-forms__element-error__10"
+                        
+                        >
+                            <option value="">Select...</option>
+                            <option value="email">Email</option><!-- NOTE value here needs to be equal to data-parsley-min-value for parent SELECT above -->
+                            <option value="socialmedia">Social Media</option>
+                            <option value="bhf_representative">BHF representative</option>
+                            <option value="bhf_website">BHF website</option>
+                            <option value="bhf_shop">BHF shop</option>
+                            <option value="magazine_newspaper">Magazine / Newspaper</option>
+                            <option value="radio">Radio</option>
+                            <option value="tv">TV</option>
+                            <option value="post">Postal mailing</option>
+                            <option value="heart_matters">Heart Matters</option>
+                            <option value="wordofmouth">Word of mouth</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="g-forms__element--error" id="g-forms__element-error__10" role="alert" aria-live="polite"></div>
+
+                </div> 
+
+                <!-- FORM element : #10b : TYPE = TEXTAREA -->
+                <div class="g-forms__element hidden" id="g-forms__element__10b">
+                    <label for="g-forms__element-input__10b">Please state<i>*</i></label>
+
+                    <input type="text" name="" id="g-forms__element-input__12b"
+                    
+                    data-parsley-length="[2, 255]"
+                    data-parsley-required="false" 
+                    data-parsley-trigger="focusout"                              
+                    data-parsley-error-message="Enter text." 
+                    data-parsley-class-handler="#g-forms__element__10b"
+                    data-parsley-errors-container="#g-forms__element-error__10b" 
+
+                    aria-required="false"
+                    aria-describedby="g-forms__element-error__10b"
+                        
+                    >
+
+                    <span class="g-forms__element--status"></span>
+                    
+                    <div class="g-forms__element--error" id="g-forms__element-error__10b" role="alert" aria-live="polite"></div>
+                </div>
+
+            </div>
+        
+        </fieldset>
+
+        <fieldset class="no-border">
+            <div class="g-forms__inner">
+                
+                <legend>Keeping in touch</legend>
+                <p>We would love to send you information on our life saving research and how you can help us to keep more hearts beating through fundraising, events and volunteering opportunities.</p>
+                <p>Please tick below to tell us how you want to hear from us<i class="red">*</i>:</p>
+                
+                <!-- ********************************** -->
+                <!-- FORM element : CHECKBOX -->
+                <!-- ********************************** -->
+                <div class="g-forms__element">
+
+                    <div class="g-forms__radio g-forms__radio--header">
+                        <span class="g-forms__radio--label"></span>
+                        <label class="g-forms__radio--element">Yes</label>
+                        <label class="g-forms__radio--element">No</label>
+                    </div>
+
+                    <!-- JOIN: EMAIL -->
+                    <div class="g-forms__radio" id="g-forms__jointype-email">
+                        <span class="g-forms__radio--label">Email<i>*</i></span>
+                        <label class="g-forms__radio--element" for="g-forms__jointype-email-yes">
+                            <!-- The "name" attribute has to be the same within the same form, but unique for every instance of a component -->
+                            
+                            <input type="radio" id="g-forms__jointype-email-yes" name="jointype-email" value="jointype-email-yes"
+                            
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-email" 
+                            data-parsley-multiple="jointype-email"
+                            data-parsley-errors-messages-disabled
+
+                            >
+                            <i></i>
+                        </label>
+
+                        <label class="g-forms__radio--element" for="g-forms__jointype-email-no"> 
+                            <input type="radio" id="g-forms__jointype-email-no" name="jointype-email" value="jointype-email-no"
+                            
+                            data-parsley-required="true" 
+                            data-parsley-trigger="click"
+                            data-parsley-class-handler="#g-forms__jointype-email"
+                            data-parsley-group="g-forms__step--2"
+                            data-parsley-multiple="jointype-email" 
+                            data-parsley-errors-messages-disabled
+                            
+                            >
+                            <i></i>
+                        </label>
+
+                        <span class="g-forms__element--status"></span>
+                    </div>
+
+                    <!-- JOIN: TEXT -->
+                    {# <div class="g-forms__radio" id="g-forms__jointype-text">
+                        <span class="g-forms__radio--label">Text<i>*</i></span>
+                        <label class="g-forms__radio--element" for="g-forms__jointype-text-yes">
+                            <!-- The "name" attribute has to be the same within the same form, but unique for every instance of a component -->
+                            
+                            <input type="radio" id="g-forms__jointype-text-yes" name="jointype-text" value="jointype-text-yes"
+
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-text" 
+                            data-parsley-multiple="jointype-text" 
+                            data-parsley-errors-messages-disabled
+
+                            >
+                            <i></i>
+                        </label>
+
+                        <label class="g-forms__radio--element" for="g-forms__jointype-text-no"> 
+                            <input type="radio" id="g-forms__jointype-text-no" name="jointype-text" value="jointype-text-no"
+                            
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-text"
+                            data-parsley-group="g-forms__step--2"
+                            data-parsley-multiple="jointype-text"
+                            data-parsley-errors-messages-disabled
+
+                            >
+                            <i></i>
+                        </label>
+
+                        <span class="g-forms__element--status"></span>
+                    </div> #}
+
+                    <!-- JOIN: POST -->
+                    <div class="g-forms__radio" id="g-forms__jointype-post">
+                        <span class="g-forms__radio--label">Post<i>*</i></span>
+                        <label class="g-forms__radio--element" for="g-forms__jointype-post-yes">
+                            <!-- The "name" attribute has to be the same within the same form, but unique for every instance of a component -->
+                            
+                            <input type="radio" id="g-forms__jointype-post-yes" name="jointype-post" value="jointype-post-yes"
+                            
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-post" 
+                            data-parsley-multiple="jointype-post"
+                            data-parsley-errors-messages-disabled
+
+                            checked="checked" 
+                            >
+                            <i></i>
+                        </label>
+
+                        <label class="g-forms__radio--element" for="g-forms__jointype-post-no"> 
+                            <input type="radio" id="g-forms__jointype-post-no" name="jointype-post" value="jointype-post-no"
+                            
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-post"
+                            data-parsley-group="g-forms__step--2"
+                            data-parsley-multiple="jointype-post"
+                            data-parsley-errors-messages-disabled
+
+                            >
+
+                            <i></i>
+                        </label>
+
+                        <span class="g-forms__element--status"></span>
+                    </div> 
+
+                    <!-- JOIN: PHONE -->
+                    {# <div class="g-forms__radio" id="g-forms__jointype-phone">
+                        <span class="g-forms__radio--label">Phone<i>*</i></span>
+                        <label class="g-forms__radio--element" for="g-forms__jointype-phone-yes">
+                            <!-- The "name" attribute has to be the same within the same form, but unique for every instance of a component -->
+                            
+                            <input type="radio" id="g-forms__jointype-phone-yes" name="jointype-phone" value="jointype-phone-yes"
+                            
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-phone" 
+                            data-parsley-multiple="jointype-phone"
+                            data-parsley-errors-messages-disabled
+
+
+                            >
+
+                            <i></i>
+                        </label>
+
+                        <label class="g-forms__radio--element" for="g-forms__jointype-phone-no"> 
+                            <input type="radio" id="g-forms__jointype-phone-no" name="jointype-phone" value="jointype-phone-no"
+                            
+                            data-parsley-required="true"
+                            data-parsley-trigger="click" 
+                            data-parsley-class-handler="#g-forms__jointype-phone"
+                            data-parsley-group="g-forms__step--2"
+                            data-parsley-multiple="jointype-phone"
+                            data-parsley-errors-messages-disabled
+
+
+                            >
+                            
+                            <i></i>
+                        </label>
+
+                        <span class="g-forms__element--status"></span>
+                    </div> #}
+
+                </div>
+                
+                <p>We take your privacy seriously and will never sell or swap your details with third parties. You can withdraw your consent to be contacted at any time by calling 0300 330 3322 or by emailing <a href="mailto:heretohelp@bhf.org.uk">heretohelp@bhf.org.uk</a>. Information about how we protect and use your personal data is set out in our privacy policy: <a href="/privacy">bhf.org.uk/privacy</a></p>
+
+
+            </div>
+
+        </fieldset>
+
+            
+        <!-- FORM element : BUTTON -->
+        <div class="g-forms__element">
+            <button type="submit" value="Submit" class="cta cta__secondary is-white-on-red" />Continue <i class="glyphicon glyphicon-menu-right"></i></button>
+
+            <a href="#" class="cta__clear-form">Clear form</a>
+        </div>
+
+
+        <p class="g-forms__validation--notice hidden"><i>*</i> Please complete all required fields before pressing continue.</p>
+        
+
+    </form> 
+
+</section>  

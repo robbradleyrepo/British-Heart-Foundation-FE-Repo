@@ -1,0 +1,128 @@
+<div id="f-modal__edit-item" class="f-forms-modal modal basket-edit-item modal-scrollable closed">
+        <h2 class="basket-edit-item__label">Your engraving details</h2>
+        <h2 class="basket-edit-item__alternative-label hidden">Edit your details</h2>
+        <div class="f-forms f-forms-parsley">
+            <form novalidate="" data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+                <div class="f-forms-modal__content"> 
+                    <div class="f-forms__element" id="f-forms__element__1b">
+                        <label for="f-forms__element-input__1b">
+                            <span class="f-forms__element--label">Name</span>
+                            <span class="f-forms__element--sublabel">Up to 38 characters</span>
+                        </label>
+
+                        <input type="text" name="" id="f-forms__element-input__1b"
+                        
+                        class="f-forms__element--actual engraving-name"
+
+                        data-parsley-trigger="focusout"
+                        data-parsley-trigger-after-failure="focusout"        
+                        data-parsley-length="[2, 38]"
+                        data-parsley-length-message="Must be between 2 and 38 characters."
+                        data-parsley-required="true"
+                        data-parsley-required-message="This is a required field." 
+                        data-parsley-class-handler="#f-forms__element__1b"
+                        data-parsley-errors-container="#f-forms__element-error__1b"
+                        data-parsley-validation-threshold="2"
+                        data-parsley-pattern="([a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]|^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\(\)]+[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF \-—–\(\)']*[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\(\)])+$"
+                        data-parsley-pattern-message="Characters only. Hyphens, spaces and parentheses are permitted." 
+                        data-parsley-whitespace="trim"
+
+                        aria-required="true"
+                        aria-describedby="f-forms__element-error__1b"
+                            
+                        >
+
+                        <span class="f-forms__element--status"></span>
+                        
+                        <div class="f-forms__element--error" id="f-forms__element-error__1b" role="alert" aria-live="polite"><span></span></div>
+                    </div>
+                    <fieldset class="f-forms--calendar-picker" data-generic-date-message="This is a required field.">
+                        <div class="f-forms__element" id="f-forms__element__1date" data-parsley-errors-container="#f-forms__element-error__1date" data-parsley-is-date-valid="false" data-parsley-validate-if-empty="true">
+                            <p class="f-forms__label">
+                                <span class="f-forms__element--label">Date to be engraved</span>
+                            </p>
+                        
+                            <div class="f-forms__textbox">
+                                <label for="f-forms__element-date__day">
+                                    <span class="f-forms__element--sublabel">Day</span>
+                                </label>
+                                <input type="text" name="" id="f-forms__element-date__day" maxlength="2"
+                                
+                                class="f-forms__element--actual day-input"
+
+                                data-parsley-required="false" 
+                                data-parsley-required-message="This is a required field." 
+                                data-parsley-trigger="focusout"
+                                data-parsley-trigger-after-failure="focusout"
+                                data-parsley-class-handler="#f-forms__element__1date"
+                                data-parsley-errors-container="#f-forms__element-error__1date"
+                                data-parsley-pattern-message="Please select a value from the list." 
+                                data-parsley-range="[1, 31]"
+                                data-parsley-range-message="Day must be a number between 1 and 31"
+
+                                aria-required="false"
+                                aria-describedby="f-forms__element-error__1date"
+                                >
+                            </div>
+
+                            <div class="f-forms__textbox">
+                                <label for="f-forms__element-date__month">
+                                    <span class="f-forms__element--sublabel">Month</span>
+                                </label>
+
+                                <input type="text" name="" id="f-forms__element-date__month" maxlength="2"
+                                
+                                class="f-forms__element--actual month-input"
+
+                                data-parsley-required="false" 
+                                data-parsley-required-message="This is a required field." 
+                                data-parsley-trigger="focusout"
+                                data-parsley-trigger-after-failure="focusout" 
+                                data-parsley-class-handler="#f-forms__element__1date"
+                                data-parsley-errors-container="#f-forms__element-error__1date"
+                                data-parsley-pattern-message="Please select a value from the list." 
+                                data-parsley-range="[1, 12]"
+                                data-parsley-range-message="Month must be a number between 1 and 12"
+
+                                aria-required="false"
+                                aria-describedby="f-forms__element-error__1date"
+                                >
+                            </div>
+
+                            <div class="f-forms__textbox">
+                                <label for="f-forms__element-date__year">
+                                    <span class="f-forms__element--sublabel">Year</span>
+                                </label>
+
+                                <input type="text" name="" id="f-forms__element-date__year" maxlength="4"
+                                
+                                class="f-forms__element--actual year-input"
+
+                                data-parsley-required="false" 
+                                data-parsley-required-message="This is a required field." 
+                                data-parsley-trigger="focusout"
+                                data-parsley-trigger-after-failure="focusout" 
+                                data-parsley-class-handler="#f-forms__element__1date"
+                                data-parsley-errors-container="#f-forms__element-error__1date"
+                                data-parsley-pattern-message="Please select a value from the list." 
+                                data-parsley-min="1900"
+                                data-parsley-min-message="Year must be a number with a minimum value of 1900"
+
+                                aria-required="false"
+                                aria-describedby="f-forms__element-error__1date"
+                                >
+                                <span class="f-forms__element--status for-date"></span>
+                            </div>
+                            <input type="hidden" class="calendar-trigger">
+                            <div class="f-forms__element--error" id="f-forms__element-error__1date" role="alert" aria-live="polite" data-date-fields-all="true"><span></span></div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="cta__container">
+                        <a href="#" class="cta cta__secondary is-white-on-red cta__href add-button">Add name<i class="glyphicon glyphicon-menu-right"></i></a>
+                        <a href="#" class="cta cta__secondary is-white-on-red cta__href update-button hidden">Save changes<i class="glyphicon glyphicon-menu-right"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>

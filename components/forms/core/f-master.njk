@@ -1,0 +1,62 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2</h1>
+
+        <p>Where field varations examples given below with validation do not exist, this is because they are too abstract to exist without specific validation rules and those will need to be configured before BE deployment.</p> 
+
+        <h1>Input</h1>
+
+        {# {% include 'forms/elements/f-select__title.njk' %} #}
+            
+        {% include 'forms/elements/f-input__firstname.njk' %}
+
+        {% include 'forms/elements/f-input__lastname.njk' %}
+
+        {% include 'forms/elements/f-input__disabled.njk' %}
+
+        {% include 'forms/elements/f-input__email.njk' %}
+
+        {% include 'forms/elements/f-input__no-validation.njk' %}
+
+
+        <h1>Textarea</h1>
+
+        {% include 'forms/elements/f-textarea.njk' %}
+
+        {% include 'forms/elements/f-textarea__no-validation.njk' %}
+
+        {% include 'forms/elements/f-textarea__disabled.njk' %}
+
+        <h1>Checkbox</h1>
+
+        {% include 'forms/elements/f-checkbox__single.njk' %}
+
+        {% include 'forms/elements/f-checkbox__group.njk' %}
+
+        {% include 'forms/elements/f-checkbox__group-with-nested.njk' %}
+
+        {% include 'forms/elements/f-checkbox__no-validation.njk' %}
+
+        {% include 'forms/elements/f-checkbox__disabled.njk' %}
+
+        <h1>Radios</h1>
+        {% include 'forms/elements/f-radio.njk' %}
+
+        <h1>Select</h1>
+        {% include 'forms/elements/f-select.njk' %}
+
+        {% include 'forms/elements/f-select__no-validation.njk' %}
+
+        {% include 'forms/elements/f-select__disabled.njk' %}
+
+        {% include 'forms/elements/f-select__title.njk' %}
+
+    </form> 
+
+</section>

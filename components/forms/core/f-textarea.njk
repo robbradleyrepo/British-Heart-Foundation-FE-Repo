@@ -1,0 +1,21 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+        
+        <h1>MVC - Forms v2: Textarea</h1>
+
+        <p>A multi-line form element for descriptive user data, only exists as a [Core] element. Additional functionality added includes live character count on focus and extendable, line by line height via carridge return.</p> 
+
+        {% include 'forms/elements/f-textarea.njk' %}
+
+        {% include 'forms/elements/f-textarea__no-validation.njk' %}
+
+        {% include 'forms/elements/f-textarea__disabled.njk' %}
+
+    </form> 
+
+</section>

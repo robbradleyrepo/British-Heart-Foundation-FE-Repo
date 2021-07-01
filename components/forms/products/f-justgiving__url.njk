@@ -1,0 +1,21 @@
+<!-- ************************************** -->
+<!-- START: MVC [v2]                        -->
+<!-- ************************************** -->
+
+<section class="f-forms f-forms-parsley" role="group">
+
+    <form novalidate data-parsley-validate="" aria-label="Enter form details below, ensuring each mandatory step is completed, before continuing.">
+
+        <h1>Set up your donation page URL</h1>
+
+        <p>You’re almost ready to get fundraising but before you do you need to create your fundraising page.</p>
+        <p>Confirm your donation page URL before you register.</p>
+
+        {% include 'forms/elements/f-input__url.njk' %}
+
+        <p class="small">By registering for Dechox you are agreeing to the <a href="#">terms and conditions.</a></p>
+
+        {% include 'forms/core/f-register.njk' %}
+    </form>
+
+</section>
