@@ -1,0 +1,72 @@
+ul {
+
+    &.g-breadcrumb {
+        padding: 0;
+        display: none;
+
+        @include mq('tablet') {
+            display: flex;
+        }
+        
+        li {
+            display: inline-table;
+            font-family: $font-base;
+            color: $c-white;
+            text-decoration: none; 
+            @include font-size(14px);
+            line-height: 16px;
+            white-space: nowrap;
+            padding: 0 5px 0 0;
+            margin: 0px;
+
+            &:before {
+                display: none;
+            }
+            
+            &:first-child {
+                a {
+                    padding-left: 0;
+                }
+            }
+
+            a {
+                font-family: $font-base;
+                color: $c-white;
+                text-decoration: underline; 
+                @include font-size(14px);
+                @include transition(all 0.3s ease-in-out);
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+    }
+
+    .mvc-legacy__breadcrumb {
+            
+        max-width: 960px;
+        margin: auto;
+    
+        .g-breadcrumb {
+            margin: 40px 20px;
+            
+            @include mq('desktop') {
+                margin: 40px 0px;
+            }
+
+            li, a {
+                color: $c-body-text;
+            }
+            
+            li a {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+    }
+}

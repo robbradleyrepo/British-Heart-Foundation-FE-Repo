@@ -1,0 +1,22 @@
+.g-screen-mobile,
+.g-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $c-black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 400;
+    @include transition(all .3s ease-in-out);
+    
+    &.active {
+        opacity: .6;
+        visibility: visible;
+    }
+}
+
+.g-screen {
+    z-index: 200;
+}

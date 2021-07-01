@@ -1,0 +1,358 @@
+.g-footer {
+    margin: 60px auto 0;
+    background: $c-dark-grey;
+    color: $c-white;
+    padding: 10px 0 40px;
+    position: relative;
+
+    @include mq('tablet') {
+        padding: 0 0 40px;
+        margin: 90px auto 0;
+    }
+
+    @include mq('desktop') {
+        margin: 110px auto 0;
+    }
+
+    @include mq('large') {
+        margin: 130px auto 0;
+    }
+
+    svg { 
+        width:100%;
+        max-width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &__wrap {
+        //@extend .cs-shelf__row-extended;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+
+        @include mq('large') {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    a {
+        color: $c-white;
+        text-decoration: none;
+    }
+
+    h1 {
+        display: block;
+        margin-top: 0;
+        color: $c-white;
+        line-height: initial;
+        font-family: $font-bhf-bold;
+        @include font-size(26px);
+
+        @include mq('tablet') {
+            @include font-size(36px);
+        }
+    }
+
+    h2 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        @include font-size(20px);
+        color: $c-gallery;
+        font-family: $font-bhf-bold;
+    }
+
+    small {
+        font-size: 80%;
+        padding-right: 20px;
+        font-family: $font-base;
+    }
+
+    &__top {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex: 1 0 100%;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid $footer-border;
+        @include transition(all 0.1s);
+        
+        @include mq(tablet) {
+            margin-bottom: 0;
+            padding: 20px 0 0;
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 0;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin: 0;
+            height: auto;
+            border-bottom: 1px solid $footer-border;
+            padding: 20px 20px 0;
+            flex: 1 0 100%;
+
+            @include mq(tablet) {
+                margin: inherit;
+                margin-bottom: 20px;
+                flex: 1 0 48%;
+                padding: 0px 0px;
+                border-right: 1px solid $footer-border;
+                border-bottom: 0;
+            }   
+            @include mq(desktop) {
+                flex: 1 0 20%;
+                border-bottom: 0;
+                margin-bottom: 0px;
+            }
+
+            &:nth-child(1) {
+                padding-left: 0;
+
+                &:after {
+                    display: none;
+
+                    @include mq(tablet) {
+                        content: '';
+                        display: block;
+                        position: relative;
+                        border-bottom: 1px solid $footer-border;
+                        width: 200%;
+                        height: 1px;
+                        top: 20px
+                    }
+                    
+                    @include mq(desktop) { 
+                      display: none;
+                    }
+                }
+            }
+
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                padding-left: 0;
+                
+                @include mq(desktop) {
+                    padding-left: 20px;
+                }
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+                margin-top: 0;
+
+                @include mq(tablet) {
+                    margin-top: 20px;
+                }
+
+                @include mq(desktop) {
+                    margin-top: 0px;
+                }
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                @include mq(tablet) {
+                    padding-left: 20px;
+                }
+            }
+
+            &:nth-child(2) {
+                @include mq(tablet) {
+                    border-right: 0;
+                }
+
+                @include mq(desktop) {
+                    border-right: 1px solid $footer-border;
+                }
+
+            }
+
+            &:nth-child(4) {
+                border-right: 0;
+            }
+            
+            ul {
+                padding: 0;
+
+                li {
+                    margin: 0 0 10px 0;
+
+                    a {
+                        font-weight: bold;
+                        border-bottom: 1px solid transparent;
+                        @include font-size(15px);
+                        @include transition(all 0.3s);
+
+                        &:hover {
+                            color: $c-mid-grey;
+                            border-bottom: 1px solid $c-mid-grey;
+                        }
+                    }
+
+                    em {
+                        font-weight: bold;
+                        font-style: none;
+                    }
+
+                    small {
+                        margin-top: 5px;
+                        display: block;
+                        @include font-size(14px);
+                    }
+                    
+                    .tel {
+                        font-weight: normal;
+                        display: inline-block;
+                        line-height: normal;
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+    &__middle {
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        @include transition(all 0.1s);
+        padding: 10px 0 0;
+
+        @include mq(tablet) {
+            border-top: 1px solid $footer-border;
+        }
+        
+        @include mq(desktop) { 
+            padding: 10px 0;
+            border-bottom: 1px solid $footer-border;
+        }
+
+        & > div {
+            height: auto;
+            padding: 20px 0;
+            border-bottom: 1px solid $footer-border;
+            @include mq(desktop) {
+                border-bottom: 0;
+                padding: 10px 0;
+            }
+        }
+
+    }
+
+    &__bottom {
+        margin: 0;
+        border-top: 0;
+        line-height: 19px;
+        padding-top: 30px;
+        @include clearfix;
+        
+        img.left {
+            float: none;
+            max-width: 195px;
+            position: relative;
+            top: -5px;
+            display: block;
+            @include mq(tablet) {
+                display: inline-block;
+                float: left;
+            }
+        }
+
+        img.right {
+            float: none;
+            max-width: 195px;
+            position: relative;
+            top: 20px;
+            display: block;
+            opacity: 1;
+            @include transition(opacity 0.3s);
+
+            @include mq(tablet) {
+                display: inline-block;
+                float: right;
+                top: inherit;
+            }
+           
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        small {
+            width: 100%;
+            float: none;
+            
+            @include mq(tablet) {
+                float: left; 
+                width: calc(100% - 370px);
+            }
+        } 
+    } 
+
+    &__social {
+        line-height: inherit;
+        
+        h2 {
+            margin: 0 20px 20px 0;
+            display: inline-block; 
+            @include mq(tablet) {
+                margin: 0 20px 0px 0;
+            }
+        }
+
+        ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            line-height: normal;
+
+            li {
+                display: inline-block;
+
+                span {
+                    display: inline-block;
+                    @include font-size(32px);
+                    opacity: 1;
+                    @include transition(all 0.3s);
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mvc-legacy__footer {
+    width: 100%;
+    content: " ";
+    display: block;
+    clear: both;
+
+    *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}

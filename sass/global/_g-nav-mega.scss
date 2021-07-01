@@ -1,0 +1,188 @@
+.g-nav-primary__mega {
+    position: absolute;
+    left: 0px;
+    height: 425px;  
+    background: $c-grey2;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    top: 60px;
+    width: 800px; 
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 0.3s ease-in-out);
+    display: none;
+    z-index: -1;
+    overflow: hidden;
+
+    @include mq('desktop-nav') {
+        display: block;
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 101;
+        @include transition(all 0.1s ease-in-out);
+    }
+
+    & > ul {
+        width: 270px;
+        height: 440px;
+        float: left;
+        margin: 0;
+        padding: 0px;
+
+        & > li {
+            line-height: 16px;
+            text-align: left;
+            color: $c-body-text;
+            font-weight: bold;
+            font-family: $font-base;
+            @include font-size(16px);
+
+            a {
+                font-family: $font-base;
+                margin: 0;
+                display: inline-block;
+                width: 100%;
+                line-height: 21px;
+                @include font-size(16px);
+                font-weight: normal;
+                color: $c-body-text;
+                padding: 7px 20px;
+                @include transition(all 0.2s ease);
+                
+                &[aria-expanded="true"] {
+                    background-color: $c-light-grey2;
+                    color: $c-bhf-red;
+                }
+    
+                &.g-nav-primary__mega--promo:hover {
+                    color: $c-bhf-red;
+                }
+            }
+
+            &:first-child a {
+                font-weight: bold;
+                padding-top: 20px;
+            }
+        }
+    }
+    
+    .g-nav-primary__mega--subnav {
+        width: calc(100% - 270px);
+        height: 100%;
+        padding: 13px 20px;
+        text-align: left; 
+        position: absolute;
+        top: 0;
+        left: 270px;  
+        list-style: none;  
+        background-color: $c-grey3;
+        opacity: 0;
+        visibility: hidden;
+        border-bottom-right-radius: 30px;
+        @include transition(all 0.4s ease-in-out);
+        z-index: -1;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            @include transition(all 0.1s ease-in-out);
+            z-index: 200;
+        } 
+
+        & > a {
+            display: block;
+            padding-left: 0;
+            font-weight: bold;
+            
+            &:hover {
+                color: $c-bhf-red;
+            }
+        }
+
+        ul {
+            padding: 0;
+            @include column-count(2);
+            -moz-column-fill: auto;
+            column-fill: auto;
+            width: 100%;
+            height: calc(100% - 38px);
+            
+            li {
+                width: 100%;
+                display: inline-block;
+    
+                a {
+                    padding-left: 0;
+                    white-space: initial;
+                    
+                    &:hover {
+                        color: $c-bhf-red;
+                    }
+                }
+            }
+        }
+    }
+
+    aside {
+        
+        display: none;
+
+        @include mq('desktop-nav') {
+            width: calc(100% - 270px);
+            height: 100%;
+            padding: 20px 20px;
+            float: left;
+            display: block;
+            text-align: left; 
+            border-bottom-right-radius: 30px;
+            background-color: $c-grey;
+        }
+
+
+        & > div {   
+            margin-bottom: 20px;
+            display: flex;
+            flex-flow: row;
+
+            &.intro {
+                margin-bottom: 20px;
+            }
+
+            img {
+                margin-right: 20px;
+                flex: 0 0 170px;
+                max-width: 170px;
+                height: 113px;
+                overflow: hidden;
+            }
+
+            & > div {
+                margin-left: 0px;
+                margin-top: -4px;
+
+                h3, p {
+                    font-family: $font-base;
+                    font-weight: normal;
+                    @include font-size(15px);
+                    padding:  0;
+                    margin: 0;
+                }
+
+                h3 {
+                    font-weight: bold; 
+                }
+                
+                a {
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                    font-family: $font-base;
+                    color: $c-bhf-red;
+                }
+            }
+        }
+    }
+}

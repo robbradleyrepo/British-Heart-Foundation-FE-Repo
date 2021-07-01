@@ -1,0 +1,95 @@
+.g-cookies {
+    background-color: $c-stat-grey;
+    position: fixed;
+    bottom: 0;
+    z-index: 100000;
+    width: 100%;
+    display: none;
+
+    &.is-visible {
+        display: block;
+    }
+
+    &__wrap {
+        max-width: $max-width;
+        margin: 0 auto;        
+        padding: 15px 20px 20px; 
+    }
+
+    &__copy {
+        color: $c-white;  
+        float: none;
+        
+        @include font-size(14px);
+        line-height: 16px;
+
+        @include mq('tablet') {
+            float: left;
+            width: 75%;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+
+    &__cta {
+        margin: 10px 0 10px 0; 
+        float: none;
+
+        @include mq('tablet') {
+            margin: 0px 0 10px 0;
+            width: 25%;
+            float: right;
+            text-align: right; 
+        }
+
+        button {
+            font-family: $font-bhf-bold;
+            white-space: nowrap;
+            background: $c-white;
+            border: none;
+            padding: 10px 17px;
+            border-radius: 26px;
+            -webkit-appearance: none;
+            @include transition(all 300ms);
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+/* onetrust configurations */
+
+// .optanon-show-settings {
+//     display: none;
+// }
+
+// .optanon-alert-box-wrapper .banner-content .banner-policy-link {
+//     color: white;
+//     text-decoration: none !important;
+//     border-bottom: 1px dotted white;
+//     transition: all .3s ease-in-out;
+// }
+
+// .optanon-alert-box-wrapper .banner-content .banner-policy-link:hover { 
+//     opacity: 0.7;
+// }
+
+// .optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle button:before {
+//     content: "";
+// }
+
+// .optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle {
+//     transition: all .3s ease-in-out;
+    
+// }
+
+// .optanon-alert-box-wrapper .optanon-button-allow .optanon-alert-box-button-middle:hover {
+//     background: #d9d9d9 !important;
+//     border-color: #d9d9d9 !important;
+//     transition: all .2s ease-in-out; 
+// }

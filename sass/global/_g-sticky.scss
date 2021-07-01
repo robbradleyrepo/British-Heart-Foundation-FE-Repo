@@ -1,0 +1,47 @@
+.is-sticky {
+
+    .cs-shelf__column & {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        left: 0px;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $c-white;
+
+        &--top {
+            top: 0px;
+            animation: animate-sticky-from-top 1s;
+            -webkit-animation: animate-sticky-from-top 1s;
+        }
+
+        &--bottom {
+            bottom: 0px;
+            animation: animate-sticky-from-bottom 1s;
+            -webkit-animation: animate-sticky-from-bottom 1s;
+        }
+
+        @keyframes animate-sticky-from-bottom {
+
+            0% {
+                bottom: -50%;
+            }
+
+            100% {
+                bottom: 0%;
+            }
+        }
+
+        @keyframes animate-sticky-from-top {
+
+            0% {
+                top: -50%;
+            }
+
+            100% {
+                top: 0%;
+            }
+        }
+    }
+} 

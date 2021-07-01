@@ -1,0 +1,92 @@
+.button-primary {
+    text-decoration: none;
+    // color: $c-bhf-red;
+    min-width: 130px;	
+    background-color: $c-white;
+    padding: 20px 15px;
+    text-align: center;
+    @include border-radius(30px);
+    @include transition(all 0.3s);
+}
+
+.button-secondary {
+    text-decoration: none;
+    color: $c-white;
+    border: solid 2px $c-white;
+    padding: 9px 15px;
+    @include border-radius(10px);
+    @include transition(all 0.3s);
+    display: inline-block;
+    margin: 5px 5% 15px 0;
+    text-align: center;
+    
+    @include mq('tablet') {
+        min-width: 280px;
+        @include font-size(20px);
+    }
+}
+
+
+.button-red {
+    background-color: $c-bhf-rubine-red; 
+    font-family: $font-base;	
+    @include border-radius(30px);
+    @include font-size(16px);
+    font-weight: bold;
+    color:  $c-white;
+    padding: 8px 15px;
+    @include transition(0.3s all);
+    opacity: 1;
+    float: left;
+    margin: 0;
+    border: 0;
+
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.disabled {
+        background-color: $c-grey2;
+    }
+
+    i {
+        @include font-size(18px);
+        font-weight: normal;
+        position: relative;
+        margin-left: 5px;
+
+        @include mq('tablet') {
+            margin-left: 30px;
+        }
+
+    }
+
+    &.is-paprika {
+        border: 2px solid $c-paprika;
+        background: transparent;
+        color: $c-paprika;
+
+        &:hover {
+            border: 2px solid $c-paprika;
+            background: $c-paprika;
+            color: $c-white;  
+            opacity: 1;
+        }
+    }
+
+    &.is-black {
+        border: 2px solid $c-body-text;
+        background: transparent;
+        color: $c-body-text;
+
+        &:hover {
+            border: 2px solid $c-body-text;
+            background: $c-body-text;
+            color: $c-white;  
+            opacity: 1;
+        }
+    }
+}

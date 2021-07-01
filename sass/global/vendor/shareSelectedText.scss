@@ -1,0 +1,88 @@
+$spacing: 10px;
+$spacing-b: $spacing * 2;
+
+$color-dark: #404658;
+$color-white: white;
+
+.share-selected-text-main-container {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: 0.3s ease opacity, 0.3s ease transform, 0.3s ease top, 0.3s ease left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 999;
+
+    .share-selected-text-inner {
+      pointer-events: auto;
+    }
+  }
+
+  .share-selected-text-inner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-dark;
+    height: 100%;
+    pointer-events: none;
+    position: relative;
+
+    &:before {
+      content: 'Copied. Share now!';
+      position: absolute;
+      display: inline-block;
+      top: -10px;
+      left: 0;
+      right: 0;
+      color: $c-white;
+      background-color: $color-dark;
+      line-height: 11px;
+      font-size: 10px;
+      text-align: center;
+      padding: 6px 0 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 7.5px 0 7.5px;
+      border-color: $color-dark transparent transparent transparent;
+    }
+  }
+
+  .share-selected-text-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-white;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0 $spacing-b;
+    transition: 0.2s ease all;
+
+    &:focus,
+    &:hover {
+      background: lighten($color-dark, 7%);
+    }
+  }
+}

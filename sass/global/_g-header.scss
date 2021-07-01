@@ -1,0 +1,252 @@
+.g-header {
+    
+    @at-root section#{&} {
+        .cs-shelf__column & {
+    
+            margin-top: -60px;
+            position: relative;
+        
+            @include mq('tablet') {
+                margin-top: -65px;
+            }
+
+            @include mq('desktop-nav') {
+                margin-top: -106px;
+            }
+        }
+    }
+    
+    &__inner {
+        position: relative;
+        overflow: visible;
+        @include animation('fade-in 1s');
+
+        @include mq('tablet') {
+            height: 46vw;
+            max-height: 880px;
+            overflow: hidden; 
+        }
+
+        &:after {
+            z-index: 0;
+            display: none;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-image: url('../img/header-curve5.svg');
+            background-repeat: no-repeat;
+            background-size: 101%;
+            height: 46vw;
+            max-height: 930px;
+            @include mq('tablet') {
+                display: block;
+            }
+        }
+
+        header {
+            float: none;
+            position: relative;
+            z-index: 3;
+            width: 100%;  
+            font-family: $font-bhf-bold;
+            padding: 20px 20px 40px 20px;
+            background: linear-gradient(to right, $c-bhf-red, $c-bhf-rubine-red);
+
+            @include mq('tablet') {
+                background: inherit;
+                font-size: 5vw; 
+                width: 50%;
+                float: left;
+                padding: inherit;
+                padding-left: 15px;
+
+                display: flex;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                align-items: center;
+                height: 47vw; 
+                max-height: 865px;
+            }
+
+            @include mq('desktop') {
+                height: 49vw; 
+            }
+
+            @include mq('large') {
+                height: 43vw; 
+            }
+
+            &:before {
+                display: block;
+                content: "";
+                width: 100%;
+                position: absolute;
+                top: -15vw;
+                left: 0;
+                right: 0;
+                background-image: url('../img/header-curve-mobile.svg');
+                background-repeat: no-repeat;
+                background-size: 102%;
+                background-position: bottom;
+                height: 16vw;
+                display: block;
+
+                @include mq('tablet') {
+                    display: none;
+                }
+            }
+
+            .g-header__copy {
+                max-width: inherit;
+                
+                @include mq('tablet') {
+                    max-width: 90%;
+                }
+            }
+
+            h1 {
+                margin-bottom: 0px;
+                margin-top: 0;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                position: relative;
+
+                @extend %glp-header-h1;
+                
+                span {
+                    display: block; 
+                }
+            }
+
+            p {
+                width: auto;
+                padding-right: 10px;
+                @extend %glp-header-p;
+            }
+
+            .button {
+                float: none;
+                display: inline-block;
+                font-family: $font-base;
+                @include font-size(16px);
+                font-weight: bold;
+                line-height: 19px;
+                background: $c-white; 
+                color: $c-bhf-red; 
+                font-family: $font-base;
+                margin: 0; 
+                border: none;
+                padding: 6px 15px 5px;
+                @include border-radius(15px);
+                @include transition(all 0.3s ease-in-out);
+                @include animation('fade-in 2s');
+                
+                i {
+                    top: 1px;
+                    position: relative;
+                    @include font-size(14px);
+                    padding-left: 15px;
+                    @include transition(all 0.3s ease-in-out);
+                    @include vendor-prefix('transform', 'translate(10%, 0)');
+                }
+
+                &:hover {
+                    background: $c-white;
+                    color: $c-bhf-red;
+                    opacity: 0.7;
+
+                    i {
+                        @include vendor-prefix('transform', 'translate(20%, 0)');
+                    }
+                }
+
+                @include mq('tablet') { 
+                    padding: 11px 15px;
+                    @include border-radius(25px);
+                }
+
+                @include mq('large') {
+                    margin-top: 25px;
+                    padding: 13px 15px 13px 23px;
+                    @include font-size(20px); 
+                }
+            }
+
+            .g-breadcrumb {
+                display: none;
+                margin: 0;
+                margin-bottom: 20px;
+                padding: 0;
+                
+                @include mq('desktop') {
+                    display: block;
+                }
+
+                li, a {
+                    display: inline;
+                    @extend %glp-header-breadcrum;
+                }
+            }
+        }
+    }
+
+    &__image {
+        float: none;
+        position: relative;
+        width: 100%; 
+        line-height: 0;
+        min-height: 255px;
+        
+        @include mq('tablet') { 
+            width: 50%;
+            min-height: inherit;
+            float: left;
+            height: 42.5vw;
+            max-height: 830px;  
+            overflow-y: hidden;
+        }
+        
+        img  {
+            width: 100%;
+        }
+    }
+
+    // to be removed and incorporated into _g-logo.scss 
+    
+    &__logo {
+
+        position: absolute;
+        left: -49px;
+        top: -46px;
+        z-index: 199;
+        @include animation('all 0.1s');
+        
+        @include mq('tablet') {
+            left: -59px;
+            top: -55px;
+        }
+        
+        @include mq('desktop-nav') {
+            width: inherit;
+            left: -62px;
+            top: -59px;
+        }
+
+        img {
+            max-width: 165px;
+            @include animation('all 0.1s');
+            
+            @include mq('tablet') {
+                max-width: 207px;
+            }
+            
+            @include mq('desktop-nav') {
+                width: inherit;
+                max-width: inherit;
+            }
+        }
+    }
+}

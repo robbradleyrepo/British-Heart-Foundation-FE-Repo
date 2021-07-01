@@ -1,0 +1,144 @@
+.g-header {
+
+    &__xmas {
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        top: 55vw;
+        bottom: inherit;
+
+        background-image: url(../img/xmas2018/mobile-bauble@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        object-fit: contain;
+
+        width: 82px;
+        height: 120px;
+
+        @include mq('tablet') {
+            bottom: 1.7vw;
+            right: 0;
+            top: inherit;
+            width: 110px;
+            height: 159px;
+            background-image: url(../img/xmas2018/tablet-bauble@2x.png);
+        }
+
+        @include mq('desktop') {
+            width: 154px;
+            height: 220px;
+            background-image: url(../img/xmas2018/desktop-bauble@2x.png);
+        }
+
+        @include animation('fade-in 1s');
+
+        & > span {
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            object-fit: contain;
+            z-index: 11;
+            opacity: 1;
+
+            width: 26px;
+            height: 26px;
+            
+            @include mq('tablet') {
+                width: 28px;
+                height: 28px;
+            }
+
+            @include mq('desktop') {
+                width: 48px;
+                height: 47px;
+            }
+        }
+
+        &--tl {
+            background-image: url(../img/xmas2018/desktop-1@2x.png);
+            @include animation('deco 1.5s infinite');
+
+            top: 51px;
+            right: 70px;
+
+            @include mq('tablet') {
+                top: 67px;
+                right: 95px;
+            }
+
+            @include mq('desktop') {
+                top: 88px;
+                right: 132px;
+            }
+        }
+
+        &--tr {
+            background-image: url(../img/xmas2018/desktop-2@2x.png);
+            @include animation('deco 1.6s infinite');
+
+            top: 29px;
+            right: 12px;
+
+            @include mq('tablet') {
+                top: 39px;
+                right: 17px;
+            }
+
+            @include mq('desktop') {
+                top: 55px;
+                right: 23px;
+            }
+        }
+
+        &--bl {
+            background-image: url(../img/xmas2018/desktop-3@2x.png);
+            @include animation('deco 1.3s infinite');
+
+            top: 103px;
+            right: 65px;
+
+            @include mq('tablet') {
+                top: 138px;
+                right: 87px;
+            }
+
+            @include mq('desktop') {
+                top: 185px;
+                right: 121px;
+            }
+        }
+
+        &--br {
+            background-image: url(../img/xmas2018/desktop-4@2x.png);
+            @include animation('deco 1.7s infinite');
+
+            top: 98px;
+            right: 7px;
+
+            @include mq('tablet') {
+                top: 130px;
+                right: 11px;
+            }
+
+            @include mq('desktop') {
+                top: 175px;
+                right: 15px;
+            }
+        }
+
+    }
+
+}
+
+
+@keyframes deco {
+    0%   {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
