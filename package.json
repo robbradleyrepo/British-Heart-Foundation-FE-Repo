@@ -1,0 +1,66 @@
+{
+  "name": "frontplate",
+  "version": "0.0.3",
+  "description": "a frontend boilerplate with gulp",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "gulp build --env development",
+    "build": "gulp build --env production",
+    "start": "gulp serve",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkbnguyen/frontplate.git"
+  },
+  "keywords": [
+    "fontend",
+    "boilerplate",
+    "gulp",
+    "development"
+  ],
+  "author": "Dan Nguyen <dkbnguyen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkbnguyen/frontplate/issues"
+  },
+  "homepage": "https://github.com/dkbnguyen/frontplate#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.2.16",
+    "@types/node": "^7.0.27",
+    "@types/underscore": "^1.8.5",
+    "browser-sync": "^2.13.0",
+    "browserify": "^14.4.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-font-icon": "^1.0.4",
+    "gulp-gh-pages-will": "^0.5.5",
+    "gulp-if": "^2.0.2",
+    "gulp-image": "^4.3.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-param": "^1.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-trimlines": "^1.0.1",
+    "gulp-tslint": "^8.1.1",
+    "gulp-uglify": "^3.0.0",
+    "hoverintent": "^2.0.0",
+    "jquery": "^3.2.1",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2",
+    "tsify": "^3.0.1",
+    "tslint": "^5.4.2",
+    "typescript": "^3.4.5",
+    "underscore": "^1.8.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.0"
+  }
+}
