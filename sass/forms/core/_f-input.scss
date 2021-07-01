@@ -1,0 +1,129 @@
+.f-forms {
+    
+    // INPUT TYPES
+    input[type=url],
+    input[type=date],
+    input[type=password],
+    input[type=number],
+    input[type=tel],
+    input[type=text],
+    input[type=email] {
+        display: block;
+        background: $c-white;
+        @include border-radius(0px);
+        border: 1px solid $c-dark-grey;
+        padding: 11px 47px 12px 17px;
+        width: 100%;
+        font-family: $font-base; 
+        @include font-size(17px);
+        @include transition(0.2s all);
+
+        @include placeholder {
+            color: $c-dove-grey;
+            font-size: 12px;
+        }
+
+        &:focus, &:active {
+            @include transition(0.2s all);
+            @include border-radius(0px);
+            outline: none;
+            border: 1px solid $c-amber !important;
+
+            & + .f-forms__element--status {
+                display: none !important;
+            }
+        }
+
+        & + p {
+            margin-top: 7px;
+        }
+
+        &.half-width {
+            width: 100%;
+            
+            @include mq('tablet') {
+                width: 50%;
+            }
+
+            & ~ span {
+                @include mq('tablet') {
+                    right: 50%;
+                }       
+            }
+
+        }
+
+        &:disabled {
+            background-color: $c-gallery;
+            border: solid 1px $c-silver;
+            color: $c-silver;
+        }
+
+        &::-ms-clear {
+            display: none;
+        }
+
+        
+    }
+
+
+    // WIP
+    input[type=text]::first-letter {
+        text-transform: capitalize;
+    }
+    
+
+    input[type=date] {
+        padding: 8px 47px 8px 17px;
+        display:block;
+        background-clip: padding-box;
+        box-shadow: none !important;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        min-height: 42px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input[type="date"] {
+
+        min-width: 210px;
+        
+        ::-webkit-clear-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+    }
+
+    input::-webkit-calendar-picker-indicator{
+        display: none;
+    }
+
+    .is-amount {
+
+        position: relative;
+        
+        input[type=text] {
+            padding-left: 30px;
+        }
+
+        &::after {
+            content: '\00a3';
+            font-style: normal;
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            font-weight: bold;
+            @include font-size(18px);
+        }
+    }
+}

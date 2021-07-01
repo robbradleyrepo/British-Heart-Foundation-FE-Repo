@@ -1,0 +1,122 @@
+.f-indicator {
+    margin: 15px 20px 0;
+    
+    @include mq('tablet') {
+        margin: 55px 20px 0;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            color: $c-paprika;
+            font-weight: bold;
+            @include font-size(16px);
+            
+            i {
+                top: 3px;
+            }
+
+            &.is-first {
+            
+                color:  $c-nevada;
+            
+                i {
+                    color:  $c-nevada;
+                }
+            }
+        }
+
+        span {
+            display: inline-flex;
+
+            @include mq('tablet') {
+                display: none;
+            }       
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 30px;
+        @include font-size(15px);
+        color: $c-paprika;
+        font-weight: bold;
+        display: none;
+
+        @include mq('tablet') {
+            display: block;
+        }
+
+        li {
+            position: relative;
+            line-height: 30px;
+
+            &:before {
+                content: ' ';
+                display: inline-block;
+                width: 100%;
+                max-width: 12px;
+                height: 12px;
+                @include border-radius(6px);
+                background: $c-paprika;
+                margin-right: 13px;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 20px;
+                background: $c-paprika;
+                display: block;
+                top: -10px;
+                left: 5px;
+                backface-visibility: hidden;
+                transform: translate3d(0,0,0);
+                //transform: translateX(225%) translateZ(0) scale(1.0, 1.0) translate3d(0,0,0);
+            }
+
+            &:first-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            a {
+                @include font-size(15px);
+                color: $c-paprika;
+                font-weight: bold;
+            }
+
+            &.current {
+                &:before {
+                    background: transparent;
+                    border: 2px solid $c-paprika;
+                }
+            }
+
+            &.future {
+                color:  $c-nevada;
+
+                &:before {
+                    background: transparent;
+                    border: 2px solid $c-nevada;
+                }
+
+                &:after {
+                    background: $c-nevada;    
+                }
+
+                a {
+                    color: $c-nevada;     
+                }
+            }
+
+        }
+    }
+    
+}

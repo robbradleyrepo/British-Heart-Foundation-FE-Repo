@@ -1,0 +1,22 @@
+.f-qrcode {
+
+    display: flex;
+    flex-flow: row;
+
+    &--block {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            span {
+                display: block;
+                @include font-size(24px);
+            }
+        }
+
+    }
+
+}

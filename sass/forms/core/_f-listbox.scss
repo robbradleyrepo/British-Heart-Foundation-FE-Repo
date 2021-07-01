@@ -1,0 +1,55 @@
+.f-forms {
+
+    // Custom FORM element
+    &__listbox {
+
+        padding: 5px 5px 5px 10px;
+        border: 1px solid $c-dark-grey;
+        
+        &--inner {
+            
+            width: 100%;
+            height: auto;
+            overflow-y: auto;
+            max-height: 405px;    
+            
+            @include mq('tablet') {
+                max-height: 465px; 
+            }
+            
+            @include scrollbar; 
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 0;
+                
+                a {
+                    display: block;
+                    border-bottom: 1px solid $c-athens-gray;
+                    @include font-size(15px);
+                    color: $c-dark-grey;
+                    padding: 10px 0 10px 5px;
+                    margin-right: 10px;
+                    background: $c-white;
+                    @include transition(0.2s all);
+
+                    &:hover {
+                        background: $c-athens-gray;
+                    }
+                }
+
+                span {
+                    display: block;
+                    padding: 10px 15px;
+                    color: $c-dark-grey;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,17 @@
+.f-forms {
+    
+    .f-forms--microform__control {
+        @include font-size(14px);
+        text-decoration: underline;
+        color: $c-paprika;
+    }
+
+    &--microform {
+        margin-top: 10px;
+        
+        .f-forms__element {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+}

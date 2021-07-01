@@ -1,0 +1,156 @@
+.f-forms {
+
+    .cs-shelf__column & {
+
+        &:not(.is-external-form) {
+            margin: 15px 20px 0;
+
+            @include mq('tablet') {
+                margin: 55px 20px 0;
+            }
+        }
+    }
+
+    &.is-external-form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    legend {
+        @include font-size(16px);
+        line-height: 20px;
+        font-weight: bold;
+
+        @include mq('tablet') {
+            @include font-size(17px);
+            line-height: 24px;
+        }
+
+        .f-forms__element--optional-flag {
+            font-weight: normal;
+            color: $c-dark-grey;
+            font-style: normal;
+            margin-left: 4px;
+        }
+    }
+
+    &__element {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        position: relative;
+        @include clearfix;
+
+        @include mq('tablet') {
+            padding: 17px 0;
+        }
+
+        // generic variations
+        &.no-pad {
+            padding: 0;
+            
+            .cta {
+                margin-top: 0;
+            }
+        }
+    
+        &.reduced-width {
+            width: 75%;
+        }
+
+        &.half-width {
+            width: 100%;
+            
+            @include mq('tablet') {
+                width: 50%;
+            }
+        }
+
+        &.hidden {
+            display: none;
+        }
+
+        i.pound-sign {
+            position: absolute;
+            top: 51px;
+            left: 20px;
+            font-weight: bold;
+            
+            + input {
+                padding-left: 35px;
+            }
+        }
+
+        // LABEL
+        .f-forms__label,
+        label { 
+            display: block;
+            margin-bottom: 10px;
+            position: relative;
+            left: 0;
+            @include transition(all 0.2s);
+
+            @include font-size(16px);
+
+            @include mq('tablet') {
+                @include font-size(17px);
+                line-height: 20px;
+            }
+
+            &.focus {
+                left: 15px;
+            }
+
+            span {
+                @include font-size(16px);
+                line-height: 20px;
+                font-weight: bold;
+
+                @include mq('tablet') {
+                    @include font-size(17px);
+                    line-height: 24px;
+                }
+
+                // &.f-forms__element--label {
+                // }
+        
+                &.f-forms__element--optional-flag {
+                    display: inline;
+                    font-weight: normal;
+                    color: $c-dark-grey;
+                    font-style: normal;
+                    margin-left: 4px;
+                }
+        
+                &.f-forms__element--sublabel { 
+                    line-height: 22px;
+                    color: $c-nevada;
+                    display: block;
+                    font-weight: normal;
+                    margin-bottom: 0px;
+                    margin-top: 2px;
+        
+                    @include mq('tablet') { 
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            &[disabled="disabled"] span {
+                color: $c-silver !important;
+            }
+            
+        }
+
+        &--suggestion {
+            @include font-size(16px);
+            line-height: 20px;
+            color: $c-nevada;
+
+            @include mq('tablet') {
+                @include font-size(17px);
+                line-height: 24px;
+            }
+        }
+    }
+}

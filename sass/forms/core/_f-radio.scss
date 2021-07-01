@@ -1,0 +1,100 @@
+.f-forms {
+
+   // RADIO
+   .f-forms__radio {
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        padding: 7.5px 0;
+        margin-left: 5px;
+
+        &--element {
+            position: relative;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            padding-left: 0px;
+            margin-bottom: 0px;
+            line-height: 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            @include mq('tablet') {
+            }
+
+            i {
+                display: inline-flex;
+                flex: 0 0 30px;
+                height: 30px;
+                width: 30px;
+                min-width: 30px;
+                border-radius: 50%;
+                border: 1px solid $c-dark-grey;
+                background: $c-white;
+                position: relative;
+                margin-right: 20px;
+
+                &:after {
+                    position: absolute;
+                    content: ""; 
+                    display: block;
+                    top: 7px;
+                    left: 6px;
+                    border-radius: 50%;
+                    background-image: url(../img/icons/icon-green-tick.svg);
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    margin-top: 0;
+                    width: 16px;
+                    height: 14px;
+                    @include transition(all 0.2s);
+                }
+                
+            }
+
+            // hidden
+            input[type=radio] {
+                position: absolute;
+                cursor: pointer;
+                opacity: 0;
+                left: -20px;
+
+                &:checked ~ i {
+                    border: 1px solid $c-green; 
+                    background: $c-white;
+                    z-index: 1;
+                }
+
+                &:checked ~ i:after {
+                    opacity: 1;
+                }
+
+                &:disabled {
+                    & ~ i {
+                        background-color: $c-gallery;
+                        border: solid 1px $c-silver;
+                    }
+
+                    & ~ span {
+                        color: $c-silver;
+                    }
+                }
+            }
+
+
+        }
+
+        &--label {
+            font-weight: normal;
+            display: inline-flex;
+            flex: 1;
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                display: block;
+            }
+        }
+    } 
+}

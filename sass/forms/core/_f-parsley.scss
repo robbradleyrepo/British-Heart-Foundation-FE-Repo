@@ -1,0 +1,259 @@
+.f-forms-parsley {
+    
+    .f-forms__element {
+
+        // icon status - error
+        .icon-error {
+            background-image: url(../img/icons/icon-error.svg);
+            background-repeat: no-repeat;
+            // width: 23px;
+            // height: 21px;
+        }
+
+        // icon status - success 
+        .icon-success {
+            background-image: url(../img/icons/icon-green-tick.svg);
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 20px;
+            opacity: 1;
+            margin-top: -29px;
+        }
+        
+        &--status {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            margin-right: 15px;
+            background-repeat: no-repeat;
+            opacity: 0;
+
+            &.for-select {
+                right: unset;
+                left: calc(75% - 70px);
+            }
+        }
+    
+        // error copy [text]
+        &--error {
+            @extend .f-forms__validation--notice;
+            margin-bottom: 0px !important;
+
+            &:before {
+                @extend :before;
+                display: none;
+            }
+        }  
+
+        &.parsley-success {
+
+            & > input[type=date],
+            & > input[type=url],
+            & > input[type=password],
+            & > input[type=number],
+            & > input[type=tel],
+            .is-amount > input[type=text],
+            &[data-parsley-is-date-valid=true] > .f-forms__textbox > input[type=text],
+            & > input[type=text],
+            & > input[type=email],
+            & .f-forms__textarea > textarea {
+                border: 1px solid $c-green;
+            }
+
+            & > .f-forms__select {
+
+                select {
+                    @include font-size(17px);
+                    color:  $c-body-text;
+                    border: 1px solid $c-green;
+                }
+                
+                .select-arrow {
+                    color: $c-green;
+                }
+            }
+
+            & > .f-forms__element--status, &[data-parsley-is-date-valid=true] > .f-forms__textbox > .f-forms__element--status, .f-forms__textarea > .f-forms__element--status {
+                @extend .icon-success;
+
+                &.for-textarea {
+                    position: absolute;
+                    right: 0px;
+                    top: 10px;
+                    margin-top: 3px;
+                }
+
+                &.for-date {
+                    margin-left: 95px;
+                    right: auto;
+                }
+            }
+
+            & > .f-forms__element--error {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(0.2s all);
+                margin-top: 0px;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            textarea:focus,
+            textarea:active {
+                & ~ .for-textarea {
+                    display: none;
+                }
+            }
+
+        }
+
+        &.parsley-error {
+
+            input[type=date],
+            input[type=url],
+            input[type=password],
+            input[type=number],
+            input[type=tel],
+            input[type=text],
+            input[type=email],
+            textarea {
+                border: 1px solid $c-dark-grey;
+            }
+
+            .f-forms__element--status {
+                display: none;
+            }
+
+            .f-forms__element--error {
+                max-height: 500px;
+                overflow: inherit;
+                opacity: 1;
+                visibility: visible;
+                @include transition(0.2s all);
+                margin-top: 12px;
+                clear: both;
+
+                &:before {
+                    display: block;
+                }
+            }
+
+            .f-forms__textarea {
+                
+                & ~ .f-forms__element--error {
+                    margin-top: 22px;
+                }
+            }
+            
+        }
+
+        &--success {
+            background-color: $c-whiteice; 
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+
+            i {
+                display: inline-flex;
+                border: 1px solid $c-green;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                background-image: url(../img/icons/icon-green-tick.svg);
+                background-repeat: no-repeat;
+                background-size: 16px 12px;
+                background-position: center;
+            }
+
+            span {
+                margin-left: 10px;
+                display: inline-flex;
+                color: $c-green;
+                font-weight: bold;
+                line-height: 21px;
+                @include font-size(15px);
+                @include mq('tablet') {
+                    @include font-size(17px);
+                }
+            }
+        }
+    }
+
+    .f-forms__validation--notice {
+        opacity: 1;
+        margin-bottom: 40px;
+        @include transition(all 0.1s);
+    
+        position: relative;
+        background-color: $c-lavender-blush;
+        color: $c-crimson;
+        font-family: $font-base;
+        font-weight: bold;	
+        @include font-size(15px);
+        line-height: 21px;
+        max-height: 500px;
+        overflow: inherit;
+        opacity: 1;
+        visibility: visible;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent $c-lavender-blush transparent;
+            -webkit-transform: rotate(360deg);
+        }
+    
+        &.hidden {
+            opacity: 0;
+            padding-bottom: 0px;
+        }
+    
+        ul {
+    
+            display: block;
+            margin: 0 10px;
+            
+            &.filled {
+                padding: 10px 0;
+            }
+    
+            & > li {
+                padding-left: 35px;
+    
+                &:first-child {
+                    background-image: url(../img/icons/icon-error.svg) !important;
+                    background-repeat: no-repeat;
+                    background-size: 23px 21px;     
+                }
+    
+                &:not(:first-child) {
+                    margin: 5px 0;
+                }
+
+                &.parsley-remote ~ .parsley-remote,
+                &.parsley-remote ~ .parsley-custom-error-message {
+                    display: none;
+                }
+                
+                a {
+                    color: $c-crimson;
+                    text-decoration: underline;
+                }
+            }
+                        
+        }
+    }
+}

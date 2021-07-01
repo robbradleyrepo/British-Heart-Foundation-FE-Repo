@@ -1,0 +1,149 @@
+.f-header {
+    position: relative;
+    padding: 0;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to left, #ed1f54, #ff0030);
+    @include transition(all 0.3s);
+    @include animation('fade-in 1s');
+
+
+    &__top {
+        position: relative; 
+        margin: 0;
+        padding: 0 0 0 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 30px; 
+        width: 100%;
+        background-color: $c-white;
+
+        @include mq('tablet') {
+            padding: 0 0 0 20px;
+        }
+
+        li {    
+            color: $c-bhf-wine; 
+            font-weight: bold;
+            @include font-size(14px);
+            display: inline-flex;
+
+            &:first-child {
+                margin-right: 10px;       
+            }
+
+            a { 
+                position: relative; 
+                color: $c-bhf-wine; 
+                font-weight: bold;
+                @include font-size(13px);
+                display: inline-block;
+                border-bottom: 0;
+                text-decoration: none;
+                @include transition(all 0.3s);
+                font-family: $font-base;  
+
+                &:hover {
+                    color: $c-bhf-red; 
+                    opacity: 1;
+                    text-decoration: underline;
+                }
+
+                span, i {
+                    @include font-size(17px);
+                    margin-right: 2px;
+
+                    &.bhfi-extlink {
+                        margin-left: 4px;
+                        position: relative;
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    &__bottom {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        height: 60px; 
+        width: 100%;
+        @include transition(all 0.3s);
+        
+        @include mq('tablet') {
+            height: 75px; 
+        }
+
+        .cta {
+            margin: 0;
+            margin-left: auto;
+            margin-right: 10px;
+            padding: 2px 10px;
+            
+            @include mq('tablet') {
+                padding: 0 15px;
+                margin-right: 20px;
+            }
+
+            i {
+                display: inline-block;
+                position: relative;
+                @include font-size(16px);
+                @include vendor-prefix('transform', 'translate(0%, 0)');
+                top: 1px;
+
+                @include mq('tablet') {
+                    margin-right: 5px;
+                    left: -5px;
+                }
+            }
+
+            span {
+                display: none;
+                @include mq('tablet') {
+                    display: inline;
+                }
+            }
+
+            &:hover i {
+                @include vendor-prefix('transform', 'translate(0%, 0)');
+            }
+        }
+    }
+
+    &__brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 10px;
+        width: 49px;
+        height: 40px;
+        background: url('../img/bhf-icon.png') no-repeat;
+        @include image-2x('../img/bhf-icon@2x.png', 49px, 40px);
+        line-height: 0;
+        backface-visibility: hidden;
+
+        @include mq('tablet') {
+            margin: 0 20px;
+        }
+        
+    }
+
+    h1 a {
+        font-family: $bhf;
+        font-weight: normal;
+        color: $c-white;
+        @include font-size(15px);
+        @include mq('tablet') {
+            @include font-size(24px);
+        }
+    }
+}

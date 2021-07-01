@@ -1,0 +1,80 @@
+.f-forms--autocomplete {
+
+    .easy-autocomplete {
+        display: flex;
+        flex-flow: row;
+        position: relative;
+
+        .easy-autocomplete-container {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+
+            ul {
+                display: none;
+                margin: 0;
+                padding: 0;
+                background: $c-white;
+                border: 1px solid $c-amber;
+                list-style-type: none;
+                height: 214px;
+                overflow-y: scroll;
+                box-shadow: 0 10px 20px 0 rgba(71, 78, 90, 0.1);
+
+                li {
+                    cursor: pointer;
+                    padding: 8.5px 10px;
+                    font-weight: bold;
+                    @include transition(all 0.15s);
+                    border-bottom: 1px solid $c-athens-gray;
+                    margin: 0px 5px;
+
+                    &.selected {
+                        background: $c-athens-gray;
+                    }
+
+                    b {
+                        color: $c-bhf-rubine-red;
+                    }
+
+                    i {
+                        @include font-size(15px);
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+
+        input[type="text"] {
+            margin-bottom: 0px;
+            width: 100%;
+            float: left;
+
+            &.is-with-button{
+                width:73.5%;
+            }
+        }
+
+        input[type="submit"] {
+            display: inline-flex;
+            max-width: 120px;
+            margin: 20px 0;
+
+            @include mq('desktop') { 
+                max-width: inherit;
+                display: inherit;
+                margin: 6px 15px;
+            }
+        }
+
+        button {
+            width: 26.5%;
+            height: 45px;
+            margin:0 0 0 5px;
+            border-radius: 0px;
+        }
+    }
+}

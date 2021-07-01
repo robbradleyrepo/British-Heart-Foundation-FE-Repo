@@ -1,0 +1,42 @@
+.f-forms {
+
+    &__postcode-lookup {
+        
+        .f-forms__element {
+            padding-top: 0;
+            
+            .with-cta { 
+                width: 50%;
+                float: left;
+
+                input[type=text] {
+                    width: 100%;
+                }
+            }
+            
+            .is-cta {
+                height: 45px;
+                border-radius: 0;
+                width: auto;
+                margin-left: 10px;
+                float: left;
+
+                a.cta {
+                    pointer-events: none;
+                    cursor: default;
+                    opacity: 0.5;
+                    padding: 8px 15px;
+                }
+            }
+
+            &.parsley-success {
+                a.cta {
+                    pointer-events: auto;
+                    cursor: pointer;
+                    opacity: 1;
+
+                }
+            }
+        }
+    }
+}
