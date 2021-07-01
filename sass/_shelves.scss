@@ -1,0 +1,574 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cs-shelf__column {
+    min-height: 1px;
+    
+    & > section {
+        margin: 50px 0;
+
+        @include mq('tablet') {
+            margin: 60px 0;
+        }
+
+        @include mq('desktop') {
+            margin: 70px 0;
+        }
+
+        @include mq('large') {
+            margin: 80px 0;
+        }
+    }
+
+    .shelf-reduced-spacing & {
+
+        & > section {
+            margin: 25px 0;
+    
+            @include mq('tablet') {
+                margin: 30px 0;
+            }
+    
+            @include mq('desktop') {
+                margin: 35px 0;
+            }
+    
+            @include mq('large') {
+                margin: 40px 0;
+            }
+        }
+    }
+}
+
+.cs-shelf__column .scEmptyPlaceholder {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    content: 'Empty';
+    min-height: 200px;
+    outline-offset: -5px;
+    outline-style: dashed;
+    position: relative;
+    background-clip: content-box;
+    padding: 9px;
+    outline-color: #a9a9a9;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 8px, #f0f0f0 8px, #f0f0f0 16px);
+}
+
+.cs-shelf__column .scEmptyPlaceholder.restricted:before {
+    content: 'Not Allowed' !important;
+    color: red;
+    text-align: center;
+}
+
+.cs-shelf__column .scEmptyPlaceholder:hover {
+    outline-color: #9c9c9c;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 8px, #e3e3e3 8px, #e3e3e3 16px);
+}
+
+.cs-shelf__column .scEmptyPlaceholder:before {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    content: 'Empty';
+    @include font-size(28px);
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #474e5a;
+    font-family: 'Knockout 50 A', 'Knockout 50 B', Arial Narrow, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cs-shelf__row {
+    &.is-grey {
+        background-color: rgba(71, 78, 90, 0.1);
+    }
+  
+    &.negative-z  {
+        z-index: -1;
+        position: relative;
+    }
+}
+
+  
+.cs-shelf__row.is-half:after,
+.cs-shelf__row.is-full:after,
+.cs-shelf__row.is-narrow:after,
+.cs-shelf__row.is-equal:after,
+.cs-shelf__row.is-wide-right:after,
+.cs-shelf__row.is-wide-left:after,
+.cs-shelf__row.is-equal-thirds:after,
+.cs-shelf__row.is-form:after,
+.cs-shelf__row.is-wide-middle-narrow-sides:after,
+.cs-shelf__row.is-equal-quaters:after,
+.cs-shelf__row.is-form:after,
+.cs-shelf__row.is-wide-left-two-quaters:after,
+.cs-shelf__row.is-wide-right-two-quaters:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.cs-shelf__row-extended,
+.cs-shelf__row.is-full,
+.cs-shelf__row.is-half,
+.cs-shelf__row.is-narrow,
+.cs-shelf__row.is-equal,
+.cs-shelf__row.is-wide-right,
+.cs-shelf__row.is-wide-left,
+.cs-shelf__row.is-equal-thirds,
+.cs-shelf__row.is-wide-middle-narrow-sides,
+.cs-shelf__row.is-form,
+.cs-shelf__row.is-equal-quaters,
+.cs-shelf__row.is-wide-left-two-quaters,
+.cs-shelf__row.is-wide-right-two-quaters {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cs-shelf__row.is-marginless {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.cs-shelf__row.is-narrow .cs-shelf__column {
+    width: 100%;
+    float: none;
+
+    @include mq($tablet) {
+        width: 66.2%;
+        margin: 0 auto;
+    }
+}
+
+.cs-shelf__row.is-half .cs-shelf__column {
+    width: 100%;
+    float: none;
+ 
+    @include mq($tablet) {
+        width: calc(1170px / 2);
+        margin: 0 auto;
+    }
+}
+
+.cs-shelf__row.is-equal .cs-shelf__column {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+
+    @include mq($tablet) {
+        width: 48.62%;
+        float: left;
+        margin-right: 2.75%;
+    }
+}
+
+.cs-shelf__row.is-equal .cs-shelf__column:last-child {
+
+    @include mq($tablet) {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.cs-shelf__row.is-equal .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [1/2]';
+}
+
+// is-wide-right
+.cs-shelf__row.is-wide-right .cs-shelf__column,
+.cs-shelf__row.is-wide-right .cs-shelf__column:last-child {
+    width: 100%;
+    float: none;
+    margin-right: 0; 
+}
+
+.cs-shelf__row.is-wide-right .cs-shelf__column {
+    
+    @include mq($tablet) {
+        width: 32.4%;
+        float: left;
+        margin-right: 2.75%;
+    }
+}
+
+.cs-shelf__row.is-wide-right .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [1/3]';
+}
+
+.cs-shelf__row.is-wide-right .cs-shelf__column:last-child {
+    
+    @include mq($tablet) {
+        width: 64.85%;
+        float: right;
+        margin-right: 0;
+    }
+}
+.cs-shelf__row.is-wide-right .cs-shelf__column:last-child .scEmptyPlaceholder:before {
+    content: 'Empty [2/3]';
+}
+
+// is-wide-left
+.cs-shelf__row.is-wide-left .cs-shelf__column,
+.cs-shelf__row.is-wide-left .cs-shelf__column:last-child {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+.cs-shelf__row.is-wide-left .cs-shelf__column {
+    
+    @include mq($tablet) {
+        width: 64.85%;
+        float: left;
+        margin-right: 2.75%;
+    }
+}
+
+.cs-shelf__row.is-wide-left .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [2/3]';
+}
+
+.cs-shelf__row.is-wide-left .cs-shelf__column:last-child {
+    
+    @include mq($tablet) {
+        width: 32.4%;
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.cs-shelf__row.is-wide-left .cs-shelf__column:last-child .scEmptyPlaceholder:before {
+    content: 'Empty [1/3]';
+}
+
+// is-equal-thirds
+.cs-shelf__row.is-equal-thirds .cs-shelf__column {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+.cs-shelf__row.is-equal-thirds .cs-shelf__column {
+    
+    @include mq($tablet) {
+        width: 31.45%;
+        float: left;
+        margin-right: 2.75%;
+    }
+}
+
+.cs-shelf__row.is-equal-thirds .cs-shelf__column:last-child {
+    
+    @include mq($tablet) {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.cs-shelf__row.is-equal-thirds .cs-shelf__column .scEmptyPlaceholder:before {
+  content: 'Empty [1/3]';
+}
+
+.cs-shelf__row.is-equal-quaters .cs-shelf__column {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+
+  @include mq($tablet) {
+    width: 22.9%;
+    float: left;
+    margin-right: 2.75%;
+  }
+}
+.cs-shelf__row.is-equal-quaters .cs-shelf__column:last-child {
+    margin-right: 0;
+    float: left;
+}
+
+.cs-shelf__row.is-equal-quaters .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [1/4]';
+}
+
+// wide-middle-narrow-sides
+.cs-shelf__row.is-form .cs-shelf__column,
+.cs-shelf__row.is-form .cs-shelf__column.first,
+.cs-shelf__row.is-form .cs-shelf__column:last-child,
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column,
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column.first,
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column:last-child {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column {
+    
+    @include mq($tablet) {
+        width: 47%;
+        float: left;
+        margin-right: 2.5%;
+    }
+}
+
+.cs-shelf__row.is-form .cs-shelf__column {
+  @include mq($tablet) {
+    width: 70%;
+    float: left;
+    margin-right: 2.5%;
+  }
+  @include mq($desktop) {
+    width: 50%;
+    float: left;
+    margin-right: 2.5%;
+  }
+
+  &.first {
+    @include mq($tablet) {
+        width: 25%;
+        float: left;
+        margin-right: 2.5%;
+      }
+  }
+   
+}
+
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [1/2]';
+}
+
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column.first {
+  @include mq($tablet) {
+    width: 24%;
+    float: left;
+    margin-right: 2.5%;
+  }
+}
+
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column.first .scEmptyPlaceholder:before {
+    content: 'Empty [1/4 Left]';
+}
+
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column:last-child {  
+    
+    @include mq($tablet) {
+        width: 24%;
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.cs-shelf__row.is-wide-middle-narrow-sides .cs-shelf__column:last-child .scEmptyPlaceholder:before {
+    content: 'Empty [1/4 Right]';
+}
+
+// is-wide-left-two-quaters
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column,
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column.second,
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column:last-child {
+    width: 100%;
+    float: none;
+}
+
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column {
+    
+    @include mq($tablet) {
+        width: 47.0%;
+        float: left;
+        margin-right: 2.5%;
+    }
+}
+
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [1/4]';
+}
+
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column.first .scEmptyPlaceholder:before {
+     content: 'Empty [1/2 Left]';
+}
+
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column.second {
+    
+    @include mq($tablet) {
+        width: 24%;
+        float: left;
+    }
+}
+
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column:last-child {
+    
+    @include mq($tablet) {
+        width: 24%;
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.cs-shelf__row.is-wide-left-two-quaters .cs-shelf__column:last-child .scEmptyPlaceholder:before {
+    content: 'Empty [1/4 Right]';
+}
+
+// is-wide-right-two-quaters
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column,
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column.second,
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column:last-child {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column,
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column.second {
+    
+    @include mq($tablet) {
+        width: 24%;
+        float: left;
+        margin-right: 2.5%;
+    }
+}
+
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column .scEmptyPlaceholder:before {
+    content: 'Empty [1/4]';
+}
+
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column.first .scEmptyPlaceholder:before {
+    content: 'Empty [1/4 Left]';
+}
+
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column:last-child {
+    
+    @include mq($tablet) {
+        width: 47%;
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.cs-shelf__row.is-wide-right-two-quaters .cs-shelf__column:last-child .scEmptyPlaceholder:before {
+    content: 'Empty [1/2 Right]';
+}
+
+
+.is-wide-middle-narrow-sides
+.is-editable-field {
+    background-color: rgba(86, 86, 86, 0.3);
+    border: 2px dashed #a9a9a9;
+    margin-bottom: 10px;
+}
+
+.component-padding {
+    padding: 0 20px;
+
+    @include mq('tablet') {
+        flex-flow: row;
+        padding: 0 25px;
+    }
+
+    @include mq('large') {
+        padding: 0;
+    }
+}
+
+.cs-shelf__wrapper {
+    padding: 25px 20px;
+    max-width: 1920px;
+    margin: auto;
+
+    @include mq('tablet') {
+        padding: 30px 20px;
+    }
+  
+    @include mq('desktop') {
+        padding: 35px 20px;
+    }
+
+    @include mq('large') {
+        padding: 40px 20px;
+    }
+
+    &.is-default {
+        padding: 50px 20px;
+
+        @include mq('tablet') {
+            padding: 60px 20px;
+        }
+        
+        @include mq('desktop') {
+            padding: 70px 20px;
+        }
+    
+        @include mq('large') {
+            padding: 80px 20px;
+        }
+    }
+
+    &.is-pull-down {
+        padding-top: 50px;
+
+        @include mq('tablet') {
+            padding-top: 60px;
+        }
+        
+        @include mq('desktop') {
+            padding-top: 70px;
+        }
+    
+        @include mq('large') {
+            padding-top: 80px;
+        }
+    }
+
+    &.is-pull-up {
+        padding-bottom: 50px;
+
+        @include mq('tablet') {
+            padding-bottom: 60px;
+        }
+        
+        @include mq('desktop') {
+            padding-bottom: 70px;
+        }
+    
+        @include mq('large') {
+            padding-bottom: 80px;
+        }
+    }
+
+	&.is-grey {
+		.cs-shelf__column > section {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+    }
+    
+    .is-equal-thirds {
+
+        .cs-shelf__column {
+            margin-top: 30px;
+        
+            @include mq($tablet) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.is-grey {
+   	background-color: $c-light-grey;
+}

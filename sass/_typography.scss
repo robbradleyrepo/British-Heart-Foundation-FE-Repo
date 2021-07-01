@@ -1,0 +1,609 @@
+.bhf-typography {
+
+    ul, ol, p, h1, h2, h3, h4, dd {
+        color: $c-body-text;
+        @include transition(0.2s all);
+    }
+    
+    a, ul, ol, p, h1, h2, h3, h4, dd {
+        
+        &.is-white-text {
+            color: $c-white;
+        }
+
+        &.is-crimson-text {
+            color: $c-crimson2;
+        }
+
+        &.is-black-text { 
+            color: $c-black;
+        }
+
+        &.is-red-text {
+            color: $c-bhf-red;
+        }
+
+        &.is-dark-grey-text {
+            color: $c-dark-grey;
+        }
+
+        &.is-wine-text {
+            color: $c-bhf-wine;
+        }
+
+        &.is-body-text {
+            color: $c-body-text;
+        }
+
+        &.is-rubine-red {
+            color: $c-bhf-rubine-red;
+        }
+
+        &.is-center-text {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+
+    h4, div, p, ul, ol, dd {
+        font-family: $font-base;
+    }
+
+    h1, h2, h3 {
+        font-family: $bhf;
+    }
+
+    h1 {
+        @include font-size(26px);
+        line-height: 1.3;
+
+        @include mq($desktop) {
+            @include font-size(58px);
+            line-height: 1.2;
+
+            &.large {
+                @include font-size(76px);
+                line-height: 75px;
+            }
+        }
+    }
+
+    h2 {
+        @include font-size(22px);
+        line-height: 1.3;
+
+        @include mq($desktop) {
+            @include font-size(36px);
+            line-height: 1.3;
+        } 
+    }
+
+    h3 {
+        @include font-size(18px);
+        line-height: 1.3;
+
+        @include mq($desktop) {
+            @include font-size(20px);
+            line-height: 1.5;
+        } 
+    }
+
+    h4 {
+        @include font-size(16px);
+        line-height: 1.4;
+        font-weight: bold;
+
+        @include mq($desktop) {
+            @include font-size(18px);
+            line-height: 1.5;
+        } 
+    }
+
+    p {
+        @include font-size(16px);
+        line-height: 1.6;
+        margin-bottom: 19.2px;
+
+        @include mq($desktop) {
+            @include font-size(17px);
+            margin-bottom: 27.2px;
+        } 
+
+        &.is-block-text {
+
+            @include mq($desktop) {
+                @include font-size(18px);
+                margin-bottom: 28.8px;
+            } 
+        }
+
+        &.intro {
+            line-height: 1.4;
+            font-weight: bold;
+            
+            @include mq($desktop) { 
+                line-height: 1.6;
+            } 
+        }
+
+        &.large {
+            @include font-size(24px);
+        }
+
+        &.small {
+            @include font-size(14px);
+        }
+
+        &.is-bold {
+            font-weight:bold;
+        }
+    }
+
+    ul {
+        padding:0px;
+        @include font-size(16px);
+
+        li {
+            line-height: 1.6;
+            padding: 0 0 0 25px;
+            position: relative;
+            margin-bottom: 20.8px;
+
+            @include mq($desktop) { 
+                margin-bottom: 22.1px;
+                @include font-size(17px);
+            } 
+
+            &:before {
+                position: absolute;
+                content: "\0025A0";
+                @include font-size(18px);
+                vertical-align: middle;
+                left: 0px;
+                top:-3px;
+            }
+        }
+
+        &.is-block-li {
+
+            li {
+
+                @include mq($desktop) { 
+                    @include font-size(18px);
+                    margin-bottom: 23.4px;
+                }
+            }
+        }
+    }
+
+    ol {
+        margin: 18px 0 36px 21px;
+        padding: 0;
+        list-style-position: outside;
+
+        li {
+            @include font-size(16px);
+            line-height: 1.6;
+            padding: 0 0 0 5px;
+
+            @include mq($desktop) { 
+                margin-bottom: 22.1px;
+                @include font-size(17px);
+            } 
+        }
+
+        &.is-block-li {
+
+            li {
+
+                @include mq($desktop) { 
+                    @include font-size(18px);
+                    margin-bottom: 23.4px;
+                }
+            }
+        }
+    }
+    
+    dl {
+
+        dt {
+            color: $c-bhf-wine;
+            font-weight: bold;
+            @include font-size(18px);
+        }
+
+        dd {
+            @include font-size(15px);
+        }
+    }
+
+    a {
+
+        &:hover, 
+        &:active {
+            opacity: .7;
+        }
+    }
+
+    %quote {
+        font-family: $font-bhf-bold;
+        @include font-size(100px);
+    }
+
+    %author {
+        font-weight: normal;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    %zero-margin {
+        margin-bottom: 0px;
+    }
+
+    %event-link {
+        @include font-size(12px);
+        line-height: 16px;
+        display: block;
+        padding-top: 15px;
+        border-top: 1px solid $c-white;
+        @include transition(all 300ms);
+        opacity: .7;
+
+        @include mq('tablet') {
+            display: inline-block;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid $c-white;
+            padding-top: 0;
+            padding-bottom: 2px;
+            @include font-size(14px);
+            line-height: 18px;
+            opacity: 1;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+
+    %event-quote {
+        color: $c-white;
+        @include font-size(70px);
+        
+        @include mq('tablet') { 
+            @include font-size(100px);
+        }
+    }
+
+    %event-copy {
+        color: $c-white;
+        line-height: 1.33;
+        @include font-size(18px);
+        
+        @include mq('tablet') {
+            line-height: 1.5;
+            @include font-size(28px);
+        }
+    }
+
+    %event-author {
+        @include font-size(18px);
+        font-weight: normal;
+        color: $c-white;
+
+        @include mq('tablet') {
+            @include font-size(20px);
+        }
+    }
+
+    %news-date {
+        margin-top: 0;
+        margin-bottom: 11px;
+        @include font-size(14px);
+        line-height: 20px;
+        text-align: left;
+
+        @include mq('tablet') {
+            @include font-size(16px);
+            line-height: 26px;
+        }
+    }
+
+    %conditions-btn {
+        font-family: $font-bhf-bold;
+        @include font-size(14px);
+        color: $c-white;
+        text-align: center;
+        font-weight: normal;
+        @include transition(all 0.3s);
+
+        &:hover {
+            background-color: darken($c-bhf-rubine-red, 15%);
+        }
+
+        &.active, &:focus {
+            background-color: $c-dark-grey;
+        }
+    }
+
+    %conditions-nav {
+        @include font-size(14px);
+        font-weight: normal;
+    }
+
+    %sticky-banner-p {
+        line-height: 28px;
+        color: $c-black; 
+
+        @include font-size(16px);
+        @include transition(all 0.3s);
+        
+        @include mq('tablet') { 
+            color: $c-white; 
+        }
+        
+        @include mq('desktop') {
+            @include font-size(17px);
+        }
+
+        &.lead { 
+            font-weight: bold; 
+            font-family: $bhf;
+
+            @include mq('desktop') {
+                @include font-size(20px);
+            }
+        }
+    }
+
+    %sticky-banner-countdown {
+        font-weight: bold;
+        font-family: $bhf;
+        @include transition(all 0.3s);
+        @include font-size(16px);
+        @include mq('tablet') {
+            @include font-size(14px); 
+        }
+        @include mq('desktop') {
+            @include font-size(20px);
+        }
+    }
+
+    %mobile-sticky-banner {
+        color: $c-white;
+        
+        span { 
+            width: calc(100% - 130px);
+            @include font-size(14px);
+            line-height: 1.36;
+        }
+    }
+
+    %text-with-list-li {
+        counter-increment: item; 
+        line-height: 24px;
+        list-style: none inside; 
+        @include font-size(16px);
+        font-weight: bold;
+
+        @include mq('tablet') {
+            @include font-size(18px);
+            }
+
+            &:before {
+            content: counter(item);
+            margin-right: 20px;
+            padding: 22px 20px;
+            display: block;
+            @include border-radius(50%);
+            width: 70px;
+            min-width: 70px;
+            max-width: 70px;
+            height: 70px;
+            background: $c-bhf-wine;
+            color: $c-white;
+            text-align: center; 
+            float: left;
+            font-family: $bhf;
+            @include font-size(28px);
+            
+            @include mq('tablet') {
+                @include font-size(36px);
+            }
+        }
+    }
+
+    %winners-table {
+        text-align: left;
+        @include font-size(14px);
+        line-height: 18px;  
+
+        @include mq('desktop') {
+            @include font-size(16px);
+        }
+    }
+
+    %featured-tiles-copy {
+        @include font-size(18px);
+        color: $c-bhf-rubine-red;
+        font-family: $bhf;
+
+        line-height: 24px;
+
+        @include mq($desktop) {
+            @include font-size(20px);
+        }
+    }
+
+    %c-quote {
+        @include font-size(88px);
+    }
+
+    %c-quote-copy {
+        @include font-size(18px);
+
+        line-height: 30px;
+
+        @include mq($desktop) {
+            @include font-size(20px);
+        }
+    }
+
+    %c-quote-author {
+        @include font-size(16px);
+        color: $c-dark-grey;
+    }
+
+    %download-text {
+        color: $c-bhf-rubine-red;
+        font-weight: bold;
+        @include font-size(11px);
+    }
+
+    %glp-header-breadcrum {
+        @include mq('large') { 
+            @include font-size(18px);
+        }
+    }
+
+    %glp-header-p {
+        color: $c-white; 
+        line-height: 22px;
+        @include font-size(16px);
+        @include animation('fade-in 2s');
+        
+        @include mq('large') { 
+            font-size: 1.35rem;
+            line-height: 31px;
+            margin: -10px 0 0;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+    }
+
+    %glp-header-h1 {
+        color: $c-white;
+
+        @include font-size(24px);
+        
+        line-height: 26px;
+
+        @include animation('fade-in 2s');
+
+        @include mq('desktop') {
+            line-height: calc(0.8em + 1vw);
+            margin-bottom: 15px;
+            @include font-size(46px);
+        }
+
+        @include mq('large') {
+            font-size: 3.8vw;
+            left: -5px;
+            margin-bottom: 20px;
+        }
+    }
+
+    %msc-hero-h1 {
+        @include mq('desktop') {
+            @include font-size(46px);
+        }
+
+        @include mq('large') {
+            @include font-size(56px);
+        }
+    }
+
+    %event-span {
+        font-family: $bhf;
+        @include font-size(16px);
+    }
+
+    %table-price-caption {
+        text-align: left;
+        @include font-size(22.5px);
+        font-weight: bold;
+    }
+
+    %table-price-td {
+        @include font-size(18px);
+        font-weight: normal;
+    }
+
+    %donate {
+        @include font-size(16px);
+
+        @include mq($desktop) {
+            @include font-size(17px);
+        } 
+    }
+
+    %totaliser-h1 {
+        @include font-size(36px);
+
+        @include mq($desktop) {
+            @include font-size(58px);
+        }
+    }
+
+    /* In some components, incorrect header tags been used (i.e. h1 is used instead of h2), Changing the HTML is time consuming and requires 
+    BE resource therefore as a workaround @extend is used to overwrite the correct styles. Extending using silent selector (%h2, %h3, %h4)  seems 
+    to be much more efficient then directly using (i.e. @extend h2) because SCSS is duplicating every instance of the selector and slowing 
+    the build heavily (over 1 minute) and outputting a larger file. */
+
+    %h4 {
+        font-family: $font-base;
+        color: $c-body-text;
+        @include transition(0.2s all);
+
+        @include font-size(16px);
+        line-height: 1.4;
+        font-weight: bold;
+
+        @include mq($desktop) {
+            @include font-size(18px);
+            line-height: 1.5;
+        } 
+    }
+
+    %h2 {
+        color: $c-body-text;
+        @include transition(0.2s all);
+        font-family: $bhf;
+
+        @include font-size(22px);
+        line-height: 1.3;
+
+        @include mq($desktop) {
+            @include font-size(36px);
+            line-height: 1.3;
+        } 
+    }
+
+    %h3 {
+        color: $c-body-text;
+        font-family: $bhf;
+        @include transition(0.2s all);
+
+        @include font-size(18px);
+        line-height: 1.3;
+
+        @include mq($desktop) {
+            @include font-size(20px);
+            line-height: 1.5;
+        } 
+    }
+
+    %is-red-text {
+        color: $c-bhf-red;
+    }
+
+    %is-wine-text {
+        color: $c-bhf-wine;
+    }
+
+    %is-body-text {
+        color: $c-body-text;
+    }
+}
