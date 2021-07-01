@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <div class="cs-shelf__row is-marginless">   
+            <div class="cs-shelf__column">
+                {% include 'c-nav-master.njk' %}
+                {% include 'c-nav-mobile.njk' %}
+            </div>
+        </div>
+        <main class="cd-main-content bhf-typography" accesskey="c" itemscope itemprop="mainContentOfPage">        
+           
+            {# <a href="index.html" class="cta">Return to list</a> #}
+
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    {% include 'c-scp-hero__is-full.njk' %}
+                </div>
+            </div> 
+
+            <!-- PLACEHOLDER --> 
+            <div class="cs-shelf__row is-full"> 
+                <div class="cs-shelf__column first">
+                    
+                    {% include 'c-conditions.njk' %}
+                    
+                    {# {% include 'c-nav-secondary.njk' %} #}
+                    
+                </div> 
+            </div> 
+
+            <!-- PLACEHOLDER --> 
+            <div class="cs-shelf__row is-full"> 
+                <div class="cs-shelf__column first">
+                    
+                    {% include 'c-donate.njk' %}
+                    
+                </div> 
+            </div>    
+ 
+            
+        </main>
+
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Quote</h1>
+
+        <main class="cd-main-content bhf-typography" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+                <div class="cs-shelf__row is-narrow">
+                    <div class="cs-shelf__column">
+                        <section class="c-text-component">
+                            <h3>Emotional support</h3>
+                            <p>The emotional effect of a heart condition will undoubtedly have a huge impact on your lives. Your loved one’s health and treatment will be a source of worry. They may also find that relying on other people is hard to accept. They will need emotional support to get through this.</p>
+                        </section>
+                        
+                        {% include 'c-quote.njk' %}
+
+                        <section class="c-text-component">
+                            <h2>What support is there for me?</h2>
+                            <p>Being a carer for someone who has a heart condition can be very demanding - both physically and emotionally. Some carers will juggle their job at work with home and family life as well as looking after their partner or relative.</p>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+</html>

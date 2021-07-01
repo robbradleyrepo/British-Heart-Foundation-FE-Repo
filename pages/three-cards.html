@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <h1>MVC - Three cards [SCROLL DOWN]</h1>
+
+        <main class="cd-main-content bhf-typography" accesskey="c" itemscope itemprop="mainContentOfPage">
+            <div>
+                <a href="index.html" class="cta">Return to list</a>
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-equal">
+                    <h2 style="text-align:center; font-weight: bold;">Equal Width</h2>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        {% include 'c-three-cards.njk' %}
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-equal">
+                    <h2 style="text-align:center; font-weight: bold;">Equal Width</h2>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+                <div class="cs-shelf__row is-full">
+                    <h2 style="text-align:center; font-weight: bold;">Full Column</h2>
+                    <div class="cs-shelf__column">
+                        <div class="scEmptyPlaceholder"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

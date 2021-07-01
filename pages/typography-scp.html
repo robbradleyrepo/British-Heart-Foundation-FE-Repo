@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        {# <h1>MVC - ARTICLE EXAMPLE</h1> #}
+        <div class="cs-shelf__row is-marginless">   
+            <div class="cs-shelf__column">
+                {% include 'c-nav-master.njk' %}
+                {% include 'c-nav-mobile.njk' %}
+            </div>
+        </div>
+
+        <main class="cd-main-content bhf-typography" accesskey="c" itemscope itemprop="mainContentOfPage">        
+           
+            {# <a href="index.html" class="cta">Return to list</a> #}
+
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    {% include 'c-scp-hero__is-full.njk' %}
+                </div>
+            </div> 
+
+            <!-- PLACEHOLDER --> 
+            <div class="cs-shelf__row is-wide-left"> 
+                <div class="cs-shelf__column">
+                    
+                    <!-- COMPONENT -->
+                    {% include 'c-text-and-image-video-large.njk' %}
+
+                    <!-- COMPONENT -->
+                    {% include 'c-text-component.njk' %}
+
+                    <section class="c-quote c-quote--is-paprika">
+                        <div class="c-quote__copy">
+                            I am a carer, but I don't think of myself as one. I think that part of loving someone is looking after them. If the boot was on the other foot he'd do the same for me
+                        </div>
+                        <div class="c-quote__author">
+                            <span>Micheal</span>, carer
+                        </div>
+                    </section>
+                    
+                    {% include 'c-related-articles.njk' %}
+                </div>
+                <div class="cs-shelf__column">
+                    
+                    <!-- COMPONENT -->
+                    {% include 'c-nav-secondary.njk' %}
+                
+                </div>
+            </div>                
+        </main>
+        <!-- PLACEHOLDER -->
+        <div class="cs-shelf__row is-marginless">
+            <div class="cs-shelf__column">
+                {% include '_footer.njk' %}
+            </div>
+        </div>
+    
+    
+    {% include '_scripts.njk' %}
+
+    </body>
+    
+</html>

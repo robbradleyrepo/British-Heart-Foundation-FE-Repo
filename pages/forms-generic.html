@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        {# <h1>MVC - ARTICLE EXAMPLE</h1> #}
+
+        <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">        
+           
+            {# <a href="index.html" class="cta">Return to list</a> #}
+
+        
+            <div class="cs-shelf__row is-marginless">   
+                <div class="cs-shelf__column">
+                    {% include 'c-nav-master.njk' %}
+                    {% include 'c-nav-mobile.njk' %}
+                </div>
+            </div>
+
+            <!-- COMPONENT -->
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    
+                    <section class="c-scp-hero">
+                            <header  itemscope itemtype="http://schema.org/WPHeader"> 
+                        
+                                <a href="#" class="g-logo bigbeat animation-beat">
+                                    <span></span>
+                                </a>
+                        
+                                <div class="c-scp-hero__copy">
+                        
+                                    <div class="c-scp-hero__is-full">
+                        
+                                        {% include '_breadcrumb.njk' %}
+                        
+                                        <h1 itemprop="headline">Big Beat Challenge:<br> Register your interest </h1>
+                        
+                                        <p>Sign up to get email updates on the Big Beat Challenge including when applications open and Big Beat Challenge events.</p>
+                        
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="c-scp-hero__mask">
+                                <img src="assets/img/mvc/scp-hero-curve.svg" alt="Hero curve mask" />
+                            </div>
+                        </section>
+
+                </div>
+            </div> 
+            
+            <!-- COMPONENT -->
+            <div class="cs-shelf__row is-full">
+                <div class="cs-shelf__column"> 
+                    {% include 'c-forms-generic.njk' %}       
+                </div>
+            </div>
+
+            
+            <!-- PLACEHOLDER -->
+            <div class="cs-shelf__row is-marginless">
+                <div class="cs-shelf__column">
+                    {% include '_footer.njk' %}
+                </div>
+            </div>
+ 
+                
+        </main>
+
+    
+    
+        {% include '_scripts.njk' %}  
+        <script src="assets/js/forms-mvc.js"></script>
+
+      
+    </body>
+    
+</html>

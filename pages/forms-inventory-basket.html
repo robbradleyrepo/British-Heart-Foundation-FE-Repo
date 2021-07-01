@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+        <main class="cd-main-content" accesskey="c">        
+
+                <div class="cs-shelf__row is-marginless">   
+                    <div class="cs-shelf__column">
+                        {% include 'forms/core/f-header.njk' %}
+                    </div>
+                </div>
+
+                <div class="cs-shelf__row is-form">
+                    <div class="cs-shelf__column first">
+                        {% include 'forms/core/f-indicator.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                        {% include 'c-inventory-basket.njk' %}
+                    </div>
+                    <div class="cs-shelf__column">
+                    </div>
+                </div>
+
+               
+                <div class="cs-shelf__row is-marginless">
+                    <div class="cs-shelf__column">
+                        {% include '_footer.njk' %}
+                    </div>
+                </div>
+
+
+                
+        </main>
+
+    
+        {% include '_scripts.njk' %}  
+        <script src="assets/js/forms-mvc.js"></script>
+    </body>
+    
+</html>

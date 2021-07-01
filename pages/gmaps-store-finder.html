@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles-mvc.css" />
+    
+    <meta name="description" content="Being a carer for someone who has a heart condition can be very demanding. Find out where you can find support, and how to care for yourself too">
+    <title>MVC - Content page</title>
+</head>
+
+<body class="sitecore-editingmode">
+    <h1>MVC Layout</h1>
+    <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+        <div>
+            <a href="index.html" class="cta">Return to list</a>
+
+            <div class="cs-shelf__row is-full">
+                <div class="cs-shelf__column">
+                    <div class="c-store-finder">
+                        <article class="c-store-finder__content">
+                            <header class="c-store-finder__header">
+                                <div class="c-store-finder__header-copy">
+                                    <h1>Store Locator</h1>
+                                    <p>This page will help you to find the closest BHF store. Simply enter your current location and click the 'Locate stores' button.</p>
+                                    <p><sup><i>In this demo mode the current location if pre-filled for you, as at the moment we only have store locations around BHF HQs.</i></sup></p>
+                                </div>
+                            </header>
+                        
+                            <div class="c-store-finder__body">
+
+                                <div class="c-store-finder__map">
+                                    <h2>Location</h2>
+
+                                    <div class="c-store-finder__map-inputs">
+                                        From <input class="c-store-finder__map-address" type="textbox" value="NW1 7AW" placeholder="Enter your address here..." />
+                                        within a radius of <select class="c-store-finder__map-radius">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select> miles
+                                        <input class="c-store-finder__map-geocode" type="button" value="Locate stores" />
+                                    </div>
+
+
+                                    <div class="c-store-finder__map-canvas">
+                                        <!-- Map is going to be injected here dynamically -->
+                                    </div>
+                                    <div class="c-store-finder__panel">
+                                        <h4>Stores around your area (<span class="c-store-finder__stores-found">0</span> found)</h4>
+
+                                        <ul class="c-store-finder__stores-list">
+                                            <!-- the list of stores will be loaded here dynamically -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    {% include '_scripts.njk' %}
+</body>
+
+</html>

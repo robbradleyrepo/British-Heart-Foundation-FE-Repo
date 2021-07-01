@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
+    {% include '_head.njk' %}
+    <body class="sitecore-editingmode">
+
+    <h1>MVC - Forms</h1>
+
+    <main class="cd-main-content" accesskey="c" itemscope itemprop="mainContentOfPage">
+
+    <!-- **************************************************** -->
+    <!-- BEGIN COMPONENT : FORMS                              -->
+    <!-- **************************************************** -->
+
+    <div class="cs-shelf__row is-half">
+        <div class="cs-shelf__column"> 
+
+            <section class="g-forms"> 
+
+                <h1>Form Heading</h1> 
+                <!-- BEGIN FORM --> 
+                <form>                    
+
+                    {% include 'c-sign-up__step1.njk' %}
+
+                    {% include 'c-sign-up__step2.njk' %} 
+
+                    {% include 'c-sign-up__step3.njk' %}
+                    
+                </form>
+
+                <!-- END FORM -->
+ 
+            </section>
+       
+        </div>
+    </div>
+    <!-- END COMPONENT -->
+
+    </main>
+    </body>
+    
+</html>
