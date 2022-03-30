@@ -51,7 +51,7 @@
     "gulp-uglify": "^3.0.0",
     "hoverintent": "^2.0.0",
     "jquery": "^3.2.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "run-sequence": "^1.2.2",
     "tsify": "^3.0.1",
     "tslint": "^5.4.2",
